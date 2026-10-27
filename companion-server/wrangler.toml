@@ -1,0 +1,13 @@
+name = "spectrum-companion"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Your site's origin only (no path). Separate several with commas.
+ALLOWED_ORIGIN = "https://YOUR-USERNAME.github.io"
+MODEL = "claude-sonnet-5-5"
+
+# Optional rate limiting: run `npx wrangler kv namespace create RL`, paste the id, and uncomment.
+# [[kv_namespaces]]
+# binding = "RL"
+# id = "PASTE_ID_HERE"
