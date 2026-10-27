@@ -1,6 +1,6 @@
 # Spectrum Hub
 
-One searchable place for autism resources, built from the recommendations in Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349:
+One searchable place for autism resources, built by Dr Ebenezer Larnyo from the recommendations in his paper Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349:
 research-backed tools sorted by common issues, connected community institutions, and accessible design.
 
 ## Host it (GitHub Pages, free)
