@@ -4,7 +4,7 @@ compatibility_date = "2025-01-01"
 
 [vars]
 # Your site's origin only (no path). Separate several with commas.
-ALLOWED_ORIGIN = "https://YOUR-USERNAME.github.io"
+ALLOWED_ORIGIN = "https://ebenezer-larnyo.github.io/spectrum-hub/"
 MODEL = "claude-sonnet-5-5"
 
 # Optional rate limiting: run `npx wrangler kv namespace create RL`, paste the id, and uncomment.
