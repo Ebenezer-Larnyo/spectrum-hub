@@ -1,0 +1,10 @@
+[
+  {"name": "CDC", "tier": "gov", "seeds": ["https://www.cdc.gov/autism/"], "allow": ["https://www.cdc.gov/autism"], "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "max_pages": 25},
+  {"name": "NIMH", "tier": "gov", "seeds": ["https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd"], "allow": ["https://www.nimh.nih.gov/health/topics/autism"], "audience": ["adults", "caregivers"], "cats": ["signs", "care"], "max_pages": 10},
+  {"name": "NICHD", "tier": "gov", "seeds": ["https://www.nichd.nih.gov/health/topics/autism"], "allow": ["https://www.nichd.nih.gov/health/topics/autism"], "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "max_pages": 15},
+  {"name": "MedlinePlus", "tier": "gov", "seeds": ["https://medlineplus.gov/autismspectrumdisorder.html"], "allow": ["https://medlineplus.gov/autism"], "audience": ["adults", "caregivers"], "cats": ["signs", "care"], "max_pages": 5},
+  {"name": "NHS", "tier": "gov", "seeds": ["https://www.nhs.uk/conditions/autism/"], "allow": ["https://www.nhs.uk/conditions/autism"], "audience": ["adults", "caregivers"], "cats": ["diagnosis", "daily"], "max_pages": 20},
+  {"name": "Autistic Self Advocacy Network", "tier": "nonprofit", "seeds": ["https://autisticadvocacy.org"], "allow": ["https://autisticadvocacy.org"], "audience": ["adults"], "cats": ["advocacy"], "max_pages": 25},
+  {"name": "Autism Society of America", "tier": "nonprofit", "seeds": ["https://autismsociety.org"], "allow": ["https://autismsociety.org"], "audience": ["caregivers", "adults"], "cats": ["local", "caregivers"], "max_pages": 25},
+  {"name": "Autism Speaks", "tier": "nonprofit", "seeds": ["https://www.autismspeaks.org"], "allow": ["https://www.autismspeaks.org"], "audience": ["caregivers"], "cats": ["caregivers", "local"], "max_pages": 25}
+]

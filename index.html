@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spectrum Hub: autism resources in one place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+<style>
+:root{--bg:#eef3f1;--bg2:#e2ebe8;--surface:#fff;--ink:#1f2b33;--muted:#4f5f69;--line:#c7d5d2;--accent:#2c7a7b;--on-accent:#fff;--soft:#dcebe6;--lav:#e6e2f7;--lav-ink:#4b3fa5;--gov:#2c7a7b;--academic:#4f5fb0;--nonprofit:#94620f;--community:#8a4f9e;--bw:1.5px;--sh:0 8px 28px rgba(31,43,51,.08);
+--sky1:#cfe6f0;--sky2:#f3f1e2;--sun:#f5d58a;--h1:#a9cdbe;--h2:#86b8a4;--h3:#5e9c8c;--path:#f1e6cc;--tree:#4c8a78;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="paper"]{--bg:#f6f2ea;--bg2:#eee7d9;--surface:#fffdf8;--ink:#2b2a28;--muted:#5b574f;--line:#d8cfbe;--accent:#3f6f6a;--soft:#e8e3d2;--lav:#ece6f2;--lav-ink:#54488f;--sky1:#eadfcb;--sky2:#f6eedd;--sun:#ebc783;--h1:#c9d6bf;--h2:#a9bfa3;--h3:#7fa08a;--path:#f3e7cc;--tree:#5e8470}
+:root[data-theme="dusk"]{--bg:#141b24;--bg2:#1a2430;--surface:#202c3a;--ink:#e7edf2;--muted:#a8b6c2;--line:#37495b;--accent:#7fd1c7;--on-accent:#0e1a1f;--soft:#27384a;--lav:#2d2a4d;--lav-ink:#c4bcf7;--gov:#7fd1c7;--academic:#a3b0f0;--nonprofit:#e6b66a;--community:#d3a6e2;--sky1:#1b2a44;--sky2:#3a4670;--sun:#f1d9a0;--h1:#34576b;--h2:#2b4a63;--h3:#233e55;--path:#55627a;--tree:#1e4a4f;--sh:0 8px 28px rgba(0,0,0,.35)}
+:root[data-contrast]{--bg:#fff;--bg2:#fff;--surface:#fff;--ink:#000;--muted:#000;--line:#000;--accent:#003f3f;--on-accent:#fff;--bw:2.5px}
+:root[data-contrast][data-theme="dusk"]{--bg:#000;--bg2:#000;--surface:#000;--ink:#fff;--muted:#fff;--line:#fff;--accent:#8ff0e6;--on-accent:#000}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;min-height:100%;background:linear-gradient(var(--bg),var(--bg2)) fixed;color:var(--ink);font:400 1.0625rem/1.65 "Atkinson Hyperlegible",system-ui,sans-serif}
+:root[data-font="plain"] body{font-family:system-ui,sans-serif}
+:root[data-space] body{line-height:1.95;letter-spacing:.02em;word-spacing:.1em}
+*,*::before,*::after{box-sizing:inherit}
+h1,h2,h3,.brand{font-family:"Fraunces",Georgia,serif;font-weight:600}
+:root[data-font="plain"] h1,:root[data-font="plain"] h2,:root[data-font="plain"] h3,:root[data-font="plain"] .brand{font-family:system-ui,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--surface);padding:8px 12px;border:var(--bw) solid var(--ink);z-index:30}.skip:focus{left:8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+header.top{background:var(--surface);position:relative;z-index:10}
+.bar{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:10px;align-items:center;font-size:1.35rem;color:var(--ink);text-decoration:none}
+.ribbon{height:5px;background:linear-gradient(90deg,#9cc7b6,#9fc5e0,#bdb6e8,#e7d5a8,#9cc7b6)}
+:root[data-calm] .ribbon{background:var(--line)}
+nav.sec{display:flex;gap:6px}nav.sec a{padding:10px 16px;border-radius:12px;text-decoration:none;color:var(--ink);font-weight:700;border:var(--bw) solid transparent;min-height:44px}
+nav.sec a[aria-current="page"]{background:var(--soft);border-color:var(--accent)}
+.tools{display:flex;gap:8px;align-items:center;position:relative}
+button.pref,summary.pref{font:inherit;font-size:.95rem;background:var(--surface);color:var(--ink);border:var(--bw) solid var(--line);border-radius:12px;padding:8px 14px;cursor:pointer;min-height:44px;list-style:none;display:inline-flex;align-items:center;gap:6px}
+summary.pref::-webkit-details-marker{display:none}
+button.pref[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button.pref:hover,summary.pref:hover{border-color:var(--accent)}
+.cpanel{position:absolute;right:0;top:calc(100% + 8px);width:min(340px,92vw);background:var(--surface);border:var(--bw) solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--sh);z-index:20}
+.cpanel h2{font-size:1.05rem;margin:0 0 8px}.cpanel .g{margin:12px 0 4px;font-weight:700;font-size:.9rem}.cpanel .row{margin:0}
+.hero{position:relative;overflow:hidden;border-radius:28px;margin:22px 0 28px;background:linear-gradient(var(--sky1),var(--sky2));box-shadow:var(--sh)}
+.hero .txt{position:relative;z-index:2;padding:40px 34px 150px;max-width:640px}
+.hero svg.art{position:absolute;left:0;bottom:0;width:100%;height:62%;z-index:1}
+:root[data-calm] .art,:root[data-calm] .deco{display:none}
+:root[data-calm] .hero{background:var(--soft);box-shadow:none}:root[data-calm] .hero .txt{padding-bottom:36px}
+.drift{animation:none}:root[data-motion]:not([data-calm]) .drift{animation:drift 70s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translateX(60px)}}
+.heroplain{padding:26px 0 0}
+h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.12;margin:0 0 12px;letter-spacing:-.01em}
+.lede{max-width:56ch;color:var(--muted);margin:0;font-size:1.12rem}
+.steps{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0 0 20px;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:10px;align-items:center;background:var(--surface);border:var(--bw) solid var(--line);border-radius:999px;padding:6px 16px 6px 8px;font-size:.95rem}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:700}
+.needs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.need{width:100%;text-align:left;font:inherit;font-size:1.05rem;font-weight:700;background:var(--surface);color:var(--ink);border:var(--bw) solid var(--line);border-radius:18px;padding:14px;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:72px;transition:border-color .15s,background-color .15s}
+.need .ic{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 18%,var(--surface))}
+.need .ic svg{width:26px;height:26px;stroke:color-mix(in srgb,var(--c) 70%,var(--ink));fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.need .t{flex:1}.need small{display:block;font-weight:400;color:var(--muted);font-size:.88rem}
+.need:hover{border-color:var(--accent)}
+.need[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.need[aria-pressed="true"] small{color:var(--on-accent)}.need[aria-pressed="true"] .ic{background:var(--surface)}
+.find{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:end;margin:26px 0 8px;padding:18px;background:var(--surface);border:var(--bw) solid var(--line);border-radius:18px}
+.find label{display:block;font-weight:700;font-size:.95rem;margin-bottom:4px}
+.find input[type=search],.find select,.cp select,.cp textarea,.mem input[type=text]{font:inherit;padding:10px 14px;border:var(--bw) solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);min-height:46px}
+.find input[type=search]{width:min(100%,320px)}.cp select,.cp textarea,.mem input[type=text]{width:100%}
+.chk{display:flex;gap:10px;align-items:center;min-height:46px;font-weight:400}.chk input{width:24px;height:24px;accent-color:var(--accent)}
+#count{margin:22px 0 10px;font-weight:700;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.item{background:var(--surface);border:var(--bw) solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:var(--sh)}
+.item h3{margin:0 0 4px;font-size:1.2rem;line-height:1.3}
+.meta{color:var(--muted);font-size:.92rem;margin:0 0 8px}.meta b{color:var(--tc);display:inline-flex;gap:6px;align-items:center}.meta b::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--tc)}
+.item p{margin:0 0 10px;max-width:70ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.chips li{font-size:.85rem;background:var(--soft);border-radius:999px;padding:3px 12px}
+.nt{font-size:.85rem;color:var(--muted);margin-left:6px;font-weight:400}
+.empty{padding:28px;border:var(--bw) dashed var(--line);border-radius:18px;color:var(--muted)}
+section.more{margin:56px 0 0;padding:34px 0;border-top:var(--bw) solid var(--line)}
+section.more h2{font-size:1.4rem;margin:0 0 12px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}.cols p,.cols li{max-width:48ch;margin-top:0}.cols ol{padding-left:1.2em;margin:0}
+footer{padding:24px 0 44px;color:var(--muted);font-size:.92rem}
+.card{background:var(--surface);border:var(--bw) solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--sh)}
+.cp{display:grid;grid-template-columns:minmax(220px,290px) 1fr;gap:20px;margin-top:16px;align-items:start}@media (max-width:760px){.cp{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--lav-ink);color:var(--surface);border-radius:999px;padding:3px 14px;font-size:.85rem;font-weight:700}
+.avwrap{width:min(220px,100%);aspect-ratio:1;border-radius:50%;overflow:hidden;margin:0 auto;background:radial-gradient(circle at 50% 35%,var(--lav),var(--soft));border:var(--bw) solid var(--line)}
+#avatar svg{width:100%;height:100%;display:block}
+.blink{transform-box:fill-box;transform-origin:center}:root[data-motion]:not([data-calm]) .blink{animation:blink 5s infinite}@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.row.m{margin-top:10px}
+.cp label.l{display:block;font-weight:700;font-size:.9rem;margin:12px 0 4px}
+.log{height:min(50vh,430px);overflow:auto;display:flex;flex-direction:column;gap:10px;padding:4px}
+.msg{max-width:88%;padding:11px 15px;border-radius:18px 18px 18px 4px;border:var(--bw) solid var(--line);white-space:pre-wrap;background:var(--lav)}
+.msg.me{align-self:flex-end;border-radius:18px 18px 4px 18px;background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.msg.crisis{border:3px solid var(--nonprofit);background:var(--surface)}
+.res{margin-top:8px;display:grid;gap:6px}.res a{display:block;border:1px solid var(--line);border-radius:12px;padding:8px 12px;background:var(--surface);color:var(--ink);text-decoration:none}.res small{display:block;color:var(--muted)}
+#cstat{min-height:1.5em;color:var(--muted);margin:8px 0 0}
+fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fieldset label{margin-right:18px;display:inline-flex;gap:8px;align-items:center;min-height:46px}fieldset input{width:22px;height:22px;accent-color:var(--accent)}
+.mem{margin-top:22px}.mem h2{margin:0 0 8px;font-size:1.3rem}.mem ul{margin:8px 0;padding-left:1.1em}.mem li{margin:6px 0}
+.pause{position:fixed;inset:0;background:rgba(10,20,25,.55);display:grid;place-items:center;z-index:50;padding:20px}.pause[hidden]{display:none}
+.pause .card{max-width:440px;text-align:center}.breath{width:110px;height:110px;border-radius:50%;margin:18px auto;background:radial-gradient(var(--lav),var(--soft));border:var(--bw) solid var(--line)}
+:root[data-motion]:not([data-calm]) .breath{animation:br 9s ease-in-out infinite}@keyframes br{50%{transform:scale(1.35)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:root[data-calm] *{transition:none!important}
+</style>
+</head>
+<body>
+<a class="skip" href="#results">Skip to results</a>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="#hub" id="brand"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" style="fill:var(--soft)"/><circle cx="22" cy="12" r="5" style="fill:var(--sun)"/><path d="M3 28c5-9 11-9 14-5s9 3 14-3v10H3z" style="fill:var(--accent)"/></svg>Spectrum Hub</a>
+  <nav class="sec" aria-label="Sections"><a href="#hub" id="nv-hub" aria-current="page">Resources</a><a href="#companion" id="nv-comp">Companion</a></nav>
+  <div class="tools">
+    <button class="pref" id="pausebtn" type="button">Take a pause</button>
+    <details class="comfort"><summary class="pref">Comfort settings</summary>
+      <div class="cpanel" role="group" aria-label="Comfort settings"><h2>Make this page comfortable</h2>
+        <div class="g">Text size</div><div class="row"><button class="pref" id="smaller" aria-label="Smaller text">A−</button><button class="pref" id="larger" aria-label="Larger text">A+</button></div>
+        <div class="g">Colors</div><div class="row"><button class="pref" id="th-sage" aria-pressed="true">Sage</button><button class="pref" id="th-paper" aria-pressed="false">Paper</button><button class="pref" id="th-dusk" aria-pressed="false">Dusk</button></div>
+        <div class="g">Reading</div><div class="row"><button class="pref" id="font" aria-pressed="false">Plain font</button><button class="pref" id="space" aria-pressed="false">Roomy spacing</button></div>
+        <div class="g">Stimulation</div><div class="row"><button class="pref" id="contrast" aria-pressed="false">High contrast</button><button class="pref" id="motion" aria-pressed="false">Gentle motion</button><button class="pref" id="calm" aria-pressed="false">Hide pictures</button></div>
+        <p style="font-size:.88rem;color:var(--muted);margin:12px 0 0">Nothing moves or makes sound unless you choose it. These choices are saved only if you turn on Memory in the Companion page.</p>
+      </div></details>
+  </div></div><div class="ribbon" aria-hidden="true"></div></header>
+<div class="pause" id="pause" hidden role="dialog" aria-modal="true" aria-labelledby="pt"><div class="card"><h2 id="pt">Take a pause</h2><p>Nothing is waiting for you. Take as long as you need.</p><div class="breath" aria-hidden="true"></div><p>Breathe in slowly, then out slowly. Come back whenever you are ready.</p><button class="pref" id="pauseX" type="button">I’m ready to continue</button></div></div>
+
+<main class="wrap" id="main">
+  <div id="view-hub">
+  <section class="hero"><div class="txt">
+      <h1>What do you need help with today?</h1>
+      <p class="lede">Pick a topic. We gather trusted autism resources from many sites in one calm place, so you don’t have to search them one by one.</p>
+    </div><svg class="art" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><circle cx="610" cy="90" r="70" style="fill:var(--sun);opacity:.25"/><circle cx="610" cy="90" r="40" style="fill:var(--sun)"/><g class="drift" style="fill:var(--surface);opacity:.75"><ellipse cx="180" cy="70" rx="60" ry="14"/><ellipse cx="215" cy="58" rx="36" ry="12"/><ellipse cx="470" cy="40" rx="50" ry="11"/></g><path d="M0 190C120 140 220 150 330 185S560 200 800 150V300H0z" style="fill:var(--h1)"/><path d="M0 230C150 190 260 200 380 225S650 240 800 205V300H0z" style="fill:var(--h2)"/><path d="M0 270C160 245 300 250 430 268S690 275 800 255V300H0z" style="fill:var(--h3)"/><path d="M360 300C380 270 330 252 392 232S470 215 520 205" stroke="var(--path)" stroke-width="16" fill="none" stroke-linecap="round"/><g style="fill:var(--tree)"><circle cx="120" cy="205" r="18"/><rect x="117" y="215" width="6" height="22"/><circle cx="700" cy="196" r="22"/><rect x="697" y="208" width="6" height="26"/><circle cx="742" cy="212" r="14"/><rect x="739" y="220" width="5" height="18"/></g></svg></section>
+    <ol class="steps" aria-label="How this page works"><li>Choose a topic</li><li>Narrow it down if you like</li><li>Read the list. Nothing opens until you click</li></ol>
+    <ul class="needs" id="needs" aria-label="Topics"></ul>
+
+  <form class="find" role="search" onsubmit="return false">
+    <div><label for="q">Search</label><input id="q" type="search" placeholder="For example: sleep, school, screening"></div>
+    <div><label for="aud">I am looking for</label>
+      <select id="aud"><option value="all">Anyone</option><option value="adults">Autistic adults</option><option value="caregivers">Parents and caregivers</option><option value="professionals">Professionals</option></select></div>
+    <label class="chk"><input type="checkbox" id="trusted"> Government and university sources only</label>
+  </form>
+
+  <h2 class="vh" id="results">Results</h2>
+  <p id="count" aria-live="polite"></p>
+  <ul id="list"></ul>
+
+  <section class="more">
+    <div class="cols">
+      <div>
+        <h2>How the list is made</h2>
+        <ol>
+          <li>A crawler visits public pages from the sources in <code>sources.json</code>, following each site’s robots.txt rules.</li>
+          <li>It reads each page’s title and summary and sorts it into the topics above.</li>
+          <li>It removes duplicates and refreshes this page’s data, with the date each page was checked.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Community space (planned)</h2>
+        <p>Research on autism discussions online found that people want to feel understood and to talk with each other and with health professionals. A text-first AI companion is now available under Companion. A moderated community of people needs accounts, safety rules and trained moderators, so it is not part of this version.</p>
+      </div>
+      <div>
+        <h2>About this information</h2>
+        <p>Spectrum Hub links to other sites and does not give medical advice. Talk to a qualified health professional about decisions for you or your family. Entries marked “starter entry” have not been crawled yet.</p>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div id="view-companion" hidden>
+    <section class="heroplain">
+      <h1>Talk it through</h1>
+      <p class="lede">A friendly <b>AI companion</b> for autistic people and caregivers. It listens, talks things over, and points you to resources in the Hub. It is not a person, a therapist or a doctor, and you can take as long as you like to reply.</p>
+      <p class="card" role="note"><b>Need urgent help?</b> In the US, call or text 988, or call 911 in an emergency. Elsewhere, contact your local emergency number.</p>
+    </section>
+    <fieldset class="card" id="who"><legend>Who is here today?</legend>
+      <label><input type="radio" name="who" value="autistic"> I am autistic</label>
+      <label><input type="radio" name="who" value="caregiver"> I support someone who is autistic</label>
+      <label><input type="radio" name="who" value="both"> Both, or not sure</label>
+    </fieldset>
+    <div class="cp">
+      <aside class="card">
+        <div class="avwrap"><div id="avatar" style="height:100%"></div></div>
+        <p style="text-align:center;margin:8px 0"><span class="pill">AI companion</span></p>
+        <div class="row" role="group" aria-label="How we talk"><button class="pref" id="ch-type" aria-pressed="true">Type</button><button class="pref" id="ch-talk" aria-pressed="false">Talk</button><button class="pref" id="mute" aria-pressed="false">Mute voice</button></div>
+        <label class="l" for="rate">Speaking speed</label><select id="rate"><option value="0.8">Slower</option><option value="1" selected>Normal</option><option value="1.2">Faster</option></select>
+        <label class="l" for="look">Avatar look</label><select id="look"><option value="0">Look 1</option><option value="1">Look 2</option><option value="2">Look 3</option></select>
+        <div class="row m"><button class="pref" id="avt" aria-pressed="true">Show avatar</button></div>
+      </aside>
+      <div class="card">
+        <div class="log" id="log" role="log" aria-live="polite" aria-label="Conversation"></div>
+        <div class="row m" id="quick"></div>
+        <form id="cf" class="row m" onsubmit="return false">
+          <label class="vh" for="msg">Your message</label>
+          <textarea id="msg" rows="2" placeholder="Choose who is here today, then type here" style="flex:1 1 240px" disabled></textarea>
+          <button class="pref" id="mic" type="button" aria-pressed="false">Start talking</button>
+          <button class="pref" id="sendb" type="submit">Send</button>
+        </form>
+        <p id="cstat" aria-live="polite"></p>
+      </div>
+    </div>
+    <section class="card mem" aria-labelledby="mh">
+      <h2 id="mh">Memory (optional)</h2>
+      <p>Off by default. If you turn it on, only your preferences are kept on this device, never what we talk about. Your messages are sent to Claude to write replies and are not stored by this page. Voice input uses your browser’s speech service, which may send audio to your browser’s provider.</p>
+      <label class="chk"><input type="checkbox" id="memOn"> Remember my preferences on this device</label>
+      <div id="memBody" hidden>
+        <label class="l" for="pname">What should I call you?</label><input type="text" id="pname" autocomplete="off">
+        <label class="l" for="pavoid">Topics to avoid unless I bring them up</label><input type="text" id="pavoid" autocomplete="off">
+        <h3>What the companion remembers</h3><ul id="memList"></ul>
+        <div class="row"><button class="pref" id="memAll" type="button">Forget everything</button><button class="pref" id="memDl" type="button" hidden>Download my preferences</button></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap">Design based on the recommendations of Larnyo, Nutakor, Addai-Dansoh and Nkrumah (2024), <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Frontiers in Psychiatry 15:1441349<span class="vh"> (opens in a new tab)</span></a>.</div></footer>
+
+<script id="data" type="application/json">[
+{"title":"Autism Spectrum Disorder (CDC)","url":"https://www.cdc.gov/autism/","source":"CDC","tier":"gov","audience":["caregivers","professionals","adults"],"cats":["signs","diagnosis","caregivers"],"summary":"Overview of signs, screening, diagnosis and resources for families and health professionals.","checked":"seed"},
+{"title":"Autism Spectrum Disorder (NIMH)","url":"https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd","source":"NIMH","tier":"gov","audience":["adults","caregivers"],"cats":["signs","diagnosis","care"],"summary":"Research-based information on symptoms, diagnosis and treatment of autism spectrum disorder.","checked":"seed"},
+{"title":"Autism (NICHD)","url":"https://www.nichd.nih.gov/health/topics/autism","source":"NICHD","tier":"gov","audience":["caregivers","professionals"],"cats":["signs","diagnosis","care"],"summary":"Federal research institute pages on autism signs, screening and treatment.","checked":"seed"},
+{"title":"Autism Spectrum Disorder (MedlinePlus)","url":"https://medlineplus.gov/autismspectrumdisorder.html","source":"MedlinePlus","tier":"gov","audience":["adults","caregivers"],"cats":["signs","care","caregivers"],"summary":"Plain-language health overview from the U.S. National Library of Medicine, with links to related topics.","checked":"seed"},
+{"title":"Autism (NHS)","url":"https://www.nhs.uk/conditions/autism/","source":"NHS","tier":"gov","audience":["adults","caregivers"],"cats":["signs","diagnosis","daily"],"summary":"UK health service guidance on signs, getting assessed and support for autistic people and families.","checked":"seed"},
+{"title":"Autistic Self Advocacy Network","url":"https://autisticadvocacy.org","source":"Autistic Self Advocacy Network","tier":"nonprofit","audience":["adults"],"cats":["advocacy","daily"],"summary":"Autistic-led organization with resources on self-advocacy, rights and acceptance.","checked":"seed"},
+{"title":"Autism Society of America","url":"https://autismsociety.org","source":"Autism Society of America","tier":"nonprofit","audience":["caregivers","adults"],"cats":["local","caregivers","advocacy"],"summary":"Nonprofit with information and a network of local affiliates.","checked":"seed"},
+{"title":"Autism Speaks","url":"https://www.autismspeaks.org","source":"Autism Speaks","tier":"nonprofit","audience":["caregivers"],"cats":["caregivers","local","care"],"summary":"Nonprofit with family toolkits and a resource guide to services.","checked":"seed"},
+{"title":"Sentiment analysis of post-COVID-19 health information needs of the autism community","url":"https://doi.org/10.3389/fpsyt.2024.1441349","source":"Frontiers in Psychiatry","tier":"academic","audience":["professionals","caregivers"],"cats":["signs","diagnosis","caregivers","advocacy"],"summary":"Open-access study of what autistic people and caregivers discuss online: symptoms, diagnosis, caregiving and stigma.","checked":"seed"}
+]</script>
+
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('data').textContent);
+var NEEDS=[['signs','Understand signs and symptoms'],['diagnosis','Get a diagnosis'],['care','Find care and therapies'],['caregivers','Support for caregivers'],['mental','Mental health and sleep'],['tech','Tools and technology'],['advocacy','Self-advocacy and acceptance'],['daily','Everyday life and routines'],['local','Find local services']];
+var NAME={};NEEDS.forEach(function(n){NAME[n[0]]=n[1]});
+var TIER={gov:'Government',academic:'University or journal',nonprofit:'Nonprofit',community:'Community-run'};
+var ORDER={gov:0,academic:1,nonprofit:2,community:3};
+var ICONS={signs:'<circle cx="10" cy="10" r="6"/><path d="M15 15l6 6"/>',diagnosis:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 12l2 2 4-4"/>',care:'<path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z"/>',caregivers:'<circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 20c0-4 2-6 5-6s5 2 5 6M14 20c0-3 1.5-4.5 4-4.5s3 1.5 3 4.5"/>',mental:'<path d="M20 14a8 8 0 1 1-10-10 6.5 6.5 0 0 0 10 10z"/>',tech:'<rect x="5" y="3" width="14" height="18" rx="3"/><path d="M10.5 18h3"/>',advocacy:'<path d="M4 5h16v11h-9l-4 4v-4H4z"/>',daily:'<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',local:'<path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/>'};
+var CC={signs:'#3e7cb1',diagnosis:'#7c6fd0',care:'#d1666b',caregivers:'#c98b2b',mental:'#5a6fc4',tech:'#2c9aa0',advocacy:'#b5568f',daily:'#d39b2a',local:'#4e9a6b'};
+var st={need:'',q:'',aud:'all',trusted:false};
+var root=document.documentElement,$=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+function buildNeeds(){
+  var ul=$('needs'),h='';
+  NEEDS.forEach(function(n){
+    var c=D.filter(function(r){return r.cats.indexOf(n[0])>-1}).length;
+    if(!c)return;
+    h+='<li><button class="need" data-need="'+n[0]+'" aria-pressed="false" style="--c:'+CC[n[0]]+'"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24">'+ICONS[n[0]]+'</svg></span><span class="t">'+n[1]+'<small>'+c+(c===1?' resource':' resources')+'</small></span></button></li>';
+  });
+  ul.innerHTML=h;
+  ul.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    st.need=st.need===b.dataset.need?'':b.dataset.need;
+    [].forEach.call(ul.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x.dataset.need===st.need))});
+    render();
+  });
+}
+function match(r){
+  if(st.need&&r.cats.indexOf(st.need)<0)return false;
+  if(st.aud!=='all'&&r.audience.indexOf(st.aud)<0)return false;
+  if(st.trusted&&r.tier!=='gov'&&r.tier!=='academic')return false;
+  if(st.q){var t=(r.title+' '+r.summary+' '+r.source+' '+r.cats.map(function(c){return NAME[c]||c}).join(' ')).toLowerCase();
+    return st.q.toLowerCase().split(/\s+/).every(function(w){return t.indexOf(w)>-1})}
+  return true;
+}
+function render(){
+  var rows=D.filter(match).sort(function(a,b){return ORDER[a.tier]-ORDER[b.tier]||a.title.localeCompare(b.title)});
+  var cn=rows.length+(rows.length===1?' resource':' resources')+(st.need?' for “'+NAME[st.need]+'”':'');var act=st.need||st.q||st.aud!=='all'||st.trusted;$('count').innerHTML='<span></span>'+(act?'<button class="pref" id="clr" type="button">Clear filters</button>':'');$('count').firstChild.textContent=cn;if(act)$('clr').onclick=function(){st={need:'',q:'',aud:'all',trusted:false};$('q').value='';$('aud').value='all';$('trusted').checked=false;[].forEach.call(document.querySelectorAll('#needs button'),function(x){x.setAttribute('aria-pressed','false')});render()};
+  if(!rows.length){$('list').innerHTML='<li class="empty">Nothing matches yet. Clear the search or choose a different topic or audience.</li>';return}
+  $('list').innerHTML=rows.map(function(r){
+    return '<li class="item" style="--tc:var(--'+r.tier+')"><h3><a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.title)+'<span class="vh"> (opens in a new tab)</span></a><span class="nt" aria-hidden="true">opens in a new tab</span></h3>'+
+      '<p class="meta"><b>'+(TIER[r.tier]||'Other')+'</b> from '+esc(r.source)+'. '+(r.checked==='seed'?'Starter entry, not yet crawled.':'Checked '+esc(r.checked)+'.')+'</p>'+
+      '<p>'+esc(r.summary)+'</p><ul class="chips" aria-label="Topics">'+r.cats.map(function(c){return '<li>'+esc(NAME[c]||c)+'</li>'}).join('')+'</ul></li>';
+  }).join('');
+}
+$('q').addEventListener('input',function(e){st.q=e.target.value.trim();render()});
+$('aud').addEventListener('change',function(e){st.aud=e.target.value;render()});
+$('trusted').addEventListener('change',function(e){st.trusted=e.target.checked;render()});
+
+var P={size:100,contrast:false,calm:false,motion:false,font:'',space:false,theme:(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dusk':'sage')},KEY='sh-mem',mem=null;
+try{mem=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}
+var memOn=function(){return !!(mem&&mem.on)};
+var cs={mode:'',channel:'type',mute:false,rate:1,avatar:true,look:0,hist:[],busy:false};
+function save(){try{localStorage.setItem(KEY,JSON.stringify(mem))}catch(e){}renderMem()}
+function remember(k,v){if(memOn()){mem[k]=v;save()}}
+function flag(n,on,v){on?root.setAttribute(n,v||''):root.removeAttribute(n)}
+function apply(){
+  root.style.fontSize=P.size+'%';flag('data-theme',true,P.theme);flag('data-contrast',P.contrast);flag('data-calm',P.calm);flag('data-motion',P.motion);flag('data-font',P.font==='plain','plain');flag('data-space',P.space);
+  $('contrast').setAttribute('aria-pressed',String(P.contrast));$('calm').setAttribute('aria-pressed',String(P.calm));$('motion').setAttribute('aria-pressed',String(P.motion));$('font').setAttribute('aria-pressed',String(P.font==='plain'));$('space').setAttribute('aria-pressed',String(P.space));
+  ['sage','paper','dusk'].forEach(function(t){$('th-'+t).setAttribute('aria-pressed',String(P.theme===t))});
+}
+function pref(k,v){P[k]=v;apply();remember(k,v)}
+$('smaller').onclick=function(){pref('size',Math.max(85,P.size-15))};
+$('larger').onclick=function(){pref('size',Math.min(160,P.size+15))};
+$('contrast').onclick=function(){pref('contrast',!P.contrast)};
+$('calm').onclick=function(){pref('calm',!P.calm)};
+$('motion').onclick=function(){pref('motion',!P.motion)};
+$('font').onclick=function(){pref('font',P.font==='plain'?'':'plain')};
+$('space').onclick=function(){pref('space',!P.space)};
+['sage','paper','dusk'].forEach(function(t){$('th-'+t).onclick=function(){pref('theme',t)}});
+var lastF=null;
+$('pausebtn').onclick=function(){lastF=document.activeElement;$('pause').hidden=false;$('pauseX').focus()};
+function unpause(){$('pause').hidden=true;if(lastF&&lastF.focus)lastF.focus()}
+$('pauseX').onclick=unpause;
+addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('pause').hidden)unpause()});
+
+/* ---------- Companion ---------- */
+var LOOKS=[{s:'#8a5a3c',h:'#1d1d1d',t:'#0f6b6b'},{s:'#e0b089',h:'#6b4a2f',t:'#4a5fa8'},{s:'#5b3a29',h:'#111111',t:'#8f5f0e'}];
+function avatar(){
+  var L=LOOKS[cs.look]||LOOKS[0];
+  $('avatar').innerHTML='<svg viewBox="0 0 200 220" role="img" aria-label="Friendly animated avatar"><path d="M20 220c0-48 36-66 80-66s80 18 80 66z" fill="'+L.t+'"/><rect x="86" y="128" width="28" height="34" rx="10" fill="'+L.s+'"/><ellipse cx="100" cy="90" rx="50" ry="58" fill="'+L.s+'"/><path d="M48 84c-2-46 34-64 54-62 30 2 52 24 50 62-8-22-26-34-52-34-26 0-44 12-52 34z" fill="'+L.h+'"/><g class="blink"><circle cx="78" cy="92" r="6" fill="#fff"/><circle cx="122" cy="92" r="6" fill="#fff"/><circle cx="79" cy="93" r="3" fill="#1b1b2f"/><circle cx="121" cy="93" r="3" fill="#1b1b2f"/></g><path d="M68 78q10-7 20-2M112 76q10-5 20 2" stroke="'+L.h+'" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M100 98v14q-6 4-10 1" stroke="rgba(0,0,0,.35)" stroke-width="3" fill="none" stroke-linecap="round"/><path id="mouth" d="M82 124q18 12 36 0" stroke="#7a1f2b" stroke-width="4" fill="none" stroke-linecap="round"/></svg>';
+  $('avatar').parentNode.hidden=!cs.avatar;$('avt').setAttribute('aria-pressed',String(cs.avatar));
+}
+var mt=null,reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+function mouth(on){
+  clearInterval(mt);var m=$('mouth');if(!m)return;m.setAttribute('d','M82 124q18 12 36 0');
+  if(on&&!reduced&&!P.calm){var o=false;mt=setInterval(function(){o=!o;m.setAttribute('d',o?'M84 124q16 18 32 0':'M82 124q18 12 36 0')},170)}
+}
+function status(t){$('cstat').textContent=t||''}
+function add(r,t,res,crisis){
+  var d=document.createElement('div');d.className='msg '+(r==='me'?'me':'bot')+(crisis?' crisis':'');
+  var p=document.createElement('div');p.textContent=t;d.appendChild(p);
+  if(res&&res.length){var w=document.createElement('div');w.className='res';res.forEach(function(x){var a=document.createElement('a');a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=x.title;var s=document.createElement('small');s.textContent=(TIER[x.tier]||'')+' from '+x.source;a.appendChild(s);w.appendChild(a)});d.appendChild(w)}
+  $('log').appendChild(d);$('log').scrollTop=$('log').scrollHeight;
+  cs.hist.push({r:r,t:t});
+}
+function speak(t){
+  if(cs.mute||cs.channel!=='talk'||!window.speechSynthesis)return;
+  speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.rate=cs.rate;
+  u.onstart=function(){mouth(true)};u.onend=u.onerror=function(){mouth(false)};speechSynthesis.speak(u);
+}
+var CRISIS=/(suicid|kill myself|end my life|want to die|self[- ]?harm|hurt myself|hurting myself|being abused|abusing me|hits me|overdos|in danger)/i;
+var CMSG='I’m really glad you told me. I’m an AI, so I can’t keep you safe, but people can help right now. In the US, call or text 988 (Suicide & Crisis Lifeline), or call 911 if you are in immediate danger. If you are somewhere else, please contact your local emergency number. If someone is near you, please tell them. I’m still here if you want to keep talking.';
+var QUICK={autistic:['I had a hard day','Sensory overload','Help me find a resource'],caregiver:['I feel stretched thin','Questions after a diagnosis','Help me find services'],both:['I had a hard day','I feel stretched thin','Help me find a resource']};
+function setMode(m,fromMem){
+  cs.mode=m;if(!fromMem)remember('mode',m);
+  [].forEach.call(document.querySelectorAll('input[name=who]'),function(r){r.checked=r.value===m});
+  $('log').innerHTML='';cs.hist=[];
+  add('bot','Hi, I’m an AI companion on Spectrum Hub. I can listen, talk things through, and point you to resources from the Hub. I’m not a person, a therapist or a doctor. What would you like to talk about? There is no rush.');
+  $('msg').disabled=false;$('msg').placeholder='Type your message';
+  var q=$('quick');q.innerHTML='';QUICK[m].forEach(function(t){var b=document.createElement('button');b.className='pref';b.type='button';b.textContent=t;b.onclick=function(){send(t)};q.appendChild(b)});
+}
+[].forEach.call(document.querySelectorAll('input[name=who]'),function(r){r.addEventListener('change',function(){setMode(r.value)})});
+function top(q){
+  var tk=(q.toLowerCase().match(/[a-z]{3,}/g)||[]);
+  return D.map(function(r){var h=(r.title+' '+r.summary+' '+r.cats.map(function(c){return NAME[c]||c}).join(' ')).toLowerCase();return{r:r,n:tk.filter(function(w){return h.indexOf(w)>-1}).length}}).filter(function(x){return x.n>0}).sort(function(a,b){return b.n-a.n}).slice(0,4).map(function(x){return x.r});
+}
+function prompt(text,res){
+  var who={autistic:'an autistic person',caregiver:'a caregiver of an autistic person',both:'an autistic person and/or a caregiver'}[cs.mode];
+  var t=cs.hist.slice(-9,-1).map(function(m){return (m.r==='me'?'User: ':'Companion: ')+m.t}).join('\n');
+  return 'You are the AI companion on an autism resource website. The user is '+who+'.\nRules: Be honest that you are an AI; never claim to be human, to have a body, a life or feelings of missing the user. You are not a therapist or doctor: give no diagnosis and no medication advice, and suggest a qualified professional for individual decisions. Use plain, literal language with no sarcasm or idioms. Keep replies under 90 words, in short paragraphs, and ask at most one question. Offer choices instead of orders. Do not pressure or tell the user how they should feel. Do not treat autism as something to cure or fix. Encourage trusted people and professionals; never encourage dependence on you. Recommend resources only from RESOURCES by index; never invent links or details.'+
+  (memOn()&&mem.name?'\nThe user prefers to be called '+mem.name+'.':'')+(memOn()&&mem.avoid?'\nAvoid these topics unless the user raises them: '+mem.avoid+'.':'')+
+  '\nRESOURCES:\n'+(res.length?res.map(function(r,i){return i+': '+r.title+' ('+r.source+'): '+r.summary}).join('\n'):'(none relevant)')+
+  '\n\nConversation so far:\n'+(t||'(start)')+'\n\nUser: '+text+'\n\nReply with JSON only: {"reply": string, "resources": [indexes from RESOURCES, may be empty]}';
+}
+var sp=null;
+var ENDPOINT=''; /* Set to your companion server URL when hosting outside claude.ai, e.g. https://spectrum-companion.YOURNAME.workers.dev */
+async function getSample(){
+  if(sp)return sp;
+  try{if(typeof claude!=='undefined')sp=await claude.use('sample')}catch(e){sp=null}
+  if(!sp&&ENDPOINT)sp={json:async function(p){var r=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:p})});if(!r.ok)throw new Error('http '+r.status);return await r.json()}};
+  return sp;
+}
+async function send(text){
+  text=(text||'').trim();if(!text||cs.busy||!cs.mode)return;
+  add('me',text);$('msg').value='';
+  if(CRISIS.test(text)){add('bot',CMSG,[],true);speak(CMSG);return}
+  var ss=await getSample();
+  if(!ss){add('bot','I can’t reach Claude in this view, so I can’t reply right now. The resource directory still works.');return}
+  cs.busy=true;status('Thinking. Take your time.');
+  try{
+    var res=top(text),out=await ss.json(prompt(text,res),{cache:false,modelTier:'quick'});
+    var reply=(out&&out.reply)?String(out.reply):'I’m sorry, I couldn’t put that into words. Could you say it another way?';
+    var picks=((out&&out.resources)||[]).filter(function(i){return Number.isInteger(i)&&res[i]}).map(function(i){return res[i]});
+    add('bot',reply,picks);speak(reply);
+  }catch(e){
+    add('bot',e&&e.code==='not_granted'?'I need permission to ask Claude before I can reply. You can allow it and try again.':'Something went wrong, so I couldn’t reply. Please try again in a moment.');
+  }
+  cs.busy=false;status('');
+}
+$('cf').addEventListener('submit',function(){send($('msg').value)});
+$('msg').addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send($('msg').value)}});
+function setChannel(c,fromMem){cs.channel=c;$('ch-type').setAttribute('aria-pressed',String(c==='type'));$('ch-talk').setAttribute('aria-pressed',String(c==='talk'));if(c!=='talk'&&window.speechSynthesis){speechSynthesis.cancel();mouth(false)}if(!fromMem)remember('channel',c)}
+$('ch-type').onclick=function(){setChannel('type')};$('ch-talk').onclick=function(){setChannel('talk')};
+$('mute').onclick=function(){cs.mute=!cs.mute;this.setAttribute('aria-pressed',String(cs.mute));if(cs.mute&&window.speechSynthesis){speechSynthesis.cancel();mouth(false)}};
+$('rate').onchange=function(){cs.rate=parseFloat(this.value);remember('rate',cs.rate)};
+$('look').onchange=function(){cs.look=parseInt(this.value,10);avatar();remember('look',cs.look)};
+$('avt').onclick=function(){cs.avatar=!cs.avatar;avatar();remember('avatar',cs.avatar)};
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition,rec=null;
+$('mic').onclick=function(){
+  if(!SR){status('Voice input is not available in this browser. You can type instead.');return}
+  if(rec){rec.stop();return}
+  rec=new SR();rec.lang='en-US';rec.interimResults=false;
+  rec.onresult=function(e){var t=e.results[0][0].transcript;$('msg').value=t;send(t)};
+  rec.onerror=function(){status('I could not hear you. You can try again or type.')};
+  rec.onend=function(){rec=null;$('mic').textContent='Start talking';$('mic').setAttribute('aria-pressed','false')};
+  try{rec.start();$('mic').textContent='Stop';$('mic').setAttribute('aria-pressed','true');status('Listening…')}catch(e){rec=null}
+};
+
+/* ---------- Memory ---------- */
+var LAB={name:'Preferred name',avoid:'Topics to avoid',mode:'Who is usually here',channel:'Type or talk',rate:'Speaking speed',avatar:'Show avatar',look:'Avatar look',size:'Text size',contrast:'High contrast',calm:'Hide pictures',motion:'Gentle motion',font:'Plain font',space:'Roomy spacing',theme:'Colors'};
+function renderMem(){
+  $('memOn').checked=memOn();$('memBody').hidden=!memOn();
+  var ul=$('memList');ul.innerHTML='';if(!memOn())return;
+  var ks=Object.keys(mem).filter(function(k){return k!=='on'&&LAB[k]});
+  if(!ks.length)ul.innerHTML='<li>Nothing is remembered yet.</li>';
+  ks.forEach(function(k){
+    var li=document.createElement('li'),b=document.createElement('button');
+    li.textContent=LAB[k]+': '+String(mem[k])+' ';b.className='pref';b.type='button';b.textContent='Forget';b.setAttribute('aria-label','Forget '+LAB[k]);
+    b.onclick=function(){delete mem[k];if(k==='name')$('pname').value='';if(k==='avoid')$('pavoid').value='';save()};
+    li.appendChild(b);ul.appendChild(li);
+  });
+}
+$('memOn').onchange=function(){
+  if(this.checked){mem={on:true,size:P.size,contrast:P.contrast,calm:P.calm,motion:P.motion,font:P.font,space:P.space,theme:P.theme,channel:cs.channel,rate:cs.rate,avatar:cs.avatar,look:cs.look};if(cs.mode)mem.mode=cs.mode;save()}
+  else{mem=null;try{localStorage.removeItem(KEY)}catch(e){}renderMem()}
+};
+$('memAll').onclick=function(){mem=null;try{localStorage.removeItem(KEY)}catch(e){}$('pname').value='';$('pavoid').value='';renderMem()};
+$('pname').oninput=function(){var v=this.value.trim();if(v)remember('name',v);else if(memOn()){delete mem.name;save()}};
+$('pavoid').oninput=function(){var v=this.value.trim();if(v)remember('avoid',v);else if(memOn()){delete mem.avoid;save()}};
+(typeof claude!=='undefined'?claude.use('downloads'):Promise.resolve(null)).then(function(dl){if(!dl)return;$('memDl').hidden=false;$('memDl').onclick=function(){var o=Object.assign({},mem);delete o.on;dl.save({filename:'my-spectrum-hub-preferences.json',data:JSON.stringify(o,null,2)}).catch(function(){})}}).catch(function(){});
+
+/* ---------- Views ---------- */
+function route(){
+  var c=location.hash==='#companion';
+  $('view-hub').hidden=c;$('view-companion').hidden=!c;
+  $('nv-hub').setAttribute('aria-current',c?'false':'page');$('nv-comp').setAttribute('aria-current',c?'page':'false');
+  document.title=c?'Companion | Spectrum Hub':'Spectrum Hub: autism resources in one place';
+}
+addEventListener('hashchange',route);
+if(memOn()){
+  ['size','contrast','calm','motion','font','space','theme'].forEach(function(k){if(k in mem)P[k]=mem[k]});
+  if('channel' in mem)cs.channel=mem.channel;if('rate' in mem)cs.rate=mem.rate;if('avatar' in mem)cs.avatar=mem.avatar;if('look' in mem)cs.look=mem.look;
+  $('rate').value=String(cs.rate);$('look').value=String(cs.look);$('pname').value=mem.name||'';$('pavoid').value=mem.avoid||'';
+}
+buildNeeds();apply();render();avatar();setChannel(cs.channel,true);renderMem();route();
+if(memOn()&&mem.mode)setMode(mem.mode,true);
+})();
+</script>
+</body>
+</html>
