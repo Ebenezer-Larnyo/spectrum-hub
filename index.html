@@ -348,7 +348,7 @@ function prompt(text,res){
   '\n\nConversation so far:\n'+(t||'(start)')+'\n\nUser: '+text+'\n\nReply with JSON only: {"reply": string, "resources": [indexes from RESOURCES, may be empty]}';
 }
 var sp=null;
-var ENDPOINT=' https://spectrum-companion.ebenezer-larnyo-spectrumhub.workers.dev'; /* Set to your companion server URL when hosting outside claude.ai, e.g.  https://spectrum-companion.ebenezer-larnyo-spectrumhub.workers.dev */
+var ENDPOINT='https://spectrum-companion.ebenezer-larnyo-spectrumhub.workers.dev'; /* Set to your companion server URL when hosting outside claude.ai, e.g.  https://spectrum-companion.ebenezer-larnyo-spectrumhub.workers.dev */
 async function getSample(){
   if(sp)return sp;
   try{if(typeof claude!=='undefined')sp=await claude.use('sample')}catch(e){sp=null}
