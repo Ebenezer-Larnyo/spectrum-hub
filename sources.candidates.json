@@ -1,0 +1,67 @@
+[
+ {
+  "name": "National Autistic Society (UK)",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://www.autism.org.uk"
+  ],
+  "allow": [
+   "https://www.autism.org.uk"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "signs",
+   "daily"
+  ],
+  "regions": [
+   "uk"
+  ],
+  "max_pages": 20
+ },
+ {
+  "name": "Autism Australia",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://www.autismaustralia.org.au"
+  ],
+  "allow": [
+   "https://www.autismaustralia.org.au"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "signs",
+   "daily"
+  ],
+  "regions": [
+   "au"
+  ],
+  "max_pages": 20
+ },
+ {
+  "name": "Autism Canada",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://autismcanada.org"
+  ],
+  "allow": [
+   "https://autismcanada.org"
+  ],
+  "audience": [
+   "caregivers"
+  ],
+  "cats": [
+   "signs",
+   "local"
+  ],
+  "regions": [
+   "ca"
+  ],
+  "max_pages": 20
+ }
+]
