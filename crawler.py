@@ -92,6 +92,7 @@ def crawl(src, max_pages, delay):
             "title": title, "url": url, "source": src["name"], "tier": src["tier"],
             "audience": sorted(set(src.get("audience", [])) | set(tags(AUD, text, title, 2, 3))) or ["adults", "caregivers"],
             "cats": tags(CATS, text, title, 3, 3) or src.get("cats", []),
+            "regions": src.get("regions", ["global"]),
             "summary": desc or text[:200], "checked": dt.date.today().isoformat(),
         })
         print("  +", title[:70])
