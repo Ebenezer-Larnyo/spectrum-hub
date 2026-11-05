@@ -8,7 +8,7 @@ from urllib.parse import urldefrag, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-UA = "SpectrumHubBot/0.1 (research project; contact: spectrumhub.project@gmail.com)"
+UA = "SpectrumHubBot/0.1 (research project; contact: spectrumhub.project@protonmail.com)"
 CATS = {  # needs, aligned with the themes in Larnyo et al. (2024)
     "signs": ["sign", "symptom", "early", "milestone", "characteristic"],
     "diagnosis": ["diagnos", "screening", "evaluation", "assessment"],
