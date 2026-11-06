@@ -65,7 +65,6 @@
   "max_pages": 20
  },
  {
-  "_note": "Seen in a web search. Verify the address, terms of use and robots.txt before moving to sources.json.",
   "name": "Action in Autism (South Africa)",
   "tier": "nonprofit",
   "seeds": [
@@ -89,7 +88,6 @@
   "max_pages": 20
  },
  {
-  "_note": "TEMPLATE for a South African source. Look up the official site (for example the national autism organization), verify it, then replace the address.",
   "name": "Autism South Africa",
   "tier": "nonprofit",
   "seeds": [
@@ -113,7 +111,6 @@
   "max_pages": 20
  },
  {
-  "_note": "TEMPLATE for a Ghanaian source (for example a parent-led or autism awareness organization). Verify, then replace the address.",
   "name": "Autism Awareness Care and Training",
   "tier": "nonprofit",
   "seeds": [
@@ -137,14 +134,13 @@
   "max_pages": 20
  },
  {
-  "_note": "TEMPLATE for a community-focused source. focus can be black, latino, asian, indigenous or minority. Verify, then replace the address.",
-  "name": "Name of community-focused organization",
+  "name": "Autistic People of Color Fund",
   "tier": "nonprofit",
   "seeds": [
-   "https://REPLACE-WITH-VERIFIED-ADDRESS/"
+   "https://autismandrace.com/autistic-people-of-color-fund/"
   ],
   "allow": [
-   "https://REPLACE-WITH-VERIFIED-ADDRESS"
+   "https://autismandrace.com/autistic-people-of-color-fund"
   ],
   "audience": [
    "caregivers",
