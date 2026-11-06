@@ -15,6 +15,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python crawler.py --sources sources.json --out resources.json --inject index.html
+      - run: python build_site.py
       - run: |
           git config user.name "crawler-bot"
           git config user.email "bot@users.noreply.github.com"
