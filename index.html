@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Spectrum Hub: autism resources in one place</title>
+<title>Spectrum Hub: autism resources in one place</title><!--seo-start--><meta name="description" content="Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.">
+<link rel="canonical" href="https://ebenezer-larnyo.github.io/spectrum-hub/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Hub">
+<meta property="og:title" content="Spectrum Hub: autism resources in one place">
+<meta property="og:description" content="Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.">
+<meta property="og:url" content="https://ebenezer-larnyo.github.io/spectrum-hub/">
+<meta property="og:image" content="https://ebenezer-larnyo.github.io/spectrum-hub/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Spectrum Hub", "url": "https://ebenezer-larnyo.github.io/spectrum-hub/", "description": "Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.", "inLanguage": "en"}</script><!--seo-end-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
@@ -102,10 +112,13 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
 .goals h2{margin:0 0 6px;font-size:1.35rem}.goals p{margin:0 0 12px;color:var(--muted)}.goalrow{display:flex;flex-wrap:wrap;gap:8px}
 #goalout{margin-top:16px;padding-top:14px;border-top:var(--bw) solid var(--line)}#goalout h3{margin:0 0 8px;font-size:1.15rem}#goalout ol{margin:0 0 12px;padding-left:1.3em;max-width:68ch}#goalout li{margin:6px 0}
 #gl dt{font-weight:700;margin-top:16px;font-size:1.05rem}#gl dt:first-child{margin-top:0}#gl dd{margin:3px 0 0;max-width:68ch}
+.breathe{transform-origin:center}:root[data-motion]:not([data-calm]) .breathe{animation:brth 6s ease-in-out infinite}@keyframes brth{50%{transform:translateY(-2px)}}
+.avc{margin-top:12px}.avc summary{cursor:pointer}#avform{margin-top:8px}#avform .g{margin:12px 0 4px;font-weight:700;font-size:.9rem}
+button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}button.sw[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px;border-color:var(--bg)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 :root[data-calm] *{transition:none!important}
 </style>
-</head>
+<!--analytics-start--><!--analytics-end--></head>
 <body>
 <a class="skip" href="#results">Skip to results</a>
 <header class="top"><div class="wrap bar">
@@ -124,7 +137,7 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
   </div></div><div class="ribbon" aria-hidden="true"></div></header>
 <div class="pause" id="pause" hidden role="dialog" aria-modal="true" aria-labelledby="pt"><div class="card"><h2 id="pt">Take a pause</h2><p>Nothing is waiting for you. Take as long as you need.</p><div class="breath" aria-hidden="true"></div><p>Breathe in slowly, then out slowly. Come back whenever you are ready.</p><button class="pref" id="pauseX" type="button">I’m ready to continue</button></div></div>
 
-<main class="wrap" id="main">
+<main class="wrap" id="main"><!--noscript-start--><noscript><section class="card"><h2>Browse without JavaScript</h2><p>The search and companion need JavaScript. You can still browse by topic:</p><ul><li><a href="topics/signs.html">Understand signs and symptoms</a></li><li><a href="topics/diagnosis.html">Get a diagnosis</a></li><li><a href="topics/care.html">Find care and therapies</a></li><li><a href="topics/caregivers.html">Support for caregivers</a></li><li><a href="topics/advocacy.html">Self-advocacy and acceptance</a></li><li><a href="topics/daily.html">Everyday life and routines</a></li><li><a href="topics/local.html">Find local services</a></li></ul><p><a href="start/index.html">Where to start</a> · <a href="glossary.html">Glossary</a></p></section></noscript><!--noscript-end-->
   <div id="view-hub">
   <section class="hero"><div class="txt">
       <h1>What do you need help with today?</h1>
@@ -139,7 +152,8 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
     <div><label for="aud">I am looking for</label>
       <select id="aud"><option value="all">Anyone</option><option value="adults">Autistic adults</option><option value="caregivers">Parents and caregivers</option><option value="professionals">Professionals</option></select></div>
     <div><label for="reg">Where are you?</label>
-      <select id="reg"><option value="all">Anywhere</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="ca">Canada</option><option value="au">Australia</option></select></div>
+      <select id="reg"><option value="all">Anywhere</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="ca">Canada</option><option value="au">Australia</option><option value="gh">Ghana</option><option value="za">South Africa</option></select></div>
+    <div id="focwrap" hidden><label for="foc">Community focus</label><select id="foc"><option value="all">Any</option></select></div>
     <label class="chk"><input type="checkbox" id="trusted"> Government and university sources only</label>
   </form>
 
@@ -159,7 +173,7 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
       </div>
       <div>
         <h2>Community space (planned)</h2>
-        <p>Research on autism discussions online found that people want to feel understood and to talk with each other and with health professionals. A text-first AI companion is now available under Companion. A moderated community of people needs accounts, safety rules and trained moderators, so it is not part of this version.</p>
+        <p>Research on autism discussions online found that people want to feel understood and to talk with each other and with health professionals. A text-first AI companion called <b>Ari</b>,is now available under Companion. A moderated community of people needs accounts, safety rules and trained moderators, so it is not part of this version.</p>
       </div>
       <div>
         <h2>About this information</h2>
@@ -171,7 +185,7 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
   <div id="view-companion" hidden>
     <section class="heroplain">
       <h1>Talk it through</h1>
-      <p class="lede">A friendly <b>AI companion</b> for autistic people and caregivers. It listens, talks things over, and points you to resources in the Hub. It is not a person, a therapist or a doctor, and you can take as long as you like to reply.</p>
+      <p class="lede">Hi! I'm <b>Ari</b> a friendly <b>AI companion</b> for autistic people and caregivers. I listens, talks things over, and points you to resources in the Hub. I am not a person, a therapist or a doctor, and you can take as long as you like to reply.</p>
       <p class="card" role="note"><b>Need urgent help?</b> In the US, call or text 988, or call 911 in an emergency. Elsewhere, contact your local emergency number.</p>
     </section>
     <fieldset class="card" id="who"><legend>Who is here today?</legend>
@@ -185,7 +199,7 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
         <p style="text-align:center;margin:8px 0"><span class="pill">AI companion</span></p>
         <div class="row" role="group" aria-label="How we talk"><button class="pref" id="ch-type" aria-pressed="true">Type</button><button class="pref" id="ch-talk" aria-pressed="false">Talk</button><button class="pref" id="mute" aria-pressed="false">Mute voice</button></div>
         <label class="l" for="rate">Speaking speed</label><select id="rate"><option value="0.8">Slower</option><option value="1" selected>Normal</option><option value="1.2">Faster</option></select>
-        <label class="l" for="look">Avatar look</label><select id="look"><option value="0">Look 1</option><option value="1">Look 2</option><option value="2">Look 3</option></select>
+        <details class="avc"><summary class="pref">Design your avatar</summary><div id="avform"></div></details>
         <div class="row m"><button class="pref" id="avt" aria-pressed="true">Show avatar</button></div>
       </aside>
       <div class="card">
@@ -221,7 +235,7 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
       <h2>How the list is made</h2>
       <p>A program called SpectrumHubBot visits a short list of public pages from government health agencies, universities and nonprofits. It reads each page’s title and summary, sorts it into topics, removes duplicates and records the date it was checked. A person chooses which sources it may visit. Labels such as “Government” or “Nonprofit” say who runs a source. They are not a guarantee that the information is right for you.</p>
       <h2>What it is not</h2>
-      <p>It does not give medical advice, diagnose anyone or replace a health professional. It does not review or endorse the sites it links to. The AI companion is a computer program, not a person, therapist or doctor.</p>
+      <p>It does not give medical advice, diagnose anyone or replace a health professional. It does not review or endorse the sites it links to. The AI companion, <b>Ari</b>, is a computer program, not a person, therapist or doctor.</p>
       <h2>Get in touch</h2>
       <p>Questions, corrections, suggestions for sources, or a request to stop SpectrumHubBot visiting your site: <a href="mailto:spectrumhub.project@protonmail.com">spectrumhub.project@protonmail.com</a>. Autistic people and caregivers who can tell us what would make this easier to use are especially welcome.</p>
     </section>
@@ -242,9 +256,9 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
         <li><b>Fonts.</b> The page loads its fonts from Google Fonts, so Google receives your address when the page loads.</li>
         <li><b>Linked sites.</b> Resources open on other websites that have their own privacy practices.</li>
       </ul>
-      <h2>The AI companion</h2>
+      <h2>The AI companion,<b>Ari</b></h2>
       <p>When you send a message, the text is sent to a server run for this project and then to Claude, an AI model from Anthropic, to write a reply. This page does not store your messages, and the project’s server is set up not to log them. Anthropic processes them under its own privacy policy. Please do not share anything you would not want an AI service to process, such as full names, addresses or medical record details. If you use voice input, your browser’s speech service may send your audio to its provider. Messages that mention self-harm, abuse or immediate danger get a fixed safety message and are not sent to the AI.</p>
-      <p>The companion is meant for adults. If you are under 18, please do not use it without a trusted adult. It can make mistakes, so check anything important with a qualified professional.</p>
+      <p>The companion, <b>Ari</b>, is meant for adults. If you are under 18, please do not use it without a trusted adult. It can make mistakes, so check anything important with a qualified professional.</p>
       <h2>The crawler</h2>
       <p>SpectrumHubBot reads only public pages, follows each site’s robots.txt rules, waits between requests, does not visit forums or social media, and collects no personal data. Site owners can ask us to stop at the email above.</p>
       <h2>Contact</h2>
@@ -258,9 +272,9 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
     <dl class="card" id="gl"></dl>
   </div>
 </main>
-<footer><div class="wrap"><nav aria-label="About" style="margin-bottom:8px"><a href="#about">About and contact</a> · <a href="#privacy">Privacy and safety</a> · <a href="#glossary">Glossary</a> · <a href="#hub">Back to resources</a></nav>Design based on the recommendations of Larnyo, Nutakor, Addai-Dansoh and Nkrumah (2024), <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Frontiers in Psychiatry 15:1441349<span class="vh"> (opens in a new tab)</span></a>.</div></footer>
+<footer><div class="wrap"><!--footerlinks-start--><nav aria-label="About" style="margin-bottom:8px"><a href="about.html">About and contact</a> · <a href="privacy.html">Privacy and safety</a> · <a href="glossary.html">Glossary</a> · <a href="topics/index.html">Topics</a> · <a href="start/index.html">Start here</a></nav><!--footerlinks-end-->Design based on the recommendations of Larnyo, Nutakor, Addai-Dansoh and Nkrumah (2024), <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Frontiers in Psychiatry 15:1441349<span class="vh"> (opens in a new tab)</span></a>.</div></footer>
 
-<script id="data" type="application/json">[{"title": "Autism Spectrum Disorder (ASD)", "url": "https://www.cdc.gov/autism", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "care"], "regions": ["us"], "summary": "ASD is a developmental disability that can lead to social, communication, and behavioral challenges.", "checked": "2026-11-06"}, {"title": "CDC's Community Report on Autism", "url": "https://www.cdc.gov/autism/communication-resources/community-reports.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs"], "regions": ["us"], "summary": "A snapshot of ASD across US communities in 2022.", "checked": "2026-11-06"}, {"title": "Autism Prevalence Varies Across US Communities", "url": "https://www.cdc.gov/autism/articles/prevalence-varies-across-us-communities.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs"], "regions": ["us"], "summary": "CDC's ADDM Network data show opportunities to learn from successful identification strategies.", "checked": "2026-11-06"}, {"title": "About Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/about/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "caregivers"], "regions": ["us"], "summary": "Find out what CDC is doing to better understand ASD to support people with ASD and their families.", "checked": "2026-11-06"}, {"title": "Signs and Symptoms of Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/signs-symptoms/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "mental"], "regions": ["us"], "summary": "Learn about the signs and symptoms of ASD.", "checked": "2026-11-06"}, {"title": "Screening for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/diagnosis/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs", "caregivers"], "regions": ["us"], "summary": "Screening and diagnosis of ASD.", "checked": "2026-11-06"}, {"title": "Treatment and Intervention for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/treatment/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["care", "daily", "signs"], "regions": ["us"], "summary": "Treatment and intervention information for people with autism spectrum disorder (ASD).", "checked": "2026-11-06"}, {"title": "Accessing Services for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/treatment/accessing-services.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "care", "diagnosis"], "regions": ["us"], "summary": "Information on accessing services for children with autism spectrum disorder (ASD).", "checked": "2026-11-06"}, {"title": "Living with Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/living-with/index.html", "source": "CDC", "tier": "gov", "audience": ["adults", "caregivers", "professionals"], "cats": ["daily", "caregivers"], "regions": ["us"], "summary": "Information for individuals with autism spectrum disorder (ASD) and the people who care for them.", "checked": "2026-11-06"}, {"title": "Data and Statistics on Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/data-research/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "regions": ["us"], "summary": "Summary and table of prevalence of ASD among children in the United States.", "checked": "2026-11-06"}, {"title": "Autism Materials and Resources", "url": "https://www.cdc.gov/autism/communication-resources/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "caregivers"], "regions": ["us"], "summary": "CDC materials and resources on autism spectrum disorder (ASD).", "checked": "2026-11-06"}, {"title": "Study to Explore Early Development (SEED)", "url": "https://www.cdc.gov/autism/seed/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs"], "regions": ["us"], "summary": "CDCâs Study to Explore Early Development (SEED) helps us learn more about autism spectrum disorder.", "checked": "2026-11-06"}, {"title": "Autism and Developmental Disabilities Monitoring (ADDM) Network", "url": "https://www.cdc.gov/autism/addm-network/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "regions": ["us"], "summary": "The ADDM Network tracks and monitors the number and characteristics of children with ASD and CP.", "checked": "2026-11-06"}, {"title": "Autism Spectrum Disorder Articles", "url": "https://www.cdc.gov/autism/articles/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "mental", "daily"], "regions": ["us"], "summary": "Key findings, feature articles, and scientific articles about autism spectrum disorder.", "checked": "2026-11-06"}, {"title": "Frequently Asked Questions about Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/faq/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs"], "regions": ["us"], "summary": "FAQs about autism spectrum disorder (ASD).", "checked": "2026-11-06"}, {"title": "Clinical Testing and Diagnosis for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/hcp/diagnosis/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "caregivers", "local"], "regions": ["us"], "summary": "Information for healthcare providers on diagnostic tools and criteria for ASD.", "checked": "2026-11-06"}, {"title": "Clinical Screening for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/hcp/diagnosis/screening.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs", "caregivers"], "regions": ["us"], "summary": "Information for healthcare providers on screening children for ASD.", "checked": "2026-11-06"}, {"title": "MythBusters for Healthcare Providers: Developmental Screening", "url": "https://www.cdc.gov/autism/hcp/diagnosis/myth-busters.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "caregivers", "signs"], "regions": ["us"], "summary": "Myths about developmental screening and the facts that disprove them.", "checked": "2026-11-06"}, {"title": "Information on Autism Spectrum Disorder for Healthcare Providers", "url": "https://www.cdc.gov/autism/hcp/information/index.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "caregivers"], "regions": ["us"], "summary": "Information and resources on autism spectrum disorder (ASD) for healthcare providers.", "checked": "2026-11-06"}, {"title": "Site Index", "url": "https://www.cdc.gov/autism/site.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs", "daily"], "regions": ["us"], "summary": "Autism spectrum disorder (ASD) is a developmental disability that can cause significant social, communication and behavioral challenges. CDC is committed to continuing to provide essential data on ASD and develop resources that help identif", "checked": "2026-11-06"}, {"title": "Autism Partner Toolkit", "url": "https://www.cdc.gov/autism/php/toolkit/index.html", "source": "CDC", "tier": "gov", "audience": ["adults", "caregivers", "professionals"], "cats": ["signs", "caregivers", "advocacy"], "regions": ["us"], "summary": "CDC's partner toolkit includes links to free resources and materials on ASD.", "checked": "2026-11-06"}, {"title": "Facts About CDC's ADDM Network", "url": "https://www.cdc.gov/autism/communication-resources/addm-network-factsheet.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "daily"], "regions": ["us"], "summary": "Facts about CDC's ADDM Network.", "checked": "2026-11-06"}, {"title": "La prevalencia del autismo varÃ­a en las comunidades de los EE. UU", "url": "https://www.cdc.gov/autism/es/articles/prevalence-varies-across-us-communities.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "regions": ["us"], "summary": "Datos de los CDC muestran oportunidades para aprender de estrategias de identificaciÃ³n exitosas.", "checked": "2026-11-06"}, {"title": "ADDM Network Sites", "url": "https://www.cdc.gov/autism/addm-network/sites.html", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs"], "regions": ["us"], "summary": "Network across multiple U.S. sites that tracks the number and characteristics of children with ASD.", "checked": "2026-11-06"}, {"title": "Autism Spectrum Disorder", "url": "https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd", "source": "NIMH", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "local", "care"], "regions": ["us"], "summary": "Learn about NIMH research on autism spectrum disorder. Find resources on the signs and symptoms of autism and potential treatments and therapies.", "checked": "2026-11-06"}, {"title": "Autism Spectrum Disorder (ASD)", "url": "https://www.nichd.nih.gov/health/topics/autism", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "care"], "regions": ["us"], "summary": "ASD is a complex developmental disorder that affects how a person behaves, interacts with others, communicates, and learns. NICHD is one of many federal agencies and NIH Institutes working to understand ASD. NICHD supports and conducts rese", "checked": "2026-11-06"}, {"title": "About Autism", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "signs"], "regions": ["us"], "summary": "Autism spectrum disorder (ASD) is a complex neurological and developmental disorder that begins early in life and affects how a person acts and interacts with others, communicates, and learns. ASD affects the structure and function of the b", "checked": "2026-11-06"}, {"title": "What are the symptoms of autism?", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/symptoms", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "caregivers", "diagnosis"], "regions": ["us"], "summary": "The symptoms of one person with autism can be very different from the symptoms of another person with autism. Health care providers think of autism as a spectrum disorder—which means that there is a range of similar features in different pe", "checked": "2026-11-06"}, {"title": "When do children usually show symptoms of autism?", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/symptoms-appear", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "caregivers"], "regions": ["us"], "summary": "The behavioral symptoms of autism spectrum disorder (ASD) often appear early in development.1 Many children show symptoms of autism by 12 months to 18 months of age or earlier.2,3 Some early signs of", "checked": "2026-11-06"}, {"title": "What causes autism?", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/causes", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs"], "regions": ["us"], "summary": "Scientists don't know exactly what causes autism spectrum disorder (ASD). Autism was first described in the 1940s, but very little was known about it until the last few decades. Even today, there is a great deal that we don't know about aut", "checked": "2026-11-06"}, {"title": "How do health care providers diagnose autism?", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/diagnose", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "daily", "signs"], "regions": ["us"], "summary": "Health care providers look for certain symptoms or groups of symptoms to diagnose autism spectrum disorder (ASD). If you have concerns about your child's development, talk to his or her health care provider right away. The provider then can", "checked": "2026-11-06"}, {"title": "What are the treatments for autism?", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/treatments", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["care", "signs", "caregivers"], "regions": ["us"], "summary": "There is currently no one standard treatment for autism spectrum disorder (ASD).", "checked": "2026-11-06"}, {"title": "NICHD Autism Research Information", "url": "https://www.nichd.nih.gov/health/topics/autism/researchinfo", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis"], "regions": ["us"], "summary": "Understanding autism spectrum disorder (ASD) and other Intellectual and developmental disabilities (IDDs) is a primary focus of NICHD research. ASDs are a set of related conditions with a range of symptoms affecting behavior, interpersonal ", "checked": "2026-11-06"}, {"title": "NICHD Autism Research Goals", "url": "https://www.nichd.nih.gov/health/topics/autism/researchinfo/Pages/goals.aspx", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["care", "diagnosis", "signs"], "regions": ["us"], "summary": "NICHD supports and conducts research on a wide range of topics related to autism spectrum disorder (ASD), including genetics, neurodevelopment, screening, and interventions. The overarching aims of this research are to find causes, examine ", "checked": "2026-11-06"}, {"title": "Autism Research Activities and Advances", "url": "https://www.nichd.nih.gov/health/topics/autism/researchinfo/Pages/activities.aspx", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["diagnosis", "caregivers", "daily"], "regions": ["us"], "summary": "NICHD's autism spectrum disorder (ASD) research portfolio is spread throughout the Institute and includes extramural components that support research on ASD and other intellectual and developmental disabilities (IDDs). NICHD also conducts s", "checked": "2026-11-06"}, {"title": "Find a Study on Autism", "url": "https://www.nichd.nih.gov/health/topics/autism/clinicaltrials", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["local"], "regions": ["us"], "summary": "Select one of the following links to get ClinicalTrials.gov search results for studies on autism spectrum disorder (ASD): All NICHD clinical trials on ASD All ClinicalTrials.gov trials on ASD", "checked": "2026-11-06"}, {"title": "Other Autism FAQs", "url": "https://www.nichd.nih.gov/health/topics/autism/more_information/other-faqs", "source": "NICHD", "tier": "gov", "audience": ["adults", "caregivers", "professionals"], "cats": ["diagnosis", "mental", "signs"], "regions": ["us"], "summary": "Basic information for topics, such as \"What is it?\" and \"How many people are affected?,\" is available in the About Autism Spectrum Disorder (ASD) section. Other Frequently Asked Questions (FAQs) that are specific to a certain topic are answ", "checked": "2026-11-06"}, {"title": "Autism Resources", "url": "https://www.nichd.nih.gov/health/topics/autism/more_information/resources", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["caregivers", "diagnosis", "care"], "regions": ["us"], "summary": "Resources for", "checked": "2026-11-06"}, {"title": "Early Intervention for Autism", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/treatments/Pages/early-intervention.aspx", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["care", "signs", "diagnosis"], "regions": ["us"], "summary": "Research shows that early diagnosis of and interventions for autism are more likely to have major long-term positive effects on symptoms and later skills.1,2,3,4,5 Autism spectrum disorder (ASD) can sometimes be diagnosed in children before", "checked": "2026-11-06"}, {"title": "Behavioral Management Therapy for Autism", "url": "https://www.nichd.nih.gov/health/topics/autism/conditioninfo/treatments/Pages/behavioral-management.aspx", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["care"], "regions": ["us"], "summary": "Behavior management therapy tries to reinforce wanted behaviors and reduce unwanted behaviors. It also suggests what caregivers can do before, during, after, and between episodes of problem behaviors. Behavioral therapy is often based on ap", "checked": "2026-11-06"}, {"title": "Autism Spectrum Disorder: MedlinePlus", "url": "https://medlineplus.gov/autismspectrumdisorder.html", "source": "MedlinePlus", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["care", "signs", "diagnosis"], "regions": ["us"], "summary": "Find out about autism spectrum disorder symptoms, causes, treatment, and other issues related to this developmental disorder.", "checked": "2026-11-06"}, {"title": "Autism", "url": "https://www.nhs.uk/conditions/autism", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["diagnosis", "daily"], "regions": ["uk"], "summary": "NHS information about autism. Find out what autism is and what the common signs are. Get help and advice if you or your child are autistic.", "checked": "2026-11-06"}, {"title": "What is autism?", "url": "https://www.nhs.uk/conditions/autism/what-is-autism", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["mental"], "regions": ["uk"], "summary": "Find out what autism is, including differences in how you experience the world if you are autistic", "checked": "2026-11-06"}, {"title": "Signs of autism in children", "url": "https://www.nhs.uk/conditions/autism/signs-in-children", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "daily", "mental"], "regions": ["uk"], "summary": "Find out about the signs of autism in children, including differences in how they communicate and behave.", "checked": "2026-11-06"}, {"title": "Signs of autism in adults", "url": "https://www.nhs.uk/conditions/autism/signs-in-adults", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "mental", "daily"], "regions": ["uk"], "summary": "Find out about the signs of autism in adults, including differences in how they communicate.", "checked": "2026-11-06"}, {"title": "Autism assessments", "url": "https://www.nhs.uk/conditions/autism/assessments", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers", "professionals"], "cats": ["diagnosis", "signs", "daily"], "regions": ["uk"], "summary": "Find out how to get an assessment for autism if you need one and what happens in an autism assessment.", "checked": "2026-11-06"}, {"title": "Supporting an autistic child", "url": "https://www.nhs.uk/conditions/autism/supporting-a-child", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["daily", "mental", "caregivers"], "regions": ["uk"], "summary": "NHS information about how to support an autistic child, including what support they might need in daily life.", "checked": "2026-11-06"}, {"title": "Autism and adult life", "url": "https://www.nhs.uk/conditions/autism/adult-life", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["mental", "daily"], "regions": ["uk"], "summary": "NHS information about daily life as any autistic adult, what support you might need and where to find it.", "checked": "2026-11-06"}, {"title": "Help and support for autistic people and their families", "url": "https://www.nhs.uk/conditions/autism/help-and-support", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["caregivers"], "regions": ["uk"], "summary": "Find out where to get support if you're autistic, or caring for an autistic person, including from charities and support groups.", "checked": "2026-11-06"}, {"title": "Autism Society Creating connections for the Autism community to live fully.", "url": "https://autismsociety.org/", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["diagnosis", "signs"], "regions": ["us"], "summary": "We create connections, empowering everyone in the Autism community with the resources needed to live fully.", "checked": "2026-11-06"}, {"title": "watsoncreative, Author at Autism Society", "url": "https://autismsociety.org/author/watsoncreative", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers"], "regions": ["us"], "summary": "About watsoncreative Connect to support from the Autism Society 6110 Executive Boulevard Suite 305 Rockville, Maryland 20852 1 (800) 328-8476 Info@AutismSociety.org Media: Press@AutismSociety.org © 20", "checked": "2026-11-06"}, {"title": "ServiceNow and Accenture to Power One Constellation, the Autism Society of America’s Digital Transformation Vision. | Autism Society", "url": "https://autismsociety.org/servicenow-and-accenture-to-power-one-constellation-the-autism-society-of-americas-digital-transformation-vision", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["signs", "tech", "caregivers"], "regions": ["us"], "summary": "Author: Jose Velasco Chief Digital and Information Officer, Autism Society of America", "checked": "2026-11-06"}, {"title": "Voting Guide | Autism Society", "url": "https://autismsociety.org/vote", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy"], "regions": ["us"], "summary": "This is a voting guide for Autistic individuals, and breaks down the voting process into clear steps with supportive information.", "checked": "2026-11-06"}, {"title": "The Autism Society of America and Goodnites® Strengthen Partnership in 2026 to Support Families with Practical Communication Tools | Autism Society", "url": "https://autismsociety.org/goodnites-communication-tools", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["caregivers", "tech", "signs"], "regions": ["us"], "summary": "The Autism Society of America and Goodnites® Strengthen Partnership in 2026 to Support Families with Practical Communication Tools May 12, 2026 – The Autism Society of America and Goodnites® nighttime underwear are […]", "checked": "2026-11-06"}, {"title": "Who We Are | Autism Society", "url": "https://autismsociety.org/who-we-are", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers", "professionals"], "cats": ["care", "caregivers", "diagnosis"], "regions": ["us"], "summary": "For 58 years and counting, the Autism Society connects people to the resources they need through education, advocacy, support, information & referral, and community programming.", "checked": "2026-11-06"}, {"title": "Screening & Diagnosis | Autism Society", "url": "https://autismsociety.org/screening-diagnosis", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers", "professionals"], "cats": ["diagnosis", "signs", "caregivers"], "regions": ["us"], "summary": "Identifying Autism, related conditions, diagnosis by life stage, and educational evaluations.", "checked": "2026-11-06"}, {"title": "Resources by Topic | Autism Society", "url": "https://autismsociety.org/resources-by-topic", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers"], "regions": ["us"], "summary": "Don’t miss out on the latest opportunities to help get the support you need.", "checked": "2026-11-06"}, {"title": "Ways To Give | Autism Society", "url": "https://autismsociety.org/ways-to-give", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["caregivers", "advocacy"], "regions": ["us"], "summary": "Learn how to connect and give back to the Autism community.", "checked": "2026-11-06"}, {"title": "Contact Us | Autism Society", "url": "https://autismsociety.org/contact-us", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["diagnosis"], "regions": ["us"], "summary": "The Autism Society of America's National Helpline is a helpful way to learn about resources and services in your local area to support.", "checked": "2026-11-06"}, {"title": "Autism Is | Autism Acceptance Month | Autism Society", "url": "https://autismsociety.org/autismis", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy"], "regions": ["us"], "summary": "This Autism Acceptance Month, Autism Society launches our Autism Is campaign, amplifying the voices and experiences of Autistic individuals.", "checked": "2026-11-06"}, {"title": "Local Support | Autism Society", "url": "https://autismsociety.org/local-support", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers"], "regions": ["us"], "summary": "Explore the Autism Society's Training & Resource Center for essential tools, educational resources, and training programs to support individuals with autism and their families.", "checked": "2026-11-06"}, {"title": "The Autism Experience | Autism Society", "url": "https://autismsociety.org/the-autism-experience", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers", "professionals"], "cats": ["diagnosis", "signs", "caregivers"], "regions": ["us"], "summary": "An introduction to Autism Spectrum Disorder, prevalence, signs, characteristics, factors, and more.", "checked": "2026-11-06"}, {"title": "Autism Acceptance Month | Autism Society", "url": "https://autismsociety.org/autism-acceptance-month", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy"], "regions": ["us"], "summary": "The Autism Society of America is proud to continue its fourth annual #CelebrateDifferences campaign in honor of Autism Acceptance Month.", "checked": "2026-11-06"}, {"title": "Blog | Autism Society", "url": "https://autismsociety.org/blog", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy", "caregivers"], "regions": ["us"], "summary": "Stay connected with the latest news and updates from the Autism Society.", "checked": "2026-11-06"}, {"title": "Vaccine Education Initiative | Autism Society", "url": "https://autismsociety.org/resources/covid-19-support", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers", "professionals"], "cats": ["daily"], "regions": ["us"], "summary": "Through its Vaccine Education Initiative (VEI), the Autism Society is committed to increasing vaccine education, confidence, and access.", "checked": "2026-11-06"}, {"title": "Donate | Autism Society", "url": "https://autismsociety.org/donate", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers"], "regions": ["us"], "summary": "Learn how to take action through the Autism Society's programs and initiatives.", "checked": "2026-11-06"}, {"title": "Wells Fargo: Spearheading a New Era of Neurodiverse Employment Through its Contribution to the Autism Society of America’s Employment Initiative | Autism Society", "url": "https://autismsociety.org/wells-fargo-spearheading-a-new-era-of-neurodiverse-employment-through-its-contribution-to-the-autism-society-of-americas-employment-initiative", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["daily", "signs"], "regions": ["us"], "summary": "Wells Fargo has extended a hand to significantly expand the scope of the Autism Society's Employment Initiative program. This program is working to address systemic barriers that have long hampered the growth and inclusion of Autistic indiv", "checked": "2026-11-06"}, {"title": "Resources: Developmental Disabilities Awareness Month & National Women's History Month | Autism Society", "url": "https://autismsociety.org/resources-developmental-disabilities-awareness-month-national-womens-history-month", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["diagnosis", "signs", "advocacy"], "regions": ["us"], "summary": "Our March resources focuses on Developmental Disabilities Awareness Month, Autism & Women, and National Women's History Month.", "checked": "2026-11-06"}, {"title": "Capitol Connection: July 13, 2023 | Autism Society", "url": "https://autismsociety.org/capitol-connection-july-13-2023", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["caregivers"], "regions": ["us"], "summary": "In this issue of Capitol Connection, find updates on budget and appropriations, President Biden’s announcement on lowering healthcare costs, Autism Society’s comments on Medicaid home and […]", "checked": "2026-11-06"}, {"title": "Kristyn Roth, Author at Autism Society", "url": "https://autismsociety.org/author/kristyn_roth", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy", "daily"], "regions": ["us"], "summary": "Privacy Policy Protecting your private information is our priority. This [...]", "checked": "2026-11-06"}, {"title": "September Resources: National Suicide Prevention Month, Anti-Bullying messaging, Hispanic Heritage Month, Training and Resource Center promotion | Autism Society", "url": "https://autismsociety.org/september-resources-national-suicide-prevention-month-anti-bullying-messaging-hispanic-heritage-month-training-and-resource-center-promotion", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy", "signs"], "regions": ["us"], "summary": "This September, we highlight National Suicide Prevention Month, Anti-Bullying messaging, Hispanic Heritage Month (9/15-10/15), Training and Resource Center promotion, and featured Autism Society resources. Our public policy resources includ", "checked": "2026-11-06"}, {"title": "November Resources: National Family Caregivers Month | Autism Society", "url": "https://autismsociety.org/november-resources-national-family-caregivers-month", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["caregivers"], "regions": ["us"], "summary": "This November, we highlight National Family Caregivers Month, mental health and respite support services for caregivers, and caregiver stories. Our Public Policy resources include the newly developed State Advocacy Toolkit and the recently ", "checked": "2026-11-06"}, {"title": "Statement from the Autism Society of America on the Department of Education Agreement to Move IDEA and Civil Rights Functions | Autism Society", "url": "https://autismsociety.org/statement-from-the-autism-society-of-america-on-the-department-of-education-agreement-to-move-idea-and-civil-rights-functions", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["advocacy", "daily", "signs"], "regions": ["us"], "summary": "June 16, 2026, Rockville, M.D. — The Autism Society of America opposes the Department of Education’s Interagency Agreements (IAAs) to transfer the Office of Special […]", "checked": "2026-11-06"}, {"title": "Camilo, Author at Autism Society", "url": "https://autismsociety.org/author/camilo", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers"], "regions": ["us"], "summary": "About Camilo Connect to support from the Autism Society 6110 Executive Boulevard Suite 305 Rockville, Maryland 20852 1 (800) 328-8476 Info@AutismSociety.org Media: Press@AutismSociety.org © 2026 Autis", "checked": "2026-11-06"}]</script>
+<script id="data" type="application/json">[{"title": "Autism Spectrum Disorder (CDC)", "url": "https://www.cdc.gov/autism/", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals", "adults"], "cats": ["signs", "diagnosis", "caregivers"], "summary": "Overview of signs, screening, diagnosis and resources for families and health professionals.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (NIMH)", "url": "https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd", "source": "NIMH", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "care"], "summary": "Research-based information on symptoms, diagnosis and treatment of autism spectrum disorder.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NICHD)", "url": "https://www.nichd.nih.gov/health/topics/autism", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "care"], "summary": "Federal research institute pages on autism signs, screening and treatment.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (MedlinePlus)", "url": "https://medlineplus.gov/autismspectrumdisorder.html", "source": "MedlinePlus", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "care", "caregivers"], "summary": "Plain-language health overview from the U.S. National Library of Medicine, with links to related topics.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NHS)", "url": "https://www.nhs.uk/conditions/autism/", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "daily"], "summary": "UK health service guidance on signs, getting assessed and support for autistic people and families.", "checked": "seed", "regions": ["uk"]}, {"title": "Autistic Self Advocacy Network", "url": "https://autisticadvocacy.org", "source": "Autistic Self Advocacy Network", "tier": "nonprofit", "audience": ["adults"], "cats": ["advocacy", "daily"], "summary": "Autistic-led organization with resources on self-advocacy, rights and acceptance.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Society of America", "url": "https://autismsociety.org", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["caregivers", "adults"], "cats": ["local", "caregivers", "advocacy"], "summary": "Nonprofit with information and a network of local affiliates.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Speaks", "url": "https://www.autismspeaks.org", "source": "Autism Speaks", "tier": "nonprofit", "audience": ["caregivers"], "cats": ["caregivers", "local", "care"], "summary": "Nonprofit with family toolkits and a resource guide to services.", "checked": "seed", "regions": ["us"]}, {"title": "Sentiment analysis of post-COVID-19 health information needs of the autism community", "url": "https://doi.org/10.3389/fpsyt.2024.1441349", "source": "Frontiers in Psychiatry", "tier": "academic", "audience": ["professionals", "caregivers"], "cats": ["signs", "diagnosis", "caregivers", "advocacy"], "summary": "Open-access study of what autistic people and caregivers discuss online: symptoms, diagnosis, caregiving and stigma.", "checked": "seed", "regions": ["global"]}]</script>
 
 <script>
 (function(){
@@ -271,8 +285,10 @@ var TIER={gov:'Government',academic:'University or journal',nonprofit:'Nonprofit
 var ORDER={gov:0,academic:1,nonprofit:2,community:3};
 var ICONS={signs:'<circle cx="10" cy="10" r="6"/><path d="M15 15l6 6"/>',diagnosis:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 12l2 2 4-4"/>',care:'<path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z"/>',caregivers:'<circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 20c0-4 2-6 5-6s5 2 5 6M14 20c0-3 1.5-4.5 4-4.5s3 1.5 3 4.5"/>',mental:'<path d="M20 14a8 8 0 1 1-10-10 6.5 6.5 0 0 0 10 10z"/>',tech:'<rect x="5" y="3" width="14" height="18" rx="3"/><path d="M10.5 18h3"/>',advocacy:'<path d="M4 5h16v11h-9l-4 4v-4H4z"/>',daily:'<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',local:'<path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/>'};
 var CC={signs:'#3e7cb1',diagnosis:'#7c6fd0',care:'#d1666b',caregivers:'#c98b2b',mental:'#5a6fc4',tech:'#2c9aa0',advocacy:'#b5568f',daily:'#d39b2a',local:'#4e9a6b'};
-var st={need:'',q:'',aud:'all',trusted:false,reg:'all'};
-var REG={global:'Anywhere',us:'United States',uk:'United Kingdom',ca:'Canada',au:'Australia'};
+var st={need:'',q:'',aud:'all',trusted:false,reg:'all',foc:'all'};
+var FOCUS={black:'Black communities',latino:'Latino and Hispanic communities',asian:'Asian communities',indigenous:'Indigenous communities',minority:'Racial and ethnic minority communities'};
+function focText(r){return (r.focus||[]).map(function(x){return FOCUS[x]||x}).join(', ')}
+var REG={global:'Anywhere',us:'United States',uk:'United Kingdom',ca:'Canada',au:'Australia',gh:'Ghana',za:'South Africa'};
 function regText(r){return (r.regions||['global']).map(function(x){return REG[x]||x}).join(', ')}
 var root=document.documentElement,$=function(i){return document.getElementById(i)};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -297,22 +313,25 @@ function match(r){
   if(st.aud!=='all'&&r.audience.indexOf(st.aud)<0)return false;
   if(st.trusted&&r.tier!=='gov'&&r.tier!=='academic')return false;
   if(st.reg!=='all'){var rg=r.regions||['global'];if(rg.indexOf(st.reg)<0&&rg.indexOf('global')<0)return false}
+  if(st.foc!=='all'&&(r.focus||[]).indexOf(st.foc)<0)return false;
   if(st.q){var t=(r.title+' '+r.summary+' '+r.source+' '+r.cats.map(function(c){return NAME[c]||c}).join(' ')).toLowerCase();
     return st.q.toLowerCase().split(/\s+/).every(function(w){return t.indexOf(w)>-1})}
   return true;
 }
 function render(){
   var rows=D.filter(match).sort(function(a,b){return ORDER[a.tier]-ORDER[b.tier]||a.title.localeCompare(b.title)});
-  var cn=rows.length+(rows.length===1?' resource':' resources')+(st.need?' for “'+NAME[st.need]+'”':'');var act=st.need||st.q||st.aud!=='all'||st.trusted||st.reg!=='all';$('count').innerHTML='<span></span>'+(act?'<button class="pref" id="clr" type="button">Clear filters</button>':'');$('count').firstChild.textContent=cn;if(act)$('clr').onclick=function(){st={need:'',q:'',aud:'all',trusted:false,reg:'all'};$('reg').value='all';$('q').value='';$('aud').value='all';$('trusted').checked=false;[].forEach.call(document.querySelectorAll('#needs button'),function(x){x.setAttribute('aria-pressed','false')});render()};
+  var cn=rows.length+(rows.length===1?' resource':' resources')+(st.need?' for “'+NAME[st.need]+'”':'');var act=st.need||st.q||st.aud!=='all'||st.trusted||st.reg!=='all'||st.foc!=='all';$('count').innerHTML='<span></span>'+(act?'<button class="pref" id="clr" type="button">Clear filters</button>':'');$('count').firstChild.textContent=cn;if(act)$('clr').onclick=function(){st={need:'',q:'',aud:'all',trusted:false,reg:'all',foc:'all'};$('reg').value='all';$('foc').value='all';$('q').value='';$('aud').value='all';$('trusted').checked=false;[].forEach.call(document.querySelectorAll('#needs button'),function(x){x.setAttribute('aria-pressed','false')});render()};
   if(!rows.length){$('list').innerHTML='<li class="empty">Nothing matches yet. Clear the search or choose a different topic or audience.</li>';return}
   $('list').innerHTML=rows.map(function(r){
     return '<li class="item" style="--tc:var(--'+r.tier+')"><h3><a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.title)+'<span class="vh"> (opens in a new tab)</span></a><span class="nt" aria-hidden="true">opens in a new tab</span></h3>'+
-      '<p class="meta"><b>'+(TIER[r.tier]||'Other')+'</b> from '+esc(r.source)+' ('+esc(regText(r))+'). '+(r.checked==='seed'?'Starter entry, not yet crawled.':'Checked '+esc(r.checked)+'.')+'</p>'+
+      '<p class="meta"><b>'+(TIER[r.tier]||'Other')+'</b> from '+esc(r.source)+' ('+esc(regText(r))+'). '+(focText(r)?'Focus: '+esc(focText(r))+'. ':'')+(r.checked==='seed'?'Starter entry, not yet crawled.':'Checked '+esc(r.checked)+'.')+'</p>'+
       '<p>'+esc(r.summary)+'</p><ul class="chips" aria-label="Topics">'+r.cats.map(function(c){return '<li>'+esc(NAME[c]||c)+'</li>'}).join('')+'</ul></li>';
   }).join('');
 }
 $('q').addEventListener('input',function(e){st.q=e.target.value.trim();render()});
 $('aud').addEventListener('change',function(e){st.aud=e.target.value;render()});
+(function(){var fs={};D.forEach(function(r){(r.focus||[]).forEach(function(x){fs[x]=1})});var ks=Object.keys(fs);if(ks.length){$('focwrap').hidden=false;ks.forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=FOCUS[k]||k;$('foc').appendChild(o)})}})();
+$('foc').addEventListener('change',function(e){st.foc=e.target.value;render()});
 $('reg').addEventListener('change',function(e){st.reg=e.target.value;render();remember('region',st.reg)});
 $('trusted').addEventListener('change',function(e){st.trusted=e.target.checked;render()});
 
@@ -345,12 +364,68 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('pause').hidden)u
 
 /* ---------- Start here ---------- */
 var GOALS=[
-{id:'suspect',label:'I think someone may be autistic',need:'signs',acts:['Write down what you have noticed: examples, when it happens and what helps.','Tell a doctor or health professional you trust and ask about screening or an evaluation.','Read about the signs and how diagnosis works, then pick one question to bring with you.']},
-{id:'diagnosed',label:'We just had a diagnosis',need:'care',acts:['Ask the clinician for a written report and their recommendations.','Ask what early intervention, school or other support services exist in your area and how to apply.','Find one person or group who understands, such as a parent group or an autistic-led organization.']},
-{id:'adult',label:'I am an autistic adult looking for support',need:'advocacy',aud:'adults',acts:['Read what autistic-led organizations say about rights, work and everyday life.','Notice what helps you, such as quiet, routine or clear instructions, and write it down so you can ask for it.','If anxiety, sleep or stomach problems get in the way, tell a doctor. These often occur alongside autism.']},
-{id:'tired',label:'I am worn out as a caregiver',need:'caregivers',aud:'caregivers',acts:['Pick one small thing to drop or share this week, and ask one trusted person for help.','Look for caregiver support or short-term respite care in your area.','If stress, sleep or your mood are suffering, tell your own doctor. You matter too.']},
-{id:'mental',label:'Sleep, anxiety or mood is hard',need:'mental',acts:['For a week, note when it is worst and what seems to help.','Share your notes with a doctor and ask about support for anxiety, depression, sleep or stomach problems.','Look at the resources below for ideas to talk through.']},
-{id:'school',label:'I need help with school or work',need:'daily',acts:['Write down which supports would help, such as a quiet space, written instructions or extra time.','Ask the school or workplace what support plans or adjustments they offer and how to request them.','Keep a copy of what you ask for and what is agreed.']}
+{
+"id": "suspect",
+"label": "I think someone may be autistic",
+"need": "signs",
+"acts": [
+"Write down what you have noticed: examples, when it happens and what helps.",
+"Tell a doctor or health professional you trust and ask about screening or an evaluation.",
+"Read about the signs and how diagnosis works, then pick one question to bring with you."
+]
+},
+{
+"id": "diagnosed",
+"label": "We just had a diagnosis",
+"need": "care",
+"acts": [
+"Ask the clinician for a written report and their recommendations.",
+"Ask what early intervention, school or other support services exist in your area and how to apply.",
+"Find one person or group who understands, such as a parent group or an autistic-led organization."
+]
+},
+{
+"id": "adult",
+"label": "I am an autistic adult looking for support",
+"need": "advocacy",
+"aud": "adults",
+"acts": [
+"Read what autistic-led organizations say about rights, work and everyday life.",
+"Notice what helps you, such as quiet, routine or clear instructions, and write it down so you can ask for it.",
+"If anxiety, sleep or stomach problems get in the way, tell a doctor. These often occur alongside autism."
+]
+},
+{
+"id": "tired",
+"label": "I am worn out as a caregiver",
+"need": "caregivers",
+"aud": "caregivers",
+"acts": [
+"Pick one small thing to drop or share this week, and ask one trusted person for help.",
+"Look for caregiver support or short-term respite care in your area.",
+"If stress, sleep or your mood are suffering, tell your own doctor. You matter too."
+]
+},
+{
+"id": "mental",
+"label": "Sleep, anxiety or mood is hard",
+"need": "mental",
+"acts": [
+"For a week, note when it is worst and what seems to help.",
+"Share your notes with a doctor and ask about support for anxiety, depression, sleep or stomach problems.",
+"Look at the resources below for ideas to talk through."
+]
+},
+{
+"id": "school",
+"label": "I need help with school or work",
+"need": "daily",
+"acts": [
+"Write down which supports would help, such as a quiet space, written instructions or extra time.",
+"Ask the school or workplace what support plans or adjustments they offer and how to request them.",
+"Keep a copy of what you ask for and what is agreed."
+]
+}
 ];
 (function(){
   var row=$('goalrow'),out=$('goalout');
@@ -372,28 +447,94 @@ var GOALS=[
 
 /* ---------- Glossary ---------- */
 var GL=[
-['Autism spectrum disorder (ASD)','A neurodevelopmental condition. It involves differences in social communication, behavior and sensory processing. People on the spectrum are very different from one another.'],
-['Autistic person and person with autism','Both are used. Many autistic people prefer “autistic person” (identity-first), and others prefer “person with autism.” If you are unsure, ask what the person prefers.'],
-['Neurodiversity','The idea that differences in how brains work, including autism, are natural variation and not only problems to fix.'],
-['Neurodivergent and neurotypical','Neurodivergent describes people whose brains work in ways that differ from what is typical, such as autistic people. Neurotypical describes people whose brains work in the typical way.'],
-['Co-occurring conditions','Other health conditions that some autistic people also have, such as anxiety, depression, stomach and digestive problems, and sleep disorders. Doctors sometimes call these comorbid conditions.'],
-['Screening','A short check for signs that may mean a fuller assessment is worth doing. It does not give a diagnosis.'],
-['Diagnostic evaluation','A full assessment by qualified professionals to decide whether someone is autistic. Who does it and how long it takes varies by country.'],
-['Early intervention','Support services for very young children with developmental differences or delays. Rules and ages differ by country, so ask a doctor or local health service.'],
-['Sensory processing','How the body takes in and responds to sounds, light, touch, taste, smell and movement. Many autistic people are more or less sensitive than average to some of these.'],
-['Sensory overload','Feeling overwhelmed when there is too much sensory input at once, such as noise, bright lights or crowds.'],
-['Stimming','Repeated movements, sounds or actions, such as rocking or hand flapping, that people use to calm themselves, focus or express feelings.'],
-['Meltdown and shutdown','A meltdown is an intense reaction to being overwhelmed. It is not a tantrum. A shutdown is when someone withdraws, goes quiet or cannot respond. Both usually need calm, space and time.'],
-['Masking','Hiding or holding back natural autistic behavior to fit in. It can be exhausting over time.'],
-['Autistic burnout','Deep tiredness and reduced ability to cope after a long period of stress, often involving masking or too many demands.'],
-['Routine and transitions','Many autistic people find predictable routines comforting. Changes, or moving from one activity to another, can be hard and are easier with warning and a plan.'],
-['AAC (augmentative and alternative communication)','Tools and methods that help people communicate in ways other than speech, such as picture boards, apps or devices.'],
-['Occupational therapy','Therapy that helps people with everyday skills and activities, which can include sensory needs.'],
-['Speech and language therapy','Therapy that supports communication, including understanding, speaking and social communication.'],
-['Respite care','Short-term care that gives family caregivers a break.'],
-['Self-advocacy','Speaking up for your own needs, rights and choices. Autistic-led organizations often share resources on this.'],
-['IEP and similar school plans','In the United States, an Individualized Education Program is a written plan of school supports for eligible students. Other places use other names, such as an EHCP in England. Ask the school what applies.'],
-['Accommodations or adjustments','Changes to a school, workplace or place that make it easier to take part, such as a quiet space, written instructions or flexible hours.']
+[
+"Autism spectrum disorder (ASD)",
+"A neurodevelopmental condition. It involves differences in social communication, behavior and sensory processing. People on the spectrum are very different from one another."
+],
+[
+"Autistic person and person with autism",
+"Both are used. Many autistic people prefer “autistic person” (identity-first), and others prefer “person with autism.” If you are unsure, ask what the person prefers."
+],
+[
+"Neurodiversity",
+"The idea that differences in how brains work, including autism, are natural variation and not only problems to fix."
+],
+[
+"Neurodivergent and neurotypical",
+"Neurodivergent describes people whose brains work in ways that differ from what is typical, such as autistic people. Neurotypical describes people whose brains work in the typical way."
+],
+[
+"Co-occurring conditions",
+"Other health conditions that some autistic people also have, such as anxiety, depression, stomach and digestive problems, and sleep disorders. Doctors sometimes call these comorbid conditions."
+],
+[
+"Screening",
+"A short check for signs that may mean a fuller assessment is worth doing. It does not give a diagnosis."
+],
+[
+"Diagnostic evaluation",
+"A full assessment by qualified professionals to decide whether someone is autistic. Who does it and how long it takes varies by country."
+],
+[
+"Early intervention",
+"Support services for very young children with developmental differences or delays. Rules and ages differ by country, so ask a doctor or local health service."
+],
+[
+"Sensory processing",
+"How the body takes in and responds to sounds, light, touch, taste, smell and movement. Many autistic people are more or less sensitive than average to some of these."
+],
+[
+"Sensory overload",
+"Feeling overwhelmed when there is too much sensory input at once, such as noise, bright lights or crowds."
+],
+[
+"Stimming",
+"Repeated movements, sounds or actions, such as rocking or hand flapping, that people use to calm themselves, focus or express feelings."
+],
+[
+"Meltdown and shutdown",
+"A meltdown is an intense reaction to being overwhelmed. It is not a tantrum. A shutdown is when someone withdraws, goes quiet or cannot respond. Both usually need calm, space and time."
+],
+[
+"Masking",
+"Hiding or holding back natural autistic behavior to fit in. It can be exhausting over time."
+],
+[
+"Autistic burnout",
+"Deep tiredness and reduced ability to cope after a long period of stress, often involving masking or too many demands."
+],
+[
+"Routine and transitions",
+"Many autistic people find predictable routines comforting. Changes, or moving from one activity to another, can be hard and are easier with warning and a plan."
+],
+[
+"AAC (augmentative and alternative communication)",
+"Tools and methods that help people communicate in ways other than speech, such as picture boards, apps or devices."
+],
+[
+"Occupational therapy",
+"Therapy that helps people with everyday skills and activities, which can include sensory needs."
+],
+[
+"Speech and language therapy",
+"Therapy that supports communication, including understanding, speaking and social communication."
+],
+[
+"Respite care",
+"Short-term care that gives family caregivers a break."
+],
+[
+"Self-advocacy",
+"Speaking up for your own needs, rights and choices. Autistic-led organizations often share resources on this."
+],
+[
+"IEP and similar school plans",
+"In the United States, an Individualized Education Program is a written plan of school supports for eligible students. Other places use other names, such as an EHCP in England. Ask the school what applies."
+],
+[
+"Accommodations or adjustments",
+"Changes to a school, workplace or place that make it easier to take part, such as a quiet space, written instructions or flexible hours."
+]
 ];
 function renderGl(){
   var q=($('gq').value||'').toLowerCase().trim(),dl=$('gl');dl.innerHTML='';
@@ -404,16 +545,133 @@ function renderGl(){
 $('gq').addEventListener('input',renderGl);renderGl();
 
 /* ---------- Companion ---------- */
-var LOOKS=[{s:'#8a5a3c',h:'#1d1d1d',t:'#0f6b6b'},{s:'#e0b089',h:'#6b4a2f',t:'#4a5fa8'},{s:'#5b3a29',h:'#111111',t:'#8f5f0e'}];
+/* Avatar generator: builds an SVG string from a plain settings object. */
+function hx(h){return [1,3,5].map(function(i){return parseInt(h.substr(i,2),16)})}
+function toHex(a){return '#'+a.map(function(v){return ('0'+Math.max(0,Math.min(255,Math.round(v))).toString(16)).slice(-2)}).join('')}
+function mixc(a,b,t){var x=hx(a),y=hx(b);return toHex(x.map(function(v,i){return v+(y[i]-v)*t}))}
+function shadeC(h,f){return mixc(h,'#000000',1-f)}
+function lightC(h,f){return mixc(h,'#ffffff',f)}
+var AV_SKIN=[['Very light','#f7dccb'],['Light','#efc3a1'],['Light brown','#dfa67e'],['Medium brown','#c68a5d'],['Brown','#a56a40'],['Dark brown','#84502f'],['Deep brown','#643a22'],['Very deep brown','#46281a']];
+var AV_HAIR=[['Black','#1b1a1a'],['Dark brown','#3b2717'],['Brown','#6a4527'],['Auburn','#8a3b22'],['Blonde','#d4b05a'],['Gray','#9b9b9b'],['White','#ebebeb'],['Teal','#2f8a8c']];
+var AV_EYES=[['Brown','#5a3820'],['Hazel','#8a6a2a'],['Green','#4f7f5a'],['Blue','#4a78a8'],['Gray','#7a8794']];
+var AV_OUT=[['Teal','#2c7a7b'],['Navy','#2f4a7a'],['Purple','#6b5bb0'],['Rose','#b5566f'],['Mustard','#c9962b'],['Green','#4f8a5c'],['Gray','#6f7a85'],['Cream','#e8dcc4']];
+var AV_BG=[['Mist','#dcebe6'],['Lavender','#e6e2f7'],['Sand','#f1e6cc'],['Sky','#d9e8f4'],['Blush','#f4dfe0'],['Slate','#cfd8de']];
+var AV_DEFAULT={style:'human',skin:3,hairStyle:'short',hair:1,eyes:0,facial:'none',glasses:'none',outfit:'crew',outfitColor:0,bg:0};
+var AV_MOUTH={
+ human:['M98 172 Q109 167 120 170 Q131 167 142 172 Q132 182 120 183 Q108 182 98 172Z','M100 171 Q120 165 140 171 Q138 186 120 187 Q102 186 100 171Z','M101 170 Q120 163 139 170 Q140 192 120 193 Q100 192 101 170Z'],
+ orb:['M96 150 Q120 164 144 150','M100 150 Q120 168 140 150','M104 148 Q120 176 136 148']
+};
+var AV_N=0;
+function avatarSVG(c){
+  var U=(++AV_N);
+  c=Object.assign({},AV_DEFAULT,c||{});
+  var o=AV_OUT[c.outfitColor]||AV_OUT[0],oc=o[1];
+  if(c.style==='orb'){
+    var base=oc,lt=lightC(base,.35),dk=shadeC(base,.7);
+    return '<svg viewBox="0 0 240 280" role="img" aria-label="Soft shapes avatar" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ob'+U+'" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="'+lt+'"/><stop offset=".7" stop-color="'+base+'"/><stop offset="1" stop-color="'+dk+'"/></radialGradient></defs><g class="breathe"><circle cx="120" cy="124" r="86" fill="url(#ob'+U+')"/><ellipse cx="92" cy="86" rx="26" ry="14" fill="#fff" opacity=".18" transform="rotate(-25 92 86)"/><g class="blink"><ellipse cx="94" cy="112" rx="9" ry="12" fill="#fff"/><ellipse cx="146" cy="112" rx="9" ry="12" fill="#fff"/><circle cx="96" cy="114" r="5" fill="#1d2a33"/><circle cx="148" cy="114" r="5" fill="#1d2a33"/></g><path id="mouth" d="'+AV_MOUTH.orb[0]+'" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" data-lip="none"/></g></svg>';
+  }
+  var sk=(AV_SKIN[c.skin]||AV_SKIN[3])[1],hr=(AV_HAIR[c.hair]||AV_HAIR[1])[1],ey=(AV_EYES[c.eyes]||AV_EYES[0])[1];
+  var skHi=lightC(sk,.14),skLo=shadeC(sk,.84),skDk=shadeC(sk,.62),skShadow=shadeC(sk,.5),lip=mixc(sk,'#a3414f',.5),lipLo=mixc(sk,'#b8505c',.45),hrDk=shadeC(hr,.7),hrHi=lightC(hr,.22);
+  var cloth=oc,clothDk=shadeC(oc,.72),clothHi=lightC(oc,.18);
+  var s='<svg viewBox="0 0 240 280" role="img" aria-label="Custom avatar" xmlns="http://www.w3.org/2000/svg"><defs>'+
+   '<radialGradient id="fg'+U+'" cx=".42" cy=".38" r=".78"><stop offset="0" stop-color="'+skHi+'"/><stop offset=".65" stop-color="'+sk+'"/><stop offset="1" stop-color="'+skLo+'"/></radialGradient>'+
+   '<linearGradient id="ng'+U+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+skShadow+'"/><stop offset=".55" stop-color="'+skDk+'"/><stop offset="1" stop-color="'+skLo+'"/></linearGradient>'+
+   '<linearGradient id="cg'+U+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+clothHi+'"/><stop offset="1" stop-color="'+clothDk+'"/></linearGradient>'+
+   '<radialGradient id="ig'+U+'" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="'+lightC(ey,.3)+'"/><stop offset="1" stop-color="'+shadeC(ey,.6)+'"/></radialGradient>'+
+   '<linearGradient id="hg'+U+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+hrHi+'"/><stop offset=".5" stop-color="'+hr+'"/><stop offset="1" stop-color="'+hrDk+'"/></linearGradient></defs><g class="breathe">';
+  var hs=c.hairStyle;
+  // back hair
+  if(hs==='curly')s+='<g fill="url(#hg'+U+')"><ellipse cx="120" cy="84" rx="90" ry="70"/><circle cx="54" cy="116" r="26"/><circle cx="186" cy="116" r="26"/><circle cx="76" cy="52" r="28"/><circle cx="164" cy="52" r="28"/><circle cx="120" cy="34" r="30"/></g>';
+  if(hs==='long')s+='<path d="M60 108 C48 66 82 30 120 30 C158 30 192 66 180 108 L194 236 Q120 258 46 236 Z" fill="url(#hg'+U+')"/>';
+  if(hs==='bun')s+='<circle cx="120" cy="26" r="24" fill="url(#hg'+U+')"/><circle cx="114" cy="19" r="8" fill="'+hrHi+'" opacity=".35"/>';
+  // body
+  var hood=c.outfit==='hoodie';
+  if(hood)s+='<path d="M52 230 C48 196 78 176 120 176 C162 176 192 196 188 230 Z" fill="'+clothDk+'"/>';
+  s+='<path d="M99 176 L99 234 Q120 248 141 234 L141 176 Z" fill="url(#ng'+U+')"/>';
+  s+='<path d="M14 280 C16 240 58 228 100 224 Q120 240 140 224 C182 228 224 240 226 280 Z" fill="url(#cg'+U+')"/>';
+  if(c.outfit==='crew')s+='<path d="M100 224 Q120 244 140 224" fill="none" stroke="'+clothDk+'" stroke-width="7" stroke-linecap="round"/>';
+  if(c.outfit==='collar')s+='<path d="M100 224 L120 252 L112 226Z M140 224 L120 252 L128 226Z" fill="#fff" stroke="'+clothDk+'" stroke-width="1.5" stroke-linejoin="round"/><path d="M120 252 L120 280" stroke="'+clothDk+'" stroke-width="1.5"/>';
+  if(hood)s+='<path d="M100 224 Q120 246 140 224" fill="none" stroke="'+clothDk+'" stroke-width="9" stroke-linecap="round"/><path d="M110 240 L108 266 M130 240 L132 266" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".85"/>';
+  s+='<path d="M40 280 C46 252 64 240 82 236" fill="none" stroke="'+clothDk+'" stroke-width="2" opacity=".35"/><path d="M200 280 C194 252 176 240 158 236" fill="none" stroke="'+clothDk+'" stroke-width="2" opacity=".35"/>';
+  // chin shadow on neck
+  s+='<path d="M99 176 Q120 206 141 176 L141 190 Q120 216 99 190Z" fill="'+skShadow+'" opacity=".28"/>';
+  // ears
+  s+='<g><ellipse cx="62" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="63.5" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/><ellipse cx="178" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="176.5" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/></g>';
+  // face
+  s+='<path d="M120 42 C160 42 178 74 178 114 C178 152 160 192 120 202 C80 192 62 152 62 114 C62 74 80 42 120 42Z" fill="url(#fg'+U+')"/>';
+  s+='<ellipse cx="92" cy="152" rx="15" ry="11" fill="#e8786e" opacity=".14"/><ellipse cx="148" cy="152" rx="15" ry="11" fill="#e8786e" opacity=".14"/>';
+  // facial hair
+  if(c.facial==='stubble')s+='<path d="M66 126 C70 178 94 204 120 204 C146 204 170 178 174 126 C164 160 146 178 120 178 C94 178 76 160 66 126Z" fill="'+hr+'" opacity=".22"/><path d="M104 160 Q120 150 136 160 Q120 166 104 160Z" fill="'+hr+'" opacity=".18"/>';
+  if(c.facial==='beard')s+='<path d="M64 124 C66 184 92 210 120 210 C148 210 174 184 176 124 C168 150 156 164 142 168 Q120 160 98 168 C84 164 72 150 64 124Z" fill="url(#hg'+U+')" opacity=".95"/><path d="M102 166 Q120 156 138 166 Q130 172 120 171 Q110 172 102 166Z" fill="url(#hg'+U+')"/>';
+  // eyes
+  var ex=[96,144],ey_=116,eyes='<g class="blink">';
+  ex.forEach(function(x){eyes+='<ellipse cx="'+x+'" cy="'+ey_+'" rx="12.5" ry="7.6" fill="#fbfbf8"/><ellipse cx="'+x+'" cy="'+(ey_+1)+'" rx="12.5" ry="7.6" fill="'+skDk+'" opacity=".08"/><circle cx="'+(x+(x<120?1.5:-1.5))+'" cy="'+(ey_+.3)+'" r="6.6" fill="url(#ig'+U+')"/><circle cx="'+(x+(x<120?1.5:-1.5))+'" cy="'+(ey_+.3)+'" r="3.2" fill="#14110f"/><circle cx="'+(x+(x<120?3.5:0.5))+'" cy="'+(ey_-2)+'" r="1.9" fill="#fff" opacity=".95"/><path d="M'+(x-13)+' '+(ey_+.5)+' Q'+x+' '+(ey_-12)+' '+(x+13)+' '+(ey_+.5)+'" fill="none" stroke="'+shadeC(sk,.3)+'" stroke-width="2.3" stroke-linecap="round"/><path d="M'+(x-11)+' '+(ey_+3)+' Q'+x+' '+(ey_+9)+' '+(x+11)+' '+(ey_+3)+'" fill="none" stroke="'+skDk+'" stroke-width="1" opacity=".55"/>'});
+  eyes+='<path d="M83 112 l-4 -3 M85 109 l-3 -4 M157 112 l4 -3 M155 109 l3 -4" stroke="'+shadeC(sk,.3)+'" stroke-width="1.4" stroke-linecap="round"/></g>';
+  s+=eyes;
+  // brows
+  s+='<path d="M81 101 Q95 92 110 97" fill="none" stroke="'+hrDk+'" stroke-width="4.6" stroke-linecap="round" opacity="'+(hs==='bald'&&c.hair>4?'.7':'1')+'"/><path d="M130 97 Q145 92 159 101" fill="none" stroke="'+hrDk+'" stroke-width="4.6" stroke-linecap="round"/>';
+  // nose
+  s+='<path d="M120 118 Q116 140 112 150" fill="none" stroke="'+skDk+'" stroke-width="2" stroke-linecap="round" opacity=".5"/><path d="M107 155 Q120 165 133 155" fill="none" stroke="'+skDk+'" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><ellipse cx="113" cy="156" rx="3.4" ry="2" fill="#000" opacity=".2"/><ellipse cx="127" cy="156" rx="3.4" ry="2" fill="#000" opacity=".2"/><ellipse cx="120" cy="143" rx="3.2" ry="7" fill="#fff" opacity=".16"/>';
+  // mouth
+  s+='<path id="mouth" d="'+AV_MOUTH.human[0]+'" fill="'+lip+'" stroke="'+shadeC(lip,.7)+'" stroke-width="1.4" stroke-linejoin="round" data-lip="'+lip+'"/><path d="M104 173 Q120 178 136 173" fill="none" stroke="'+shadeC(lip,.6)+'" stroke-width="1.1" opacity=".6" id="mline"/>';
+  // front hair
+  if(hs==='short')s+='<path d="M62 112 C56 66 86 36 122 36 C158 36 184 64 178 112 C174 92 166 80 150 74 C134 86 100 86 84 74 C70 82 64 96 62 112Z" fill="url(#hg'+U+')"/><path d="M96 48 Q122 40 150 52" stroke="'+hrHi+'" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/>';
+  if(hs==='buzz')s+='<path d="M66 106 C62 68 90 44 120 44 C152 44 180 68 174 106 C170 84 150 66 120 66 C92 66 72 84 66 106Z" fill="'+hr+'" opacity=".78"/>';
+  if(hs==='bun')s+='<path d="M62 112 C58 66 88 40 120 40 C154 40 182 66 178 112 C172 88 156 72 120 70 C86 72 68 88 62 112Z" fill="url(#hg'+U+')"/>';
+  if(hs==='long')s+='<path d="M62 118 C56 66 86 34 120 34 C156 34 184 66 178 118 C170 90 150 70 124 68 C100 82 74 94 62 118Z" fill="url(#hg'+U+')"/><path d="M62 124 C52 170 56 214 70 238 L90 232 C80 196 82 150 84 122Z" fill="url(#hg'+U+')"/><path d="M178 124 C188 170 184 214 170 238 L150 232 C160 196 158 150 156 122Z" fill="url(#hg'+U+')"/>';
+  if(hs==='curly')s+='<path d="M68 104 C66 68 92 52 120 52 C150 52 176 68 172 104 C164 84 148 74 120 74 C94 74 76 84 68 104Z" fill="url(#hg'+U+')"/><g fill="url(#hg'+U+')"><circle cx="82" cy="74" r="14"/><circle cx="104" cy="62" r="14"/><circle cx="134" cy="62" r="14"/><circle cx="158" cy="74" r="14"/></g>';
+  // glasses
+  var gc='#2a2623';
+  if(c.glasses==='round')s+='<g fill="#fff" fill-opacity=".1" stroke="'+gc+'" stroke-width="3"><circle cx="96" cy="117" r="19"/><circle cx="144" cy="117" r="19"/></g><path d="M115 115 Q120 111 125 115 M77 112 L66 108 M163 112 L174 108" fill="none" stroke="'+gc+'" stroke-width="3" stroke-linecap="round"/>';
+  if(c.glasses==='square')s+='<g fill="#fff" fill-opacity=".1" stroke="'+gc+'" stroke-width="3"><rect x="76" y="102" width="40" height="30" rx="8"/><rect x="124" y="102" width="40" height="30" rx="8"/></g><path d="M116 112 L124 112 M76 110 L66 106 M164 110 L174 106" fill="none" stroke="'+gc+'" stroke-width="3" stroke-linecap="round"/>';
+  s+='</g></svg>';
+  return s;
+}
+
+cs.av=Object.assign({},AV_DEFAULT);
+var AVH=[['skin','Skin tone',AV_SKIN,1],['hairStyle','Hair style',[['short','Short'],['buzz','Very short'],['long','Long'],['curly','Curly'],['bun','Bun'],['bald','None']],0],['hair','Hair color',AV_HAIR,1],['eyes','Eye color',AV_EYES,1],['facial','Facial hair',[['none','None'],['stubble','Stubble'],['beard','Beard']],0],['glasses','Glasses',[['none','None'],['round','Round'],['square','Square']],0],['outfit','Clothing',[['crew','Crew neck'],['collar','Collar'],['hoodie','Hoodie']],0]];
+function avSync(){
+  [].forEach.call(document.querySelectorAll('#avform button[data-k]'),function(b){b.setAttribute('aria-pressed',String(String(cs.av[b.dataset.k])===b.dataset.v))});
+  $('avhuman').hidden=cs.av.style==='orb';
+}
+function avSet(k,v){cs.av[k]=v;avatar();remember('av',cs.av);avSync()}
+function buildAvForm(){
+  var f=$('avform');f.innerHTML='';
+  function grp(host,label,k,items,sw){
+    var g=document.createElement('div');g.className='g';g.textContent=label;host.appendChild(g);
+    var r=document.createElement('div');r.className='row';r.setAttribute('role','group');r.setAttribute('aria-label',label);host.appendChild(r);
+    items.forEach(function(it,i){
+      var b=document.createElement('button');b.type='button';b.className='pref'+(sw?' sw':'');
+      var v=sw?i:it[0],nm=sw?it[0]:it[1];b.dataset.k=k;b.dataset.v=String(v);
+      if(sw){b.style.background=it[1];b.setAttribute('aria-label',label+': '+nm);b.title=nm}else b.textContent=nm;
+      b.onclick=function(){avSet(k,v)};r.appendChild(b);
+    });
+  }
+  grp(f,'Style','style',[['human','Human-like'],['orb','Soft shapes']],0);
+  var hh=document.createElement('div');hh.id='avhuman';f.appendChild(hh);
+  AVH.forEach(function(a){grp(hh,a[1],a[0],a[2],a[3])});
+  grp(f,'Color of clothes or shape','outfitColor',AV_OUT,1);
+  grp(f,'Background','bg',AV_BG,1);
+  var r=document.createElement('div');r.className='row m';f.appendChild(r);
+  var rb=document.createElement('button');rb.type='button';rb.className='pref';rb.textContent='Surprise me';
+  rb.onclick=function(){var P_=function(a){return a[Math.floor(Math.random()*a.length)]};
+    cs.av={style:cs.av.style,skin:Math.floor(Math.random()*AV_SKIN.length),hairStyle:P_(['short','buzz','long','curly','bun','bald']),hair:Math.floor(Math.random()*AV_HAIR.length),eyes:Math.floor(Math.random()*AV_EYES.length),facial:P_(['none','none','stubble','beard']),glasses:P_(['none','none','round','square']),outfit:P_(['crew','collar','hoodie']),outfitColor:Math.floor(Math.random()*AV_OUT.length),bg:Math.floor(Math.random()*AV_BG.length)};
+    avatar();remember('av',cs.av);avSync()};
+  var rs=document.createElement('button');rs.type='button';rs.className='pref';rs.textContent='Reset';
+  rs.onclick=function(){cs.av=Object.assign({},AV_DEFAULT);avatar();remember('av',cs.av);avSync()};
+  r.appendChild(rb);r.appendChild(rs);
+  var n=document.createElement('p');n.style.cssText='font-size:.85rem;color:var(--muted);margin:10px 0 0';n.textContent='Your avatar is built from these choices only. No photos are used or uploaded. It is saved only if you turn on Memory.';f.appendChild(n);
+  avSync();
+}
 function avatar(){
-  var L=LOOKS[cs.look]||LOOKS[0];
-  $('avatar').innerHTML='<svg viewBox="0 0 200 220" role="img" aria-label="Friendly animated avatar"><path d="M20 220c0-48 36-66 80-66s80 18 80 66z" fill="'+L.t+'"/><rect x="86" y="128" width="28" height="34" rx="10" fill="'+L.s+'"/><ellipse cx="100" cy="90" rx="50" ry="58" fill="'+L.s+'"/><path d="M48 84c-2-46 34-64 54-62 30 2 52 24 50 62-8-22-26-34-52-34-26 0-44 12-52 34z" fill="'+L.h+'"/><g class="blink"><circle cx="78" cy="92" r="6" fill="#fff"/><circle cx="122" cy="92" r="6" fill="#fff"/><circle cx="79" cy="93" r="3" fill="#1b1b2f"/><circle cx="121" cy="93" r="3" fill="#1b1b2f"/></g><path d="M68 78q10-7 20-2M112 76q10-5 20 2" stroke="'+L.h+'" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M100 98v14q-6 4-10 1" stroke="rgba(0,0,0,.35)" stroke-width="3" fill="none" stroke-linecap="round"/><path id="mouth" d="M82 124q18 12 36 0" stroke="#7a1f2b" stroke-width="4" fill="none" stroke-linecap="round"/></svg>';
-  $('avatar').parentNode.hidden=!cs.avatar;$('avt').setAttribute('aria-pressed',String(cs.avatar));
+  $('avatar').innerHTML=avatarSVG(cs.av);
+  var w=$('avatar').parentNode;w.style.background=(AV_BG[cs.av.bg]||AV_BG[0])[1];w.hidden=!cs.avatar;$('avt').setAttribute('aria-pressed',String(cs.avatar));
 }
 var mt=null,reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 function mouth(on){
-  clearInterval(mt);var m=$('mouth');if(!m)return;m.setAttribute('d','M82 124q18 12 36 0');
-  if(on&&!reduced&&!P.calm){var o=false;mt=setInterval(function(){o=!o;m.setAttribute('d',o?'M84 124q16 18 32 0':'M82 124q18 12 36 0')},170)}
+  clearInterval(mt);var m=$('mouth');if(!m)return;var orb=cs.av.style==='orb',M=AV_MOUTH[orb?'orb':'human'],lip=m.getAttribute('data-lip');
+  m.setAttribute('d',M[0]);if(!orb)m.setAttribute('fill',lip);
+  if(on&&!reduced&&!P.calm){var i=0,seq=[1,0,2,1,0,1];mt=setInterval(function(){i=(i+1)%seq.length;m.setAttribute('d',M[seq[i]]);if(!orb)m.setAttribute('fill',seq[i]?'#5b2230':lip)},150)}
 }
 function status(t){$('cstat').textContent=t||''}
 function add(r,t,res,crisis){
@@ -485,7 +743,7 @@ function setChannel(c,fromMem){cs.channel=c;$('ch-type').setAttribute('aria-pres
 $('ch-type').onclick=function(){setChannel('type')};$('ch-talk').onclick=function(){setChannel('talk')};
 $('mute').onclick=function(){cs.mute=!cs.mute;this.setAttribute('aria-pressed',String(cs.mute));if(cs.mute&&window.speechSynthesis){speechSynthesis.cancel();mouth(false)}};
 $('rate').onchange=function(){cs.rate=parseFloat(this.value);remember('rate',cs.rate)};
-$('look').onchange=function(){cs.look=parseInt(this.value,10);avatar();remember('look',cs.look)};
+
 $('avt').onclick=function(){cs.avatar=!cs.avatar;avatar();remember('avatar',cs.avatar)};
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition,rec=null;
 $('mic').onclick=function(){
@@ -499,7 +757,7 @@ $('mic').onclick=function(){
 };
 
 /* ---------- Memory ---------- */
-var LAB={name:'Preferred name',avoid:'Topics to avoid',mode:'Who is usually here',channel:'Type or talk',rate:'Speaking speed',avatar:'Show avatar',look:'Avatar look',size:'Text size',contrast:'High contrast',calm:'Hide pictures',motion:'Gentle motion',font:'Plain font',space:'Roomy spacing',theme:'Colors',region:'Region'};
+var LAB={name:'Preferred name',avoid:'Topics to avoid',mode:'Who is usually here',channel:'Type or talk',rate:'Speaking speed',avatar:'Show avatar',av:'Avatar design',size:'Text size',contrast:'High contrast',calm:'Hide pictures',motion:'Gentle motion',font:'Plain font',space:'Roomy spacing',theme:'Colors',region:'Region'};
 function renderMem(){
   $('memOn').checked=memOn();$('memBody').hidden=!memOn();
   var ul=$('memList');ul.innerHTML='';if(!memOn())return;
@@ -507,13 +765,13 @@ function renderMem(){
   if(!ks.length)ul.innerHTML='<li>Nothing is remembered yet.</li>';
   ks.forEach(function(k){
     var li=document.createElement('li'),b=document.createElement('button');
-    li.textContent=LAB[k]+': '+String(mem[k])+' ';b.className='pref';b.type='button';b.textContent='Forget';b.setAttribute('aria-label','Forget '+LAB[k]);
+    li.textContent=LAB[k]+': '+(typeof mem[k]==='object'?'saved on this device':String(mem[k]))+' ';b.className='pref';b.type='button';b.textContent='Forget';b.setAttribute('aria-label','Forget '+LAB[k]);
     b.onclick=function(){delete mem[k];if(k==='name')$('pname').value='';if(k==='avoid')$('pavoid').value='';save()};
     li.appendChild(b);ul.appendChild(li);
   });
 }
 $('memOn').onchange=function(){
-  if(this.checked){mem={on:true,size:P.size,contrast:P.contrast,calm:P.calm,motion:P.motion,font:P.font,space:P.space,theme:P.theme,channel:cs.channel,rate:cs.rate,avatar:cs.avatar,look:cs.look};if(cs.mode)mem.mode=cs.mode;save()}
+  if(this.checked){mem={on:true,size:P.size,contrast:P.contrast,calm:P.calm,motion:P.motion,font:P.font,space:P.space,theme:P.theme,channel:cs.channel,rate:cs.rate,avatar:cs.avatar,av:cs.av};if(cs.mode)mem.mode=cs.mode;save()}
   else{mem=null;try{localStorage.removeItem(KEY)}catch(e){}renderMem()}
 };
 $('memAll').onclick=function(){mem=null;try{localStorage.removeItem(KEY)}catch(e){}$('pname').value='';$('pavoid').value='';renderMem()};
@@ -532,10 +790,10 @@ function route(){
 addEventListener('hashchange',route);
 if(memOn()){
   ['size','contrast','calm','motion','font','space','theme'].forEach(function(k){if(k in mem)P[k]=mem[k]});
-  if('channel' in mem)cs.channel=mem.channel;if('rate' in mem)cs.rate=mem.rate;if('avatar' in mem)cs.avatar=mem.avatar;if('look' in mem)cs.look=mem.look;
-  $('rate').value=String(cs.rate);$('look').value=String(cs.look);$('pname').value=mem.name||'';$('pavoid').value=mem.avoid||'';if(mem.region){st.reg=mem.region;$('reg').value=mem.region}
+  if('channel' in mem)cs.channel=mem.channel;if('rate' in mem)cs.rate=mem.rate;if('avatar' in mem)cs.avatar=mem.avatar;if(mem.av)cs.av=Object.assign({},AV_DEFAULT,mem.av);
+  $('rate').value=String(cs.rate);$('pname').value=mem.name||'';$('pavoid').value=mem.avoid||'';if(mem.region){st.reg=mem.region;$('reg').value=mem.region}
 }
-buildNeeds();apply();render();avatar();setChannel(cs.channel,true);renderMem();route();
+buildNeeds();apply();render();avatar();buildAvForm();setChannel(cs.channel,true);renderMem();route();
 if(memOn()&&mem.mode)setMode(mem.mode,true);
 })();
 </script>
