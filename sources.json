@@ -171,5 +171,116 @@
   "regions": [
    "us"
   ]
+ },
+ {
+  "name": "Autistic People of Color Fund",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://autismandrace.com/autistic-people-of-color-fund"
+  ],
+  "allow": [
+   "https://autismandrace.com/autistic-people-of-color-fund"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "care",
+   "advocacy",
+   "caregivers"
+  ],
+  "max_pages": 25,
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "name": "Autism in Black",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://www.autisminblack.org"
+  ],
+  "allow": [
+   "https://www.autisminblack.org"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "advocacy",
+   "caregivers"
+  ],
+  "max_pages": 25,
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "name": "Autism Awareness Care and Training",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://aactgh.org"
+  ],
+  "allow": [
+   "https://aactgh.org"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "advocacy",
+   "caregivers"
+  ],
+  "max_pages": 25,
+  "regions": [
+   "gh"
+  ]
+ },
+ {
+  "name": "Autism South Africa",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://www.aut2know.co.za"
+  ],
+  "allow": [
+   "https://www.aut2know.co.za"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "advocacy",
+   "caregivers"
+  ],
+  "max_pages": 25,
+  "regions": [
+   "za"
+  ]
+ },
+ {
+  "name": "Autism Western Cape",
+  "tier": "nonprofit",
+  "seeds": [
+   "https://www.autismwesterncape.org.za"
+  ],
+  "allow": [
+   "https://www.autismwesterncape.org.za"
+  ],
+  "audience": [
+   "adults",
+   "caregivers"
+  ],
+  "cats": [
+   "advocacy",
+   "caregivers"
+  ],
+  "max_pages": 25,
+  "regions": [
+   "za"
+  ]
  }
 ]
