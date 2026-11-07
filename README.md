@@ -1,10 +1,10 @@
 # Spectrum Hub
 
-One searchable place for autism resources, built by Dr Ebenezer Larnyo from the recommendations in his paper Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349:
+One searchable place for autism resources, built from the recommendations in Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349:
 research-backed tools sorted by common issues, connected community institutions, and accessible design.
 
 ## Host it (GitHub Pages, free)
-1. Before anything else, set a real contact URL or email in the `UA` line of `crawler.py` and check each source's terms of use.
+1. Before anything else, set a real contact (an email, plus your site's `#about` page) in the `UA` line of `crawler.py` and check each source's terms of use. Example: `UA = "SpectrumHubBot/0.1 (research project; contact: spectrumhub.project@protonmail.com; +https://ebenezer-larnyo.github.io/spectrum-hub/#about)"`.
 2. Create a GitHub repository and upload this folder's contents, with `index.html` at the top level.
 3. Settings > Pages > "Deploy from a branch" > `main` and `/ (root)`. The site appears at `https://YOUR-USERNAME.github.io/REPO-NAME/`.
 4. `.github/workflows/refresh.yml` re-crawls every Monday at 06:00 UTC and commits the new data. You can also run it from the Actions tab. Public repositories pause scheduled runs after 60 days without activity.
@@ -23,6 +23,27 @@ Open `index.html` in a browser, or host it on any static host. Re-run the crawle
 - Keeps only pages that are about autism, then sorts them into the nine topics in `CATS` using keyword scores on the title and text.
 - Removes duplicates and records the date each page was checked.
 - Does not crawl forums or social media, and stores no personal data. Set a contact URL in `UA` before real use.
+
+## Search visibility and analytics
+- `python build_site.py` writes static pages (about, privacy, glossary, topics, starting points, regions, 404), `sitemap.xml` and `robots.txt`, and refreshes the page title, description, social tags and structured data in `index.html`. The weekly workflow runs it after the crawl.
+- Edit the goals, glossary and topic introductions in `content.json` (not in `index.html`) and re-run the script. Settings are in `site_config.json`.
+- If you use a custom domain, change `site_url` in `site_config.json` and re-run the script. Note that search engines only read `robots.txt` at the root of a domain, so on a github.io project address it has no effect, which is fine because crawling is allowed by default.
+- Register the site in Google Search Console and Bing Webmaster Tools, add the verification codes in `site_config.json`, and submit `sitemap.xml`.
+- Analytics are off by default. To count visits without cookies, set `analytics` in `site_config.json` to `{"provider": "goatcounter", "code": "YOUR-CODE"}` or `{"provider": "cloudflare", "code": "YOUR-TOKEN"}`, then run the script. It adds the script tag to every page and updates the privacy page to describe the counting.
+
+## Contact details, regions and community focus
+- `site_config.json` holds the contact email and site address. The crawler builds its `UA` (the name it gives websites) from it, and the About and Privacy pages use it, so they always agree. Set `contact_email` to the address you actually read.
+- Regions: `us`, `uk`, `ca`, `au`, `gh` (Ghana), `za` (South Africa) and `global`. To add one, add it to the region list and `REG` map in `index.html` and to `REG` in `build_site.py`, then use it in `sources.json`.
+- Community focus: give a source `"focus": ["black"]` (or `latino`, `asian`, `indigenous`, `minority`). A "Community focus" filter appears on the page once any source has a focus, and `build_site.py` writes a page for each focus under `community/`.
+- `sources.candidates.json` has unverified starting points and templates for Ghana, South Africa and community-focused sources. Look up and verify each official address, check the site's terms and robots.txt, then move the entry into `sources.json`.
+
+## Avatar
+The companion's avatar is generated from a handful of choices (skin tone, hair, eyes, glasses, clothing, colors, or a soft-shapes style). No photos are used or uploaded. The design is saved only if the user turns on Memory.
+
+## Regions, starter steps and glossary
+- Each resource has a `regions` list (`us`, `uk`, `ca`, `au` or `global`). The "Where are you?" filter shows the chosen region plus anything marked global. Set a source's region in `sources.json`.
+- `sources.candidates.json` lists possible UK, Australian and Canadian sources. I have not checked their pages or terms: verify the web addresses and each site's terms and robots.txt, then move entries into `sources.json`.
+- The "Not sure where to start?" goals (`GOALS`) and the glossary (`GL`) are plain lists in `index.html`. Have a clinician and autistic reviewers check the wording before wide release.
 
 ## Add a source
 Add an object to `sources.json` (name, tier: gov / academic / nonprofit / community, seeds, allow, audience, cats, max_pages). Check the site's terms of use first.

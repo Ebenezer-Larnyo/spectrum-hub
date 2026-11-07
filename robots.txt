@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ebenezer-larnyo.github.io/spectrum-hub/sitemap.xml

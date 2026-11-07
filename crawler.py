@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
 """Spectrum Hub crawler: polite, robots.txt-aware collector for public ASD resource pages.
 Usage: python crawler.py --sources sources.json --out resources.json --inject index.html"""
-import argparse, datetime as dt, json, re, time
+import argparse, datetime as dt, json, pathlib, re, time
 from collections import deque
 from urllib import robotparser
 from urllib.parse import urldefrag, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-UA = "SpectrumHubBot/0.1 (research project; contact: spectrumhub.project@protonmail.com)"
+def _ua():
+    """Contact details come from site_config.json so the crawler, About and Privacy pages always agree."""
+    try:
+        cfg = json.load(open(pathlib.Path(__file__).with_name("site_config.json"), encoding="utf-8"))
+        return f"SpectrumHubBot/0.1 (research project; contact: {cfg['contact_email']}; +{cfg['site_url'].rstrip('/')}/about.html)"
+    except Exception:
+        return "SpectrumHubBot/0.1 (research project; set contact_email and site_url in site_config.json)"
+
+
+UA = _ua()
 CATS = {  # needs, aligned with the themes in Larnyo et al. (2024)
     "signs": ["sign", "symptom", "early", "milestone", "characteristic"],
     "diagnosis": ["diagnos", "screening", "evaluation", "assessment"],
@@ -92,7 +101,7 @@ def crawl(src, max_pages, delay):
             "title": title, "url": url, "source": src["name"], "tier": src["tier"],
             "audience": sorted(set(src.get("audience", [])) | set(tags(AUD, text, title, 2, 3))) or ["adults", "caregivers"],
             "cats": tags(CATS, text, title, 3, 3) or src.get("cats", []),
-            "regions": src.get("regions", ["global"]),
+            "regions": src.get("regions", ["global"]), "focus": src.get("focus", []),
             "summary": desc or text[:200], "checked": dt.date.today().isoformat(),
         })
         print("  +", title[:70])

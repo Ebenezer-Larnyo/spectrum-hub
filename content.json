@@ -1,0 +1,167 @@
+{
+ "goals": [
+  {
+   "id": "suspect",
+   "label": "I think someone may be autistic",
+   "need": "signs",
+   "acts": [
+    "Write down what you have noticed: examples, when it happens and what helps.",
+    "Tell a doctor or health professional you trust and ask about screening or an evaluation.",
+    "Read about the signs and how diagnosis works, then pick one question to bring with you."
+   ]
+  },
+  {
+   "id": "diagnosed",
+   "label": "We just had a diagnosis",
+   "need": "care",
+   "acts": [
+    "Ask the clinician for a written report and their recommendations.",
+    "Ask what early intervention, school or other support services exist in your area and how to apply.",
+    "Find one person or group who understands, such as a parent group or an autistic-led organization."
+   ]
+  },
+  {
+   "id": "adult",
+   "label": "I am an autistic adult looking for support",
+   "need": "advocacy",
+   "aud": "adults",
+   "acts": [
+    "Read what autistic-led organizations say about rights, work and everyday life.",
+    "Notice what helps you, such as quiet, routine or clear instructions, and write it down so you can ask for it.",
+    "If anxiety, sleep or stomach problems get in the way, tell a doctor. These often occur alongside autism."
+   ]
+  },
+  {
+   "id": "tired",
+   "label": "I am worn out as a caregiver",
+   "need": "caregivers",
+   "aud": "caregivers",
+   "acts": [
+    "Pick one small thing to drop or share this week, and ask one trusted person for help.",
+    "Look for caregiver support or short-term respite care in your area.",
+    "If stress, sleep or your mood are suffering, tell your own doctor. You matter too."
+   ]
+  },
+  {
+   "id": "mental",
+   "label": "Sleep, anxiety or mood is hard",
+   "need": "mental",
+   "acts": [
+    "For a week, note when it is worst and what seems to help.",
+    "Share your notes with a doctor and ask about support for anxiety, depression, sleep or stomach problems.",
+    "Look at the resources below for ideas to talk through."
+   ]
+  },
+  {
+   "id": "school",
+   "label": "I need help with school or work",
+   "need": "daily",
+   "acts": [
+    "Write down which supports would help, such as a quiet space, written instructions or extra time.",
+    "Ask the school or workplace what support plans or adjustments they offer and how to request them.",
+    "Keep a copy of what you ask for and what is agreed."
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Autism spectrum disorder (ASD)",
+   "A neurodevelopmental condition. It involves differences in social communication, behavior and sensory processing. People on the spectrum are very different from one another."
+  ],
+  [
+   "Autistic person and person with autism",
+   "Both are used. Many autistic people prefer “autistic person” (identity-first), and others prefer “person with autism.” If you are unsure, ask what the person prefers."
+  ],
+  [
+   "Neurodiversity",
+   "The idea that differences in how brains work, including autism, are natural variation and not only problems to fix."
+  ],
+  [
+   "Neurodivergent and neurotypical",
+   "Neurodivergent describes people whose brains work in ways that differ from what is typical, such as autistic people. Neurotypical describes people whose brains work in the typical way."
+  ],
+  [
+   "Co-occurring conditions",
+   "Other health conditions that some autistic people also have, such as anxiety, depression, stomach and digestive problems, and sleep disorders. Doctors sometimes call these comorbid conditions."
+  ],
+  [
+   "Screening",
+   "A short check for signs that may mean a fuller assessment is worth doing. It does not give a diagnosis."
+  ],
+  [
+   "Diagnostic evaluation",
+   "A full assessment by qualified professionals to decide whether someone is autistic. Who does it and how long it takes varies by country."
+  ],
+  [
+   "Early intervention",
+   "Support services for very young children with developmental differences or delays. Rules and ages differ by country, so ask a doctor or local health service."
+  ],
+  [
+   "Sensory processing",
+   "How the body takes in and responds to sounds, light, touch, taste, smell and movement. Many autistic people are more or less sensitive than average to some of these."
+  ],
+  [
+   "Sensory overload",
+   "Feeling overwhelmed when there is too much sensory input at once, such as noise, bright lights or crowds."
+  ],
+  [
+   "Stimming",
+   "Repeated movements, sounds or actions, such as rocking or hand flapping, that people use to calm themselves, focus or express feelings."
+  ],
+  [
+   "Meltdown and shutdown",
+   "A meltdown is an intense reaction to being overwhelmed. It is not a tantrum. A shutdown is when someone withdraws, goes quiet or cannot respond. Both usually need calm, space and time."
+  ],
+  [
+   "Masking",
+   "Hiding or holding back natural autistic behavior to fit in. It can be exhausting over time."
+  ],
+  [
+   "Autistic burnout",
+   "Deep tiredness and reduced ability to cope after a long period of stress, often involving masking or too many demands."
+  ],
+  [
+   "Routine and transitions",
+   "Many autistic people find predictable routines comforting. Changes, or moving from one activity to another, can be hard and are easier with warning and a plan."
+  ],
+  [
+   "AAC (augmentative and alternative communication)",
+   "Tools and methods that help people communicate in ways other than speech, such as picture boards, apps or devices."
+  ],
+  [
+   "Occupational therapy",
+   "Therapy that helps people with everyday skills and activities, which can include sensory needs."
+  ],
+  [
+   "Speech and language therapy",
+   "Therapy that supports communication, including understanding, speaking and social communication."
+  ],
+  [
+   "Respite care",
+   "Short-term care that gives family caregivers a break."
+  ],
+  [
+   "Self-advocacy",
+   "Speaking up for your own needs, rights and choices. Autistic-led organizations often share resources on this."
+  ],
+  [
+   "IEP and similar school plans",
+   "In the United States, an Individualized Education Program is a written plan of school supports for eligible students. Other places use other names, such as an EHCP in England. Ask the school what applies."
+  ],
+  [
+   "Accommodations or adjustments",
+   "Changes to a school, workplace or place that make it easier to take part, such as a quiet space, written instructions or flexible hours."
+  ]
+ ],
+ "topic_intro": {
+  "signs": "Autism looks different in every person. Common signs involve differences in social communication, behavior and sensory processing. These pages explain signs and point to information on screening and diagnosis.",
+  "diagnosis": "A screening checks for signs that may mean a fuller assessment is worth doing. A diagnostic evaluation by qualified professionals decides whether someone is autistic. How to get one depends on where you live, and a good first step is to talk to a doctor you trust.",
+  "care": "Support can include therapies such as speech and language therapy and occupational therapy. Decisions about care are best made with a qualified health professional who knows the person.",
+  "caregivers": "Caring for an autistic person can be rewarding and tiring. Support for caregivers includes information, peer groups and short-term respite care.",
+  "mental": "Anxiety, depression, sleep problems and stomach problems occur alongside autism for some people. A doctor can help look at what is going on and what support might help.",
+  "tech": "Tools such as communication apps, visual schedules and wearable devices help some people. Look for tools that fit the person, and check the evidence and the privacy of any app.",
+  "advocacy": "Self-advocacy means speaking up for your own needs, rights and choices. Autistic-led organizations share resources on rights, acceptance and reducing stigma.",
+  "daily": "Routines, school, work and sensory needs shape everyday life. Planning ahead and asking for adjustments can make days easier.",
+  "local": "Services such as clinics, therapy providers and support groups depend on where you live. Directories and local organizations can help you find them."
+ }
+}
