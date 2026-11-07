@@ -1,13 +1,12 @@
 # Spectrum Hub
 
-One searchable place for autism resources, built from the recommendations in Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349:
-research-backed tools sorted by common issues, connected community institutions, and accessible design.
+One searchable place for autism resources, built by Dr. Ebenezer Larnyo from the recommendations in his Larnyo et al. (2024), Frontiers in Psychiatry 15:1441349: research-backed tools sorted by common issues, connected community institutions, and accessible design.
 
 ## Host it (GitHub Pages, free)
 1. Before anything else, set a real contact (an email, plus your site's `#about` page) in the `UA` line of `crawler.py` and check each source's terms of use. Example: `UA = "SpectrumHubBot/0.1 (research project; contact: spectrumhub.project@protonmail.com; +https://ebenezer-larnyo.github.io/spectrum-hub/#about)"`.
 2. Create a GitHub repository and upload this folder's contents, with `index.html` at the top level.
 3. Settings > Pages > "Deploy from a branch" > `main` and `/ (root)`. The site appears at `https://YOUR-USERNAME.github.io/REPO-NAME/`.
-4. `.github/workflows/refresh.yml` re-crawls every Monday at 06:00 UTC and commits the new data. You can also run it from the Actions tab. Public repositories pause scheduled runs after 60 days without activity.
+4. `.github/workflows/refresh.yml` re-crawls every daily at 06:00 UTC and commits the new data. You can also run it from the Actions tab. Public repositories pause scheduled runs after 60 days without activity.
 5. Optional: add a custom domain in Settings > Pages and tick "Enforce HTTPS".
 6. AI companion: on claude.ai it works on its own. On other hosts, deploy `companion-server/` (a small Cloudflare Worker that holds your API key; see its README) and set `ENDPOINT` in `index.html`. Or remove the Companion link and view.
 7. Before real users: clinician review of the crisis wording, testing with autistic adults and caregivers, an accessibility check, a privacy notice (the Google Fonts links share visitors' addresses with Google, so self-host the fonts if you serve EU visitors), and an age policy.
