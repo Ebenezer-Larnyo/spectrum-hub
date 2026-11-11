@@ -2,11 +2,33 @@
   "site_url": "https://ebenezer-larnyo.github.io/spectrum-hub",
   "site_name": "Spectrum Hub",
   "contact_email": "spectrumhub.project@protonmail.com",
-  "privacy_updated": "6 November 2026",
+  "privacy_updated": "4 November 2026",
   "analytics": {
     "provider": "",
     "code": ""
   },
   "google_verification": "",
-  "bing_verification": ""
+  "bing_verification": "",
+  "team": [
+    {
+      "name": "Ebenezer Larnyo",
+      "affiliation": "Center for Black Studies Research, University of California, Santa Barbara (as listed in the article)",
+      "blurb": "First and corresponding author. In the article he is credited with conceptualization, data curation, formal analysis, methodology, supervision, validation and writing. His research covers digital health, health informatics, wearable sensor technologies, aging populations, environmental health equity and the socioeconomic determinants of health. He holds a Ph.D. in Management Science and Engineering from Jiangsu University."
+    },
+    {
+      "name": "Jonathan Aseye Nutakor",
+      "affiliation": "Department of Health Policy and Management, School of Management, Jiangsu University, China",
+      "blurb": "Co-author. Credited in the article with formal analysis, methodology and writing."
+    },
+    {
+      "name": "Stephen Addai-Dansoh",
+      "affiliation": "Department of Health Policy and Management, School of Management, Jiangsu University, China",
+      "blurb": "Co-author. Credited in the article with writing (original draft, review and editing)."
+    },
+    {
+      "name": "Edmund Nana Kwame Nkrumah",
+      "affiliation": "Nobel International Business School, Accra, Ghana",
+      "blurb": "Co-author. Credited in the article with writing (original draft, review and editing)."
+    }
+  ]
 }

@@ -174,7 +174,7 @@
  },
  {
   "name": "Autistic People of Color Fund",
-  "tier": "nonprofit",
+  "tier": "community",
   "seeds": [
    "https://autismandrace.com/autistic-people-of-color-fund"
   ],
@@ -182,22 +182,26 @@
    "https://autismandrace.com/autistic-people-of-color-fund"
   ],
   "audience": [
-   "adults",
-   "caregivers"
+   "adults"
   ],
   "cats": [
-   "care",
    "advocacy",
-   "caregivers"
+   "daily"
   ],
   "max_pages": 25,
   "regions": [
    "us"
+  ],
+  "focus": [
+   "minority",
+   "black",
+   "asian",
+   "indigenous"
   ]
  },
  {
   "name": "Autism in Black",
-  "tier": "nonprofit",
+  "tier": "community",
   "seeds": [
    "https://www.autisminblack.org"
   ],
@@ -210,11 +214,15 @@
   ],
   "cats": [
    "advocacy",
-   "caregivers"
+   "caregivers",
+   "daily"
   ],
   "max_pages": 25,
   "regions": [
    "us"
+  ],
+  "focus": [
+   "black"
   ]
  },
  {
@@ -231,13 +239,15 @@
    "caregivers"
   ],
   "cats": [
-   "advocacy",
-   "caregivers"
+   "local",
+   "caregivers",
+   "daily"
   ],
   "max_pages": 25,
   "regions": [
    "gh"
-  ]
+  ],
+  "focus": []
  },
  {
   "name": "Autism South Africa",
@@ -250,16 +260,19 @@
   ],
   "audience": [
    "adults",
-   "caregivers"
+   "caregivers",
+   "professionals"
   ],
   "cats": [
-   "advocacy",
-   "caregivers"
+   "local",
+   "caregivers",
+   "advocacy"
   ],
-  "max_pages": 25,
+  "max_pages": 40,
   "regions": [
    "za"
-  ]
+  ],
+  "focus": []
  },
  {
   "name": "Autism Western Cape",
@@ -275,12 +288,15 @@
    "caregivers"
   ],
   "cats": [
-   "advocacy",
-   "caregivers"
+   "local",
+   "care",
+   "caregivers",
+   "advocacy"
   ],
   "max_pages": 25,
   "regions": [
    "za"
-  ]
+  ],
+  "focus": []
  }
 ]
