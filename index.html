@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Spectrum Hub: autism resources in one place</title><!--seo-start--><meta name="description" content="Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion <b>Ari</b>, for autistic people and caregivers.">
+<title>Spectrum Hub: autism resources in one place</title><!--seo-start--><meta name="description" content="Search links from selected public autism sources, including health agencies, universities and nonprofits, in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.">
 <link rel="canonical" href="https://ebenezer-larnyo.github.io/spectrum-hub/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Spectrum Hub">
 <meta property="og:title" content="Spectrum Hub: autism resources in one place">
-<meta property="og:description" content="Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.">
+<meta property="og:description" content="Search links from selected public autism sources, including health agencies, universities and nonprofits, in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.">
 <meta property="og:url" content="https://ebenezer-larnyo.github.io/spectrum-hub/">
 <meta property="og:image" content="https://ebenezer-larnyo.github.io/spectrum-hub/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Spectrum Hub", "url": "https://ebenezer-larnyo.github.io/spectrum-hub/", "description": "Search trusted autism resources from health agencies, universities and nonprofits in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.", "inLanguage": "en"}</script><!--seo-end-->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Spectrum Hub", "url": "https://ebenezer-larnyo.github.io/spectrum-hub/", "description": "Search links from selected public autism sources, including health agencies, universities and nonprofits, in one calm place. Topics, next steps, a plain-language glossary and an AI companion, for autistic people and caregivers.", "inLanguage": "en"}</script><!--seo-end-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
@@ -42,7 +42,7 @@ header.top{background:var(--surface);position:relative;z-index:10}
 .brand{display:flex;gap:10px;align-items:center;font-size:1.35rem;color:var(--ink);text-decoration:none}
 .ribbon{height:5px;background:linear-gradient(90deg,#9cc7b6,#9fc5e0,#bdb6e8,#e7d5a8,#9cc7b6)}
 :root[data-calm] .ribbon{background:var(--line)}
-nav.sec{display:flex;gap:6px}nav.sec a{padding:10px 16px;border-radius:12px;text-decoration:none;color:var(--ink);font-weight:700;border:var(--bw) solid transparent;min-height:44px}
+nav.sec{display:flex;flex-wrap:wrap;gap:4px 6px}nav.sec a{padding:10px 12px;border-radius:12px;text-decoration:none;color:var(--ink);font-weight:700;border:var(--bw) solid transparent;min-height:44px}
 nav.sec a[aria-current="page"]{background:var(--soft);border-color:var(--accent)}
 .tools{display:flex;gap:8px;align-items:center;position:relative}
 button.pref,summary.pref{font:inherit;font-size:.95rem;background:var(--surface);color:var(--ink);border:var(--bw) solid var(--line);border-radius:12px;padding:8px 14px;cursor:pointer;min-height:44px;list-style:none;display:inline-flex;align-items:center;gap:6px}
@@ -115,6 +115,9 @@ fieldset.card{margin:16px 0 0}fieldset legend{font-weight:700;padding:0 6px}fiel
 .breathe{transform-origin:center}:root[data-motion]:not([data-calm]) .breathe{animation:brth 6s ease-in-out infinite}@keyframes brth{50%{transform:translateY(-2px)}}
 .avc{margin-top:12px}.avc summary{cursor:pointer}#avform{margin-top:8px}#avform .g{margin:12px 0 4px;font-weight:700;font-size:.9rem}
 button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}button.sw[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px;border-color:var(--bg)}
+.totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;gap:6px;align-items:center;min-height:48px;padding:10px 16px;border-radius:999px;border:var(--bw) solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-weight:700;box-shadow:var(--sh);cursor:pointer}.totop[hidden]{display:none}.totop:hover{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;list-style:none;margin:12px 0 0;padding:0}.team li{border:var(--bw) solid var(--line);border-radius:14px;padding:14px 16px;background:var(--bg)}.team h3{margin:0 0 2px;font-size:1.1rem}.team .aff{margin:0 0 8px;color:var(--muted);font-size:.92rem}.team p{margin:0;max-width:60ch}
+@media print{.totop{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 :root[data-calm] *{transition:none!important}
 </style>
@@ -123,7 +126,7 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
 <a class="skip" href="#results">Skip to results</a>
 <header class="top"><div class="wrap bar">
   <a class="brand" href="#hub" id="brand"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" style="fill:var(--soft)"/><circle cx="22" cy="12" r="5" style="fill:var(--sun)"/><path d="M3 28c5-9 11-9 14-5s9 3 14-3v10H3z" style="fill:var(--accent)"/></svg>Spectrum Hub</a>
-  <nav class="sec" aria-label="Sections"><a href="#hub" id="nv-hub" aria-current="page">Resources</a><a href="#companion" id="nv-comp">Companion</a></nav>
+  <nav class="sec" aria-label="Sections"><a href="#hub" id="nv-hub" aria-current="page">Resources</a><a href="topics/index.html">Topics</a><a href="start/index.html">Start here</a><a href="community/index.html">Communities</a><a href="glossary.html">Glossary</a><a href="#companion" id="nv-comp">Companion</a><a href="about.html">About</a></nav>
   <div class="tools">
     <button class="pref" id="pausebtn" type="button">Take a pause</button>
     <details class="comfort"><summary class="pref">Comfort settings</summary>
@@ -137,11 +140,11 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
   </div></div><div class="ribbon" aria-hidden="true"></div></header>
 <div class="pause" id="pause" hidden role="dialog" aria-modal="true" aria-labelledby="pt"><div class="card"><h2 id="pt">Take a pause</h2><p>Nothing is waiting for you. Take as long as you need.</p><div class="breath" aria-hidden="true"></div><p>Breathe in slowly, then out slowly. Come back whenever you are ready.</p><button class="pref" id="pauseX" type="button">I’m ready to continue</button></div></div>
 
-<main class="wrap" id="main"><!--noscript-start--><noscript><section class="card"><h2>Browse without JavaScript</h2><p>The search and companion need JavaScript. You can still browse by topic:</p><ul><li><a href="topics/signs.html">Understand signs and symptoms</a></li><li><a href="topics/diagnosis.html">Get a diagnosis</a></li><li><a href="topics/care.html">Find care and therapies</a></li><li><a href="topics/caregivers.html">Support for caregivers</a></li><li><a href="topics/advocacy.html">Self-advocacy and acceptance</a></li><li><a href="topics/daily.html">Everyday life and routines</a></li><li><a href="topics/local.html">Find local services</a></li></ul><p><a href="start/index.html">Where to start</a> · <a href="glossary.html">Glossary</a></p></section></noscript><!--noscript-end-->
+<main class="wrap" id="main"><!--noscript-start--><noscript><section class="card"><h2>Browse without JavaScript</h2><p>The search and companion need JavaScript. You can still browse by topic, <a href="community/index.html">by community</a> or on the <a href="sitemap.html">site map</a>:</p><ul><li><a href="topics/signs.html">Understand signs and symptoms</a></li><li><a href="topics/diagnosis.html">Get a diagnosis</a></li><li><a href="topics/care.html">Find care and therapies</a></li><li><a href="topics/caregivers.html">Support for caregivers</a></li><li><a href="topics/advocacy.html">Self-advocacy and acceptance</a></li><li><a href="topics/daily.html">Everyday life and routines</a></li><li><a href="topics/local.html">Find local services</a></li></ul><p><a href="start/index.html">Where to start</a> · <a href="glossary.html">Glossary</a></p></section></noscript><!--noscript-end-->
   <div id="view-hub">
   <section class="hero"><div class="txt">
       <h1>What do you need help with today?</h1>
-      <p class="lede">Pick a topic. We gather trusted autism resources from many sites in one calm place, so you don’t have to search them one by one.</p>
+      <p class="lede">Pick a topic. We collect links from selected public sources in one calm place, so you don’t have to search them one by one. You can also filter by where you live and by community focus, such as resources made by or for Black communities.</p>
     </div><svg class="art" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><circle cx="610" cy="90" r="70" style="fill:var(--sun);opacity:.25"/><circle cx="610" cy="90" r="40" style="fill:var(--sun)"/><g class="drift" style="fill:var(--surface);opacity:.75"><ellipse cx="180" cy="70" rx="60" ry="14"/><ellipse cx="215" cy="58" rx="36" ry="12"/><ellipse cx="470" cy="40" rx="50" ry="11"/></g><path d="M0 190C120 140 220 150 330 185S560 200 800 150V300H0z" style="fill:var(--h1)"/><path d="M0 230C150 190 260 200 380 225S650 240 800 205V300H0z" style="fill:var(--h2)"/><path d="M0 270C160 245 300 250 430 268S690 275 800 255V300H0z" style="fill:var(--h3)"/><path d="M360 300C380 270 330 252 392 232S470 215 520 205" stroke="var(--path)" stroke-width="16" fill="none" stroke-linecap="round"/><g style="fill:var(--tree)"><circle cx="120" cy="205" r="18"/><rect x="117" y="215" width="6" height="22"/><circle cx="700" cy="196" r="22"/><rect x="697" y="208" width="6" height="26"/><circle cx="742" cy="212" r="14"/><rect x="739" y="220" width="5" height="18"/></g></svg></section>
     <section class="card goals" aria-labelledby="gh"><h2 id="gh">Not sure where to start?</h2><p>Tell us what you are trying to do and we will suggest three small next steps. These are general ideas, not medical advice. New to the words? See the <a href="#glossary">glossary</a>.</p><div class="goalrow" id="goalrow" role="group" aria-label="What are you trying to do?"></div><div id="goalout" hidden aria-live="polite"></div></section>
     <ol class="steps" aria-label="How this page works" style="margin-top:22px"><li>Choose a topic</li><li>Narrow it down if you like</li><li>Read the list. Nothing opens until you click</li></ol>
@@ -153,12 +156,14 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
       <select id="aud"><option value="all">Anyone</option><option value="adults">Autistic adults</option><option value="caregivers">Parents and caregivers</option><option value="professionals">Professionals</option></select></div>
     <div><label for="reg">Where are you?</label>
       <select id="reg"><option value="all">Anywhere</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="ca">Canada</option><option value="au">Australia</option><option value="gh">Ghana</option><option value="za">South Africa</option></select></div>
-    <div id="focwrap" hidden><label for="foc">Community focus</label><select id="foc"><option value="all">Any</option></select></div>
+    <div id="focwrap"><label for="foc">Community focus</label><select id="foc"><option value="all">Any</option></select></div>
     <label class="chk"><input type="checkbox" id="trusted"> Government and university sources only</label>
   </form>
 
+  <p class="nt" style="margin:6px 0 0;max-width:72ch;font-size:.92rem">“Where are you?” and “Community focus” narrow the list. A community focus tag marks a source made by or for a specific community. The project team assigns these tags by hand, they are new and still being added, and they have not yet been reviewed by community advisors. <a href="community/index.html">See what is available</a>.</p>
   <h2 class="vh" id="results">Results</h2>
   <p id="count" aria-live="polite"></p>
+  <p id="note" class="nt" style="margin:0 0 10px;font-size:.95rem" aria-live="polite"></p>
   <ul id="list"></ul>
 
   <section class="more">
@@ -172,20 +177,21 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
         </ol>
       </div>
       <div>
-        <h2>Community space (planned)</h2>
-        <p>Research on autism discussions online found that people want to feel understood and to talk with each other and with health professionals. A text-first AI companion called <b>Ari</b>,is now available under Companion. A moderated community of people needs accounts, safety rules and trained moderators, so it is not part of this version.</p>
+        <h2>Finding resources and talking with people</h2>
+        <p><b>Available now:</b> community-centered resource discovery. Filter by place and community focus, browse topics and starting points, and talk things through with Ari, an AI companion.</p>
+        <p><b>Possible later:</b> a moderated peer community, where people talk with each other. It needs accounts, safety rules and trained moderators, so it is not available yet. Ari is a computer program, not a community of people.</p>
       </div>
       <div>
         <h2>About this information</h2>
-        <p>Spectrum Hub links to other sites and does not give medical advice. Talk to a qualified health professional about decisions for you or your family. Entries marked “starter entry” have not been crawled yet.</p>
+        <p>Spectrum Hub collects and sorts links from selected public sources. It does not independently verify, review or endorse them, and they are not clinically validated. It does not give medical advice. Talk to a qualified health professional about decisions for you or your family. Entries marked “starter entry” have not been crawled yet.</p>
       </div>
     </div>
   </section>
   </div>
   <div id="view-companion" hidden>
     <section class="heroplain">
-      <h1>Talk it through</h1>
-      <p class="lede">Hi! I'm <b>Ari</b> a friendly <b>AI companion</b> for autistic people and caregivers. I listens, talks things over, and points you to resources in the Hub. I am not a person, a therapist or a doctor, and you can take as long as you like to reply.</p>
+      <h1>Talk it through with Ari</h1>
+      <p class="lede">Meet <b>Ari</b>, a friendly <b>AI companion</b> for autistic people and caregivers. Ari listens, talks things over, and points you to resources in the Hub. Ari is not a person, a therapist or a doctor, and you can take as long as you like to reply.</p>
       <p class="card" role="note"><b>Need urgent help?</b> In the US, call or text 988, or call 911 in an emergency. Elsewhere, contact your local emergency number.</p>
     </section>
     <fieldset class="card" id="who"><legend>Who is here today?</legend>
@@ -196,7 +202,7 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
     <div class="cp">
       <aside class="card">
         <div class="avwrap"><div id="avatar" style="height:100%"></div></div>
-        <p style="text-align:center;margin:8px 0"><span class="pill">AI companion</span></p>
+        <p style="text-align:center;margin:8px 0"><span class="pill">Ari, AI companion</span></p>
         <div class="row" role="group" aria-label="How we talk"><button class="pref" id="ch-type" aria-pressed="true">Type</button><button class="pref" id="ch-talk" aria-pressed="false">Talk</button><button class="pref" id="mute" aria-pressed="false">Mute voice</button></div>
         <label class="l" for="rate">Speaking speed</label><select id="rate"><option value="0.8">Slower</option><option value="1" selected>Normal</option><option value="1.2">Faster</option></select>
         <details class="avc"><summary class="pref">Design your avatar</summary><div id="avform"></div></details>
@@ -207,7 +213,7 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
         <div class="row m" id="quick"></div>
         <form id="cf" class="row m" onsubmit="return false">
           <label class="vh" for="msg">Your message</label>
-          <textarea id="msg" rows="2" placeholder="Choose who is here today, then type here" style="flex:1 1 240px" disabled></textarea>
+          <textarea id="msg" rows="2" placeholder="Type your message to Ari" style="flex:1 1 240px"></textarea>
           <button class="pref" id="mic" type="button" aria-pressed="false">Start talking</button>
           <button class="pref" id="sendb" type="submit">Send</button>
         </form>
@@ -228,14 +234,14 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
   </div>
   <div id="view-about" hidden>
     <section class="heroplain"><h1>About Spectrum Hub</h1>
-      <p class="lede">Spectrum Hub brings trusted autism resources from many websites into one calm, searchable place, for autistic people, caregivers and professionals.</p></section>
+      <p class="lede">Spectrum Hub collects and sorts links from selected public autism sources into one calm, searchable place, for autistic people, caregivers and professionals.</p></section>
     <section class="card" style="margin-top:20px">
       <h2>Why it exists</h2>
-      <p>A 2024 study of autism discussions on Reddit leb by Dr. Ebenezer Larnyo (Larnyo, Nutakor, Addai-Dansoh and Nkrumah, <em>Frontiers in Psychiatry</em> 15:1441349) found that people want reliable health information, support for diagnosis and caregiving, and a community that helps them feel understood. It recommended accessible digital platforms that bring this together. This site is a prototype of that idea. <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Read the article<span class="vh"> (opens in a new tab)</span></a>.</p>
+      <p>A 2024 study of autism discussions on Reddit, led by Dr. Ebenezer Larnyo (Larnyo, Nutakor, Addai-Dansoh and Nkrumah, <em>Frontiers in Psychiatry</em> 15:1441349), found that people want reliable health information, support for diagnosis and caregiving, and a community that helps them feel understood. It recommended accessible digital platforms that bring this together. This site is a prototype of that idea. <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Read the article<span class="vh"> (opens in a new tab)</span></a>.</p>
       <h2>How the list is made</h2>
       <p>A program called SpectrumHubBot visits a short list of public pages from government health agencies, universities and nonprofits. It reads each page’s title and summary, sorts it into topics, removes duplicates and records the date it was checked. A person chooses which sources it may visit. Labels such as “Government” or “Nonprofit” say who runs a source. They are not a guarantee that the information is right for you.</p>
       <h2>What it is not</h2>
-      <p>It does not give medical advice, diagnose anyone or replace a health professional. It does not review or endorse the sites it links to. The AI companion, <b>Ari</b>, is a computer program, not a person, therapist or doctor.</p>
+      <p>It does not give medical advice, diagnose anyone or replace a health professional. It does not independently verify, review or endorse the sites it links to, and their content is not clinically validated. The AI companion is a computer program, not a person, therapist or doctor.</p>
       <h2>Get in touch</h2>
       <p>Questions, corrections, suggestions for sources, or a request to stop SpectrumHubBot visiting your site: <a href="mailto:spectrumhub.project@protonmail.com">spectrumhub.project@protonmail.com</a>. Autistic people and caregivers who can tell us what would make this easier to use are especially welcome.</p>
     </section>
@@ -256,9 +262,9 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
         <li><b>Fonts.</b> The page loads its fonts from Google Fonts, so Google receives your address when the page loads.</li>
         <li><b>Linked sites.</b> Resources open on other websites that have their own privacy practices.</li>
       </ul>
-      <h2>The AI companion,<b>Ari</b></h2>
+      <h2>The AI companion</h2>
       <p>When you send a message, the text is sent to a server run for this project and then to Claude, an AI model from Anthropic, to write a reply. This page does not store your messages, and the project’s server is set up not to log them. Anthropic processes them under its own privacy policy. Please do not share anything you would not want an AI service to process, such as full names, addresses or medical record details. If you use voice input, your browser’s speech service may send your audio to its provider. Messages that mention self-harm, abuse or immediate danger get a fixed safety message and are not sent to the AI.</p>
-      <p>The companion, <b>Ari</b>, is meant for adults. If you are under 18, please do not use it without a trusted adult. It can make mistakes, so check anything important with a qualified professional.</p>
+      <p>The companion is meant for adults. If you are under 18, please do not use it without a trusted adult. It can make mistakes, so check anything important with a qualified professional.</p>
       <h2>The crawler</h2>
       <p>SpectrumHubBot reads only public pages, follows each site’s robots.txt rules, waits between requests, does not visit forums or social media, and collects no personal data. Site owners can ask us to stop at the email above.</p>
       <h2>Contact</h2>
@@ -272,9 +278,10 @@ button.sw{width:36px;height:36px;min-height:36px;padding:0;border-radius:50%}but
     <dl class="card" id="gl"></dl>
   </div>
 </main>
-<footer><div class="wrap"><!--footerlinks-start--><nav aria-label="About" style="margin-bottom:8px"><a href="about.html">About and contact</a> · <a href="privacy.html">Privacy and safety</a> · <a href="glossary.html">Glossary</a> · <a href="topics/index.html">Topics</a> · <a href="start/index.html">Start here</a></nav><!--footerlinks-end-->Design based on the recommendations of Larnyo, Nutakor, Addai-Dansoh and Nkrumah (2024), <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Frontiers in Psychiatry 15:1441349<span class="vh"> (opens in a new tab)</span></a>.</div></footer>
+<footer><div class="wrap"><!--footerlinks-start--><nav aria-label="About" style="margin-bottom:8px"><a href="about.html">About and contact</a> · <a href="privacy.html">Privacy and safety</a> · <a href="glossary.html">Glossary</a> · <a href="topics/index.html">Topics</a> · <a href="start/index.html">Start here</a> · <a href="community/index.html">Communities</a> · <a href="sitemap.html">Site map</a></nav><!--footerlinks-end-->Design by Dr. Ebenezer Larnyo, based on the recommendations of Larnyo, Nutakor, Addai-Dansoh and Nkrumah (2024), <a href="https://doi.org/10.3389/fpsyt.2024.1441349" target="_blank" rel="noopener noreferrer">Frontiers in Psychiatry 15:1441349<span class="vh"> (opens in a new tab)</span></a>.</div></footer>
 
-<script id="data" type="application/json">[{"title": "Autism Spectrum Disorder (CDC)", "url": "https://www.cdc.gov/autism/", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals", "adults"], "cats": ["signs", "diagnosis", "caregivers"], "summary": "Overview of signs, screening, diagnosis and resources for families and health professionals.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (NIMH)", "url": "https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd", "source": "NIMH", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "care"], "summary": "Research-based information on symptoms, diagnosis and treatment of autism spectrum disorder.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NICHD)", "url": "https://www.nichd.nih.gov/health/topics/autism", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "care"], "summary": "Federal research institute pages on autism signs, screening and treatment.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (MedlinePlus)", "url": "https://medlineplus.gov/autismspectrumdisorder.html", "source": "MedlinePlus", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "care", "caregivers"], "summary": "Plain-language health overview from the U.S. National Library of Medicine, with links to related topics.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NHS)", "url": "https://www.nhs.uk/conditions/autism/", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "daily"], "summary": "UK health service guidance on signs, getting assessed and support for autistic people and families.", "checked": "seed", "regions": ["uk"]}, {"title": "Autistic Self Advocacy Network", "url": "https://autisticadvocacy.org", "source": "Autistic Self Advocacy Network", "tier": "nonprofit", "audience": ["adults"], "cats": ["advocacy", "daily"], "summary": "Autistic-led organization with resources on self-advocacy, rights and acceptance.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Society of America", "url": "https://autismsociety.org", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["caregivers", "adults"], "cats": ["local", "caregivers", "advocacy"], "summary": "Nonprofit with information and a network of local affiliates.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Speaks", "url": "https://www.autismspeaks.org", "source": "Autism Speaks", "tier": "nonprofit", "audience": ["caregivers"], "cats": ["caregivers", "local", "care"], "summary": "Nonprofit with family toolkits and a resource guide to services.", "checked": "seed", "regions": ["us"]}, {"title": "Sentiment analysis of post-COVID-19 health information needs of the autism community", "url": "https://doi.org/10.3389/fpsyt.2024.1441349", "source": "Frontiers in Psychiatry", "tier": "academic", "audience": ["professionals", "caregivers"], "cats": ["signs", "diagnosis", "caregivers", "advocacy"], "summary": "Open-access study of what autistic people and caregivers discuss online: symptoms, diagnosis, caregiving and stigma.", "checked": "seed", "regions": ["global"]}]</script>
+<button type="button" id="totop" class="totop" hidden aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Top</span></button>
+<script id="data" type="application/json">[{"title": "Autism Spectrum Disorder (CDC)", "url": "https://www.cdc.gov/autism/", "source": "CDC", "tier": "gov", "audience": ["caregivers", "professionals", "adults"], "cats": ["signs", "diagnosis", "caregivers"], "summary": "Overview of signs, screening, diagnosis and resources for families and health professionals.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (NIMH)", "url": "https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd", "source": "NIMH", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "care"], "summary": "Research-based information on symptoms, diagnosis and treatment of autism spectrum disorder.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NICHD)", "url": "https://www.nichd.nih.gov/health/topics/autism", "source": "NICHD", "tier": "gov", "audience": ["caregivers", "professionals"], "cats": ["signs", "diagnosis", "care"], "summary": "Federal research institute pages on autism signs, screening and treatment.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Spectrum Disorder (MedlinePlus)", "url": "https://medlineplus.gov/autismspectrumdisorder.html", "source": "MedlinePlus", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "care", "caregivers"], "summary": "Plain-language health overview from the U.S. National Library of Medicine, with links to related topics.", "checked": "seed", "regions": ["us"]}, {"title": "Autism (NHS)", "url": "https://www.nhs.uk/conditions/autism/", "source": "NHS", "tier": "gov", "audience": ["adults", "caregivers"], "cats": ["signs", "diagnosis", "daily"], "summary": "UK health service guidance on signs, getting assessed and support for autistic people and families.", "checked": "seed", "regions": ["uk"]}, {"title": "Autistic Self Advocacy Network", "url": "https://autisticadvocacy.org", "source": "Autistic Self Advocacy Network", "tier": "nonprofit", "audience": ["adults"], "cats": ["advocacy", "daily"], "summary": "Autistic-led organization with resources on self-advocacy, rights and acceptance.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Society of America", "url": "https://autismsociety.org", "source": "Autism Society of America", "tier": "nonprofit", "audience": ["caregivers", "adults"], "cats": ["local", "caregivers", "advocacy"], "summary": "Nonprofit with information and a network of local affiliates.", "checked": "seed", "regions": ["us"]}, {"title": "Autism Speaks", "url": "https://www.autismspeaks.org", "source": "Autism Speaks", "tier": "nonprofit", "audience": ["caregivers"], "cats": ["caregivers", "local", "care"], "summary": "Nonprofit with family toolkits and a resource guide to services.", "checked": "seed", "regions": ["us"]}, {"title": "Sentiment analysis of post-COVID-19 health information needs of the autism community", "url": "https://doi.org/10.3389/fpsyt.2024.1441349", "source": "Frontiers in Psychiatry", "tier": "academic", "audience": ["professionals", "caregivers"], "cats": ["signs", "diagnosis", "caregivers", "advocacy"], "summary": "Open-access study of what autistic people and caregivers discuss online: symptoms, diagnosis, caregiving and stigma.", "checked": "seed", "regions": ["global"]}, {"title": "Autism South Africa", "url": "https://www.aut2know.co.za/", "source": "Autism South Africa", "tier": "nonprofit", "audience": ["adults", "caregivers", "professionals"], "cats": ["local", "caregivers", "advocacy"], "regions": ["za"], "focus": [], "summary": "National organization offering information, resources for adults, parents and professionals, training, and a list of service providers by province.", "checked": "seed"}, {"title": "Autism Western Cape", "url": "https://www.autismwesterncape.org.za/", "source": "Autism Western Cape", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "care", "caregivers", "advocacy"], "regions": ["za"], "focus": [], "summary": "Non-profit in the Western Cape offering post-diagnosis support, counselling, educational programs and advocacy for autistic people and their families.", "checked": "seed"}, {"title": "Autism Awareness Care and Training (AACT)", "url": "https://aactgh.org/", "source": "Autism Awareness Care and Training", "tier": "nonprofit", "audience": ["adults", "caregivers"], "cats": ["local", "caregivers", "daily"], "regions": ["gh"], "focus": [], "summary": "Centre in Accra, Ghana, offering training and individualized education for children with autism, and autism awareness work.", "checked": "seed"}, {"title": "Autism in Black", "url": "https://www.autisminblack.org/", "source": "Autism in Black", "tier": "community", "audience": ["adults", "caregivers"], "cats": ["advocacy", "caregivers", "daily"], "regions": ["us"], "focus": ["black"], "summary": "Community-led organization serving Black autistic people and their families, with resources, programs and events.", "checked": "seed"}, {"title": "Autistic People of Color Fund", "url": "https://autismandrace.com/autistic-people-of-color-fund", "source": "Autistic People of Color Fund", "tier": "community", "audience": ["adults"], "cats": ["advocacy", "daily"], "regions": ["us"], "focus": ["minority", "black", "asian", "indigenous"], "summary": "A fund that supports autistic people of color. Check the page for who is eligible and how to apply.", "checked": "seed"}]</script>
 
 <script>
 (function(){
@@ -320,8 +327,11 @@ function match(r){
 }
 function render(){
   var rows=D.filter(match).sort(function(a,b){return ORDER[a.tier]-ORDER[b.tier]||a.title.localeCompare(b.title)});
+  var nt='';if(st.reg!=='all'&&!D.some(function(r){return (r.regions||[]).indexOf(st.reg)>-1}))nt='We do not have sources specific to '+REG[st.reg]+' yet, so these are resources that apply anywhere. We are adding more.';
+  if(st.foc!=='all'&&!D.some(function(r){return (r.focus||[]).indexOf(st.foc)>-1}))nt='No sources are tagged for '+FOCUS[st.foc]+' yet. Tags are assigned by the project team and are still being added.';
+  $('note').textContent=nt;
   var cn=rows.length+(rows.length===1?' resource':' resources')+(st.need?' for “'+NAME[st.need]+'”':'');var act=st.need||st.q||st.aud!=='all'||st.trusted||st.reg!=='all'||st.foc!=='all';$('count').innerHTML='<span></span>'+(act?'<button class="pref" id="clr" type="button">Clear filters</button>':'');$('count').firstChild.textContent=cn;if(act)$('clr').onclick=function(){st={need:'',q:'',aud:'all',trusted:false,reg:'all',foc:'all'};$('reg').value='all';$('foc').value='all';$('q').value='';$('aud').value='all';$('trusted').checked=false;[].forEach.call(document.querySelectorAll('#needs button'),function(x){x.setAttribute('aria-pressed','false')});render()};
-  if(!rows.length){$('list').innerHTML='<li class="empty">Nothing matches yet. Clear the search or choose a different topic or audience.</li>';return}
+  if(!rows.length){$('list').innerHTML='<li class="empty">'+(st.foc!=='all'&&!D.some(function(r){return (r.focus||[]).indexOf(st.foc)>-1})?'We have not tagged any sources for '+esc(FOCUS[st.foc])+' yet. <a href="community/index.html">See how community tags work</a>, or clear the filter to see everything.':'Nothing matches yet. Clear the search or choose a different topic, audience, place or community.')+'</li>';return}
   $('list').innerHTML=rows.map(function(r){
     return '<li class="item" style="--tc:var(--'+r.tier+')"><h3><a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.title)+'<span class="vh"> (opens in a new tab)</span></a><span class="nt" aria-hidden="true">opens in a new tab</span></h3>'+
       '<p class="meta"><b>'+(TIER[r.tier]||'Other')+'</b> from '+esc(r.source)+' ('+esc(regText(r))+'). '+(focText(r)?'Focus: '+esc(focText(r))+'. ':'')+(r.checked==='seed'?'Starter entry, not yet crawled.':'Checked '+esc(r.checked)+'.')+'</p>'+
@@ -330,7 +340,7 @@ function render(){
 }
 $('q').addEventListener('input',function(e){st.q=e.target.value.trim();render()});
 $('aud').addEventListener('change',function(e){st.aud=e.target.value;render()});
-(function(){var fs={};D.forEach(function(r){(r.focus||[]).forEach(function(x){fs[x]=1})});var ks=Object.keys(fs);if(ks.length){$('focwrap').hidden=false;ks.forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=FOCUS[k]||k;$('foc').appendChild(o)})}})();
+(function(){Object.keys(FOCUS).forEach(function(k){var n=D.filter(function(r){return (r.focus||[]).indexOf(k)>-1}).length,o=document.createElement('option');o.value=k;o.textContent=FOCUS[k]+' ('+n+')';$('foc').appendChild(o)})})();
 $('foc').addEventListener('change',function(e){st.foc=e.target.value;render()});
 $('reg').addEventListener('change',function(e){st.reg=e.target.value;render();remember('region',st.reg)});
 $('trusted').addEventListener('change',function(e){st.trusted=e.target.checked;render()});
@@ -556,9 +566,10 @@ var AV_HAIR=[['Black','#1b1a1a'],['Dark brown','#3b2717'],['Brown','#6a4527'],['
 var AV_EYES=[['Brown','#5a3820'],['Hazel','#8a6a2a'],['Green','#4f7f5a'],['Blue','#4a78a8'],['Gray','#7a8794']];
 var AV_OUT=[['Teal','#2c7a7b'],['Navy','#2f4a7a'],['Purple','#6b5bb0'],['Rose','#b5566f'],['Mustard','#c9962b'],['Green','#4f8a5c'],['Gray','#6f7a85'],['Cream','#e8dcc4']];
 var AV_BG=[['Mist','#dcebe6'],['Lavender','#e6e2f7'],['Sand','#f1e6cc'],['Sky','#d9e8f4'],['Blush','#f4dfe0'],['Slate','#cfd8de']];
-var AV_DEFAULT={style:'human',skin:3,hairStyle:'short',hair:1,eyes:0,facial:'none',glasses:'none',outfit:'crew',outfitColor:0,bg:0};
+var AV_DEFAULT={style:'human',build:'neu',skin:3,hairStyle:'short',hair:1,eyes:0,facial:'none',glasses:'none',outfit:'crew',outfitColor:0,bg:0};
 var AV_MOUTH={
  human:['M98 172 Q109 167 120 170 Q131 167 142 172 Q132 182 120 183 Q108 182 98 172Z','M100 171 Q120 165 140 171 Q138 186 120 187 Q102 186 100 171Z','M101 170 Q120 163 139 170 Q140 192 120 193 Q100 192 101 170Z'],
+ fem:['M97 172 Q108 164 120 168 Q132 164 143 172 Q133 187 120 188 Q107 187 97 172Z','M99 170 Q120 163 141 170 Q139 188 120 189 Q101 188 99 170Z','M100 169 Q120 161 140 169 Q141 194 120 195 Q99 194 100 169Z'],
  orb:['M96 150 Q120 164 144 150','M100 150 Q120 168 140 150','M104 148 Q120 176 136 148']
 };
 var AV_N=0;
@@ -568,12 +579,19 @@ function avatarSVG(c){
   var o=AV_OUT[c.outfitColor]||AV_OUT[0],oc=o[1];
   if(c.style==='orb'){
     var base=oc,lt=lightC(base,.35),dk=shadeC(base,.7);
-    return '<svg viewBox="0 0 240 280" role="img" aria-label="Soft shapes avatar" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ob'+U+'" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="'+lt+'"/><stop offset=".7" stop-color="'+base+'"/><stop offset="1" stop-color="'+dk+'"/></radialGradient></defs><g class="breathe"><circle cx="120" cy="124" r="86" fill="url(#ob'+U+')"/><ellipse cx="92" cy="86" rx="26" ry="14" fill="#fff" opacity=".18" transform="rotate(-25 92 86)"/><g class="blink"><ellipse cx="94" cy="112" rx="9" ry="12" fill="#fff"/><ellipse cx="146" cy="112" rx="9" ry="12" fill="#fff"/><circle cx="96" cy="114" r="5" fill="#1d2a33"/><circle cx="148" cy="114" r="5" fill="#1d2a33"/></g><path id="mouth" d="'+AV_MOUTH.orb[0]+'" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" data-lip="none"/></g></svg>';
+    return '<svg viewBox="0 0 240 280" role="img" aria-label="Ari, the AI companion" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ob'+U+'" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="'+lt+'"/><stop offset=".7" stop-color="'+base+'"/><stop offset="1" stop-color="'+dk+'"/></radialGradient></defs><g class="breathe"><circle cx="120" cy="124" r="86" fill="url(#ob'+U+')"/><ellipse cx="92" cy="86" rx="26" ry="14" fill="#fff" opacity=".18" transform="rotate(-25 92 86)"/><g class="blink"><ellipse cx="94" cy="112" rx="9" ry="12" fill="#fff"/><ellipse cx="146" cy="112" rx="9" ry="12" fill="#fff"/><circle cx="96" cy="114" r="5" fill="#1d2a33"/><circle cx="148" cy="114" r="5" fill="#1d2a33"/></g><path id="mouth" d="'+AV_MOUTH.orb[0]+'" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" data-lip="none"/></g></svg>';
   }
   var sk=(AV_SKIN[c.skin]||AV_SKIN[3])[1],hr=(AV_HAIR[c.hair]||AV_HAIR[1])[1],ey=(AV_EYES[c.eyes]||AV_EYES[0])[1];
   var skHi=lightC(sk,.14),skLo=shadeC(sk,.84),skDk=shadeC(sk,.62),skShadow=shadeC(sk,.5),lip=mixc(sk,'#a3414f',.5),lipLo=mixc(sk,'#b8505c',.45),hrDk=shadeC(hr,.7),hrHi=lightC(hr,.22);
   var cloth=oc,clothDk=shadeC(oc,.72),clothHi=lightC(oc,.18);
-  var s='<svg viewBox="0 0 240 280" role="img" aria-label="Custom avatar" xmlns="http://www.w3.org/2000/svg"><defs>'+
+  var B=c.build||'neu';
+  var FACE={neu:'M120 42 C160 42 178 74 178 114 C178 152 160 192 120 202 C80 192 62 152 62 114 C62 74 80 42 120 42Z',
+            fem:'M120 42 C158 42 174 76 174 114 C174 150 156 190 120 203 C84 190 66 150 66 114 C66 76 82 42 120 42Z',
+            masc:'M120 42 C162 42 180 74 180 114 C180 158 164 194 142 200 Q120 206 98 200 C76 194 60 158 60 114 C60 74 78 42 120 42Z'}[B];
+  var EAR={neu:[62,178],fem:[66,174],masc:[60,180]}[B],NK={neu:[99,141],fem:[102,138],masc:[95,145]}[B],SH={neu:[14,226],fem:[24,216],masc:[4,236]}[B];
+  var BROW={neu:4.6,fem:3.4,masc:5.8}[B],LASH=(B==='fem');
+  if(B==='fem')lip=mixc(sk,'#b83a55',.55);else if(B==='masc')lip=mixc(sk,'#9a5a55',.32);
+  var s='<svg viewBox="0 0 240 280" role="img" aria-label="Ari, the AI companion" xmlns="http://www.w3.org/2000/svg"><defs>'+
    '<radialGradient id="fg'+U+'" cx=".42" cy=".38" r=".78"><stop offset="0" stop-color="'+skHi+'"/><stop offset=".65" stop-color="'+sk+'"/><stop offset="1" stop-color="'+skLo+'"/></radialGradient>'+
    '<linearGradient id="ng'+U+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+skShadow+'"/><stop offset=".55" stop-color="'+skDk+'"/><stop offset="1" stop-color="'+skLo+'"/></linearGradient>'+
    '<linearGradient id="cg'+U+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+clothHi+'"/><stop offset="1" stop-color="'+clothDk+'"/></linearGradient>'+
@@ -587,8 +605,8 @@ function avatarSVG(c){
   // body
   var hood=c.outfit==='hoodie';
   if(hood)s+='<path d="M52 230 C48 196 78 176 120 176 C162 176 192 196 188 230 Z" fill="'+clothDk+'"/>';
-  s+='<path d="M99 176 L99 234 Q120 248 141 234 L141 176 Z" fill="url(#ng'+U+')"/>';
-  s+='<path d="M14 280 C16 240 58 228 100 224 Q120 240 140 224 C182 228 224 240 226 280 Z" fill="url(#cg'+U+')"/>';
+  s+='<path d="M'+NK[0]+' 176 L'+NK[0]+' 234 Q120 248 '+NK[1]+' 234 L'+NK[1]+' 176 Z" fill="url(#ng'+U+')"/>';
+  s+='<path d="M'+SH[0]+' 280 C'+(SH[0]+2)+' 240 58 228 100 224 Q120 240 140 224 C182 228 '+(SH[1]-2)+' 240 '+SH[1]+' 280 Z" fill="url(#cg'+U+')"/>';
   if(c.outfit==='crew')s+='<path d="M100 224 Q120 244 140 224" fill="none" stroke="'+clothDk+'" stroke-width="7" stroke-linecap="round"/>';
   if(c.outfit==='collar')s+='<path d="M100 224 L120 252 L112 226Z M140 224 L120 252 L128 226Z" fill="#fff" stroke="'+clothDk+'" stroke-width="1.5" stroke-linejoin="round"/><path d="M120 252 L120 280" stroke="'+clothDk+'" stroke-width="1.5"/>';
   if(hood)s+='<path d="M100 224 Q120 246 140 224" fill="none" stroke="'+clothDk+'" stroke-width="9" stroke-linecap="round"/><path d="M110 240 L108 266 M130 240 L132 266" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".85"/>';
@@ -596,9 +614,10 @@ function avatarSVG(c){
   // chin shadow on neck
   s+='<path d="M99 176 Q120 206 141 176 L141 190 Q120 216 99 190Z" fill="'+skShadow+'" opacity=".28"/>';
   // ears
-  s+='<g><ellipse cx="62" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="63.5" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/><ellipse cx="178" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="176.5" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/></g>';
+  s+='<g><ellipse cx="'+EAR[0]+'" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="'+(EAR[0]+1.5)+'" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/><ellipse cx="'+EAR[1]+'" cy="120" rx="9.5" ry="16" fill="'+skLo+'"/><ellipse cx="'+(EAR[1]-1.5)+'" cy="121" rx="4.2" ry="9" fill="'+skDk+'" opacity=".45"/></g>';
   // face
-  s+='<path d="M120 42 C160 42 178 74 178 114 C178 152 160 192 120 202 C80 192 62 152 62 114 C62 74 80 42 120 42Z" fill="url(#fg'+U+')"/>';
+  s+='<path d="'+FACE+'" fill="url(#fg'+U+')"/>';
+  if(B==='masc')s+='<path d="M66 140 C76 186 98 200 120 201 C142 200 164 186 174 140 C164 168 144 184 120 184 C96 184 76 168 66 140Z" fill="'+skDk+'" opacity=".16"/>';
   s+='<ellipse cx="92" cy="152" rx="15" ry="11" fill="#e8786e" opacity=".14"/><ellipse cx="148" cy="152" rx="15" ry="11" fill="#e8786e" opacity=".14"/>';
   // facial hair
   if(c.facial==='stubble')s+='<path d="M66 126 C70 178 94 204 120 204 C146 204 170 178 174 126 C164 160 146 178 120 178 C94 178 76 160 66 126Z" fill="'+hr+'" opacity=".22"/><path d="M104 160 Q120 150 136 160 Q120 166 104 160Z" fill="'+hr+'" opacity=".18"/>';
@@ -606,10 +625,11 @@ function avatarSVG(c){
   // eyes
   var ex=[96,144],ey_=116,eyes='<g class="blink">';
   ex.forEach(function(x){eyes+='<ellipse cx="'+x+'" cy="'+ey_+'" rx="12.5" ry="7.6" fill="#fbfbf8"/><ellipse cx="'+x+'" cy="'+(ey_+1)+'" rx="12.5" ry="7.6" fill="'+skDk+'" opacity=".08"/><circle cx="'+(x+(x<120?1.5:-1.5))+'" cy="'+(ey_+.3)+'" r="6.6" fill="url(#ig'+U+')"/><circle cx="'+(x+(x<120?1.5:-1.5))+'" cy="'+(ey_+.3)+'" r="3.2" fill="#14110f"/><circle cx="'+(x+(x<120?3.5:0.5))+'" cy="'+(ey_-2)+'" r="1.9" fill="#fff" opacity=".95"/><path d="M'+(x-13)+' '+(ey_+.5)+' Q'+x+' '+(ey_-12)+' '+(x+13)+' '+(ey_+.5)+'" fill="none" stroke="'+shadeC(sk,.3)+'" stroke-width="2.3" stroke-linecap="round"/><path d="M'+(x-11)+' '+(ey_+3)+' Q'+x+' '+(ey_+9)+' '+(x+11)+' '+(ey_+3)+'" fill="none" stroke="'+skDk+'" stroke-width="1" opacity=".55"/>'});
-  eyes+='<path d="M83 112 l-4 -3 M85 109 l-3 -4 M157 112 l4 -3 M155 109 l3 -4" stroke="'+shadeC(sk,.3)+'" stroke-width="1.4" stroke-linecap="round"/></g>';
+  if(LASH)eyes+='<path d="M83 112 l-5 -3 M85.5 108.5 l-4 -5 M90 106 l-2.5 -5 M157 112 l5 -3 M154.5 108.5 l4 -5 M150 106 l2.5 -5" stroke="'+shadeC(sk,.25)+'" stroke-width="1.7" stroke-linecap="round"/></g>';
+  else eyes+='<path d="M83 112 l-4 -3 M85 109 l-3 -4 M157 112 l4 -3 M155 109 l3 -4" stroke="'+shadeC(sk,.3)+'" stroke-width="1.4" stroke-linecap="round"/></g>';
   s+=eyes;
   // brows
-  s+='<path d="M81 101 Q95 92 110 97" fill="none" stroke="'+hrDk+'" stroke-width="4.6" stroke-linecap="round" opacity="'+(hs==='bald'&&c.hair>4?'.7':'1')+'"/><path d="M130 97 Q145 92 159 101" fill="none" stroke="'+hrDk+'" stroke-width="4.6" stroke-linecap="round"/>';
+  s+=(B==='fem'?'<path d="M81 102 Q95 90 110 96" fill="none" stroke="'+hrDk+'" stroke-width="'+BROW+'" stroke-linecap="round"/><path d="M130 96 Q145 90 159 102" fill="none" stroke="'+hrDk+'" stroke-width="'+BROW+'" stroke-linecap="round"/>':'<path d="M81 100 Q95 93 110 97" fill="none" stroke="'+hrDk+'" stroke-width="'+BROW+'" stroke-linecap="round"/><path d="M130 97 Q145 93 159 100" fill="none" stroke="'+hrDk+'" stroke-width="'+BROW+'" stroke-linecap="round"/>');
   // nose
   s+='<path d="M120 118 Q116 140 112 150" fill="none" stroke="'+skDk+'" stroke-width="2" stroke-linecap="round" opacity=".5"/><path d="M107 155 Q120 165 133 155" fill="none" stroke="'+skDk+'" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><ellipse cx="113" cy="156" rx="3.4" ry="2" fill="#000" opacity=".2"/><ellipse cx="127" cy="156" rx="3.4" ry="2" fill="#000" opacity=".2"/><ellipse cx="120" cy="143" rx="3.2" ry="7" fill="#fff" opacity=".16"/>';
   // mouth
@@ -627,9 +647,8 @@ function avatarSVG(c){
   s+='</g></svg>';
   return s;
 }
-
 cs.av=Object.assign({},AV_DEFAULT);
-var AVH=[['skin','Skin tone',AV_SKIN,1],['hairStyle','Hair style',[['short','Short'],['buzz','Very short'],['long','Long'],['curly','Curly'],['bun','Bun'],['bald','None']],0],['hair','Hair color',AV_HAIR,1],['eyes','Eye color',AV_EYES,1],['facial','Facial hair',[['none','None'],['stubble','Stubble'],['beard','Beard']],0],['glasses','Glasses',[['none','None'],['round','Round'],['square','Square']],0],['outfit','Clothing',[['crew','Crew neck'],['collar','Collar'],['hoodie','Hoodie']],0]];
+var AVH=[['build','Face and body shape',[['fem','Feminine'],['neu','Neutral'],['masc','Masculine']],0],['skin','Skin tone',AV_SKIN,1],['hairStyle','Hair style',[['short','Short'],['buzz','Very short'],['long','Long'],['curly','Curly'],['bun','Bun'],['bald','None']],0],['hair','Hair color',AV_HAIR,1],['eyes','Eye color',AV_EYES,1],['facial','Facial hair',[['none','None'],['stubble','Stubble'],['beard','Beard']],0],['glasses','Glasses',[['none','None'],['round','Round'],['square','Square']],0],['outfit','Clothing',[['crew','Crew neck'],['collar','Collar'],['hoodie','Hoodie']],0]];
 function avSync(){
   [].forEach.call(document.querySelectorAll('#avform button[data-k]'),function(b){b.setAttribute('aria-pressed',String(String(cs.av[b.dataset.k])===b.dataset.v))});
   $('avhuman').hidden=cs.av.style==='orb';
@@ -648,6 +667,11 @@ function buildAvForm(){
     });
   }
   grp(f,'Style','style',[['human','Human-like'],['orb','Soft shapes']],0);
+  var qg=document.createElement('div');qg.className='g';qg.textContent='Quick start';f.appendChild(qg);
+  var qr=document.createElement('div');qr.className='row';f.appendChild(qr);
+  [['Woman',{build:'fem',hairStyle:'long',hair:1,facial:'none',outfit:'crew',outfitColor:2}],['Man',{build:'masc',hairStyle:'short',hair:0,facial:'stubble',outfit:'collar',outfitColor:1}],['Neutral',{build:'neu',hairStyle:'short',hair:2,facial:'none',outfit:'crew',outfitColor:0}]].forEach(function(q){
+    var b=document.createElement('button');b.type='button';b.className='pref';b.textContent=q[0];
+    b.onclick=function(){cs.av=Object.assign({},cs.av,{style:'human'},q[1]);avatar();remember('av',cs.av);avSync()};qr.appendChild(b)});
   var hh=document.createElement('div');hh.id='avhuman';f.appendChild(hh);
   AVH.forEach(function(a){grp(hh,a[1],a[0],a[2],a[3])});
   grp(f,'Color of clothes or shape','outfitColor',AV_OUT,1);
@@ -655,7 +679,7 @@ function buildAvForm(){
   var r=document.createElement('div');r.className='row m';f.appendChild(r);
   var rb=document.createElement('button');rb.type='button';rb.className='pref';rb.textContent='Surprise me';
   rb.onclick=function(){var P_=function(a){return a[Math.floor(Math.random()*a.length)]};
-    cs.av={style:cs.av.style,skin:Math.floor(Math.random()*AV_SKIN.length),hairStyle:P_(['short','buzz','long','curly','bun','bald']),hair:Math.floor(Math.random()*AV_HAIR.length),eyes:Math.floor(Math.random()*AV_EYES.length),facial:P_(['none','none','stubble','beard']),glasses:P_(['none','none','round','square']),outfit:P_(['crew','collar','hoodie']),outfitColor:Math.floor(Math.random()*AV_OUT.length),bg:Math.floor(Math.random()*AV_BG.length)};
+    cs.av={style:cs.av.style,build:P_(['fem','neu','masc']),skin:Math.floor(Math.random()*AV_SKIN.length),hairStyle:P_(['short','buzz','long','curly','bun','bald']),hair:Math.floor(Math.random()*AV_HAIR.length),eyes:Math.floor(Math.random()*AV_EYES.length),facial:P_(['none','none','stubble','beard']),glasses:P_(['none','none','round','square']),outfit:P_(['crew','collar','hoodie']),outfitColor:Math.floor(Math.random()*AV_OUT.length),bg:Math.floor(Math.random()*AV_BG.length)};
     avatar();remember('av',cs.av);avSync()};
   var rs=document.createElement('button');rs.type='button';rs.className='pref';rs.textContent='Reset';
   rs.onclick=function(){cs.av=Object.assign({},AV_DEFAULT);avatar();remember('av',cs.av);avSync()};
@@ -669,7 +693,7 @@ function avatar(){
 }
 var mt=null,reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 function mouth(on){
-  clearInterval(mt);var m=$('mouth');if(!m)return;var orb=cs.av.style==='orb',M=AV_MOUTH[orb?'orb':'human'],lip=m.getAttribute('data-lip');
+  clearInterval(mt);var m=$('mouth');if(!m)return;var orb=cs.av.style==='orb',M=AV_MOUTH[orb?'orb':(cs.av.build==='fem'?'fem':'human')],lip=m.getAttribute('data-lip');
   m.setAttribute('d',M[0]);if(!orb)m.setAttribute('fill',lip);
   if(on&&!reduced&&!P.calm){var i=0,seq=[1,0,2,1,0,1];mt=setInterval(function(){i=(i+1)%seq.length;m.setAttribute('d',M[seq[i]]);if(!orb)m.setAttribute('fill',seq[i]?'#5b2230':lip)},150)}
 }
@@ -677,17 +701,38 @@ function status(t){$('cstat').textContent=t||''}
 function add(r,t,res,crisis){
   var d=document.createElement('div');d.className='msg '+(r==='me'?'me':'bot')+(crisis?' crisis':'');
   var p=document.createElement('div');p.textContent=t;d.appendChild(p);
-  if(r!=='me'&&window.speechSynthesis){var hb=document.createElement('button');hb.className='pref';hb.type='button';hb.textContent='Hear this';hb.style.marginTop='8px';hb.onclick=function(){speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.rate=cs.rate;u.onstart=function(){mouth(true)};u.onend=u.onerror=function(){mouth(false)};speechSynthesis.speak(u)};d.appendChild(hb)}
+  if(r!=='me'){var hb=document.createElement('button');hb.className='pref';hb.type='button';hb.textContent='Hear this';hb.style.marginTop='8px';hb.onclick=function(){sayAloud(t,true)};d.appendChild(hb)}
   if(res&&res.length){var w=document.createElement('div');w.className='res';res.forEach(function(x){var a=document.createElement('a');a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=x.title;var s=document.createElement('small');s.textContent=(TIER[x.tier]||'')+' from '+x.source;a.appendChild(s);w.appendChild(a)});d.appendChild(w)}
   $('log').appendChild(d);$('log').scrollTop=$('log').scrollHeight;
   cs.hist.push({r:r,t:t});
 }
-function speak(t){
-  if(cs.channel==='talk'&&!cs.mute&&!window.speechSynthesis)status('This browser cannot read replies aloud.');
-  if(cs.mute||cs.channel!=='talk'||!window.speechSynthesis)return;
-  speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.rate=cs.rate;
-  u.onstart=function(){mouth(true)};u.onend=u.onerror=function(){mouth(false)};speechSynthesis.speak(u);
+var VOICE=null,UQ=[];
+function pickVoice(){
+  if(!window.speechSynthesis)return;var vs=speechSynthesis.getVoices();if(!vs.length)return;
+  var lang=(navigator.language||'en-US').toLowerCase();
+  VOICE=vs.filter(function(v){return v.lang&&v.lang.toLowerCase()===lang})[0]||vs.filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf(lang.slice(0,2))===0})[0]||vs[0]||null;
 }
+if(window.speechSynthesis){pickVoice();if('onvoiceschanged' in speechSynthesis)speechSynthesis.onvoiceschanged=pickVoice}
+var NOVOICE='Nothing played. Check your volume and that this browser has a voice installed. If this page is inside another app, open it in its own browser tab.';
+function sayAloud(t,explicit){
+  if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){status('This browser cannot read aloud. Try Chrome, Edge or Safari, and open this page in its own tab.');return}
+  var started=false;
+  function go(){
+    var parts=t.replace(/\s+/g,' ').match(/[^.!?]+[.!?]*/g)||[t];UQ=[];
+    parts.forEach(function(p,i){
+      p=p.trim();if(!p)return;var u=new SpeechSynthesisUtterance(p);
+      if(VOICE){u.voice=VOICE;u.lang=VOICE.lang}else u.lang='en-US';u.rate=cs.rate;
+      u.onstart=function(){if(!started){started=true;status('Reading aloud…');mouth(true)}};
+      u.onerror=function(e){mouth(false);if(e.error!=='canceled'&&e.error!=='interrupted')status('The voice could not play ('+e.error+'). Check your volume and that this browser has a voice installed. If this page is inside another app, open it in its own browser tab.')};
+      UQ.push(u);speechSynthesis.speak(u);
+    });
+    var last=UQ[UQ.length-1];if(last)last.onend=function(){status('');mouth(false)};
+    if(explicit)setTimeout(function(){if(!started&&!speechSynthesis.speaking)status(NOVOICE)},2000);
+  }
+  if(speechSynthesis.paused)speechSynthesis.resume();
+  if(speechSynthesis.speaking||speechSynthesis.pending){speechSynthesis.cancel();setTimeout(go,100)}else go();
+}
+function speak(t){if(cs.mute||cs.channel!=='talk')return;sayAloud(t,false)}
 var CRISIS=/(suicid|kill myself|end my life|want to die|self[- ]?harm|hurt myself|hurting myself|being abused|abusing me|hits me|overdos|in danger)/i;
 var CMSG='I’m really glad you told me. I’m an AI, so I can’t keep you safe, but people can help right now. In the US, call or text 988 (Suicide & Crisis Lifeline), or call 911 if you are in immediate danger. If you are somewhere else, please contact your local emergency number. If someone is near you, please tell them. I’m still here if you want to keep talking.';
 var QUICK={autistic:['I had a hard day','Sensory overload','Help me find a resource'],caregiver:['I feel stretched thin','Questions after a diagnosis','Help me find services'],both:['I had a hard day','I feel stretched thin','Help me find a resource']};
@@ -695,8 +740,8 @@ function setMode(m,fromMem){
   cs.mode=m;if(!fromMem)remember('mode',m);
   [].forEach.call(document.querySelectorAll('input[name=who]'),function(r){r.checked=r.value===m});
   $('log').innerHTML='';cs.hist=[];
-  add('bot','Hi, I’m an AI companion on Spectrum Hub. I can listen, talk things through, and point you to resources from the Hub. I’m not a person, a therapist or a doctor. What would you like to talk about? There is no rush.');
-  $('msg').disabled=false;$('msg').placeholder='Type your message';
+  add('bot','Hi, I’m Ari, an AI companion on Spectrum Hub. I can listen, talk things through, and point you to resources from the Hub. I’m not a person, a therapist or a doctor. What would you like to talk about? There is no rush.');
+  $('msg').disabled=false;$('msg').placeholder='Type your message to Ari';
   var q=$('quick');q.innerHTML='';QUICK[m].forEach(function(t){var b=document.createElement('button');b.className='pref';b.type='button';b.textContent=t;b.onclick=function(){send(t)};q.appendChild(b)});
 }
 [].forEach.call(document.querySelectorAll('input[name=who]'),function(r){r.addEventListener('change',function(){setMode(r.value)})});
@@ -707,7 +752,7 @@ function top(q){
 function prompt(text,res){
   var who={autistic:'an autistic person',caregiver:'a caregiver of an autistic person',both:'an autistic person and/or a caregiver'}[cs.mode];
   var t=cs.hist.slice(-9,-1).map(function(m){return (m.r==='me'?'User: ':'Companion: ')+m.t}).join('\n');
-  return 'You are the AI companion on an autism resource website. The user is '+who+'.\nRules: Be honest that you are an AI; never claim to be human, to have a body, a life or feelings of missing the user. You are not a therapist or doctor: give no diagnosis and no medication advice, and suggest a qualified professional for individual decisions. Use plain, literal language with no sarcasm or idioms. Keep replies under 90 words, in short paragraphs, and ask at most one question. Offer choices instead of orders. Do not pressure or tell the user how they should feel. Do not treat autism as something to cure or fix. Encourage trusted people and professionals; never encourage dependence on you. Recommend resources only from RESOURCES by index; never invent links or details.'+
+  return 'You are Ari, the AI companion on an autism resource website. Your name is Ari. If the user greets you or this is your first reply, say hello and introduce yourself briefly as Ari. The user is '+who+'.\nRules: Be honest that you are an AI; never claim to be human, to have a body, a life or feelings of missing the user. You are not a therapist or doctor: give no diagnosis and no medication advice, and suggest a qualified professional for individual decisions. Use plain, literal language with no sarcasm or idioms. Keep replies under 90 words, in short paragraphs, and ask at most one question. Offer choices instead of orders. Do not pressure or tell the user how they should feel. Do not treat autism as something to cure or fix. Encourage trusted people and professionals; never encourage dependence on you. Recommend resources only from RESOURCES by index; never invent links or details.'+
   (memOn()&&mem.name?'\nThe user prefers to be called '+mem.name+'.':'')+(memOn()&&mem.avoid?'\nAvoid these topics unless the user raises them: '+mem.avoid+'.':'')+
   '\nRESOURCES:\n'+(res.length?res.map(function(r,i){return i+': '+r.title+' ('+r.source+'): '+r.summary}).join('\n'):'(none relevant)')+
   '\n\nConversation so far:\n'+(t||'(start)')+'\n\nUser: '+text+'\n\nReply with JSON only: {"reply": string, "resources": [indexes from RESOURCES, may be empty]}';
@@ -747,11 +792,11 @@ $('rate').onchange=function(){cs.rate=parseFloat(this.value);remember('rate',cs.
 $('avt').onclick=function(){cs.avatar=!cs.avatar;avatar();remember('avatar',cs.avatar)};
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition,rec=null;
 $('mic').onclick=function(){
-  if(!SR){status('Voice input is not available in this browser. You can type instead.');return}
+  if(!SR){status('Voice input is not available in this browser. Try Chrome, Edge or Safari, or type instead.');return}
   if(rec){rec.stop();return}
-  rec=new SR();rec.lang='en-US';rec.interimResults=false;
+  rec=new SR();rec.lang=navigator.language||'en-US';rec.interimResults=false;rec.onstart=function(){status('Listening. Speak now.')};
   rec.onresult=function(e){var t=e.results[0][0].transcript;$('msg').value=t;send(t)};
-  rec.onerror=function(e){var m={'not-allowed':'The microphone is blocked. Allow it in your browser’s site settings, or type instead.','service-not-allowed':'Voice input is not allowed in this browser or view. You can type instead.','no-speech':'I did not hear anything. Try again when you are ready.','audio-capture':'No microphone was found.','network':'Voice input needs an internet connection.'};status(m[e.error]||'I could not hear you. You can try again or type.')};
+  rec.onerror=function(e){var m={'not-allowed':'The microphone is blocked. Allow it in your browser’s site settings, or open this page in its own browser tab. You can also type.','service-not-allowed':'Voice input is not allowed in this browser or view. You can type instead.','no-speech':'I did not hear anything. Try again when you are ready.','audio-capture':'No microphone was found.','network':'Voice input needs an internet connection.'};status(m[e.error]||'I could not hear you. You can try again or type.')};
   rec.onend=function(){rec=null;$('mic').textContent='Start talking';$('mic').setAttribute('aria-pressed','false')};
   try{rec.start();$('mic').textContent='Stop';$('mic').setAttribute('aria-pressed','true');status('Listening…')}catch(e){rec=null}
 };
@@ -794,7 +839,12 @@ if(memOn()){
   $('rate').value=String(cs.rate);$('pname').value=mem.name||'';$('pavoid').value=mem.avoid||'';if(mem.region){st.reg=mem.region;$('reg').value=mem.region}
 }
 buildNeeds();apply();render();avatar();buildAvForm();setChannel(cs.channel,true);renderMem();route();
-if(memOn()&&mem.mode)setMode(mem.mode,true);
+function intro(){
+  add('bot','Hi, I’m Ari, an AI companion on Spectrum Hub. I’m not a person, a therapist or a doctor. Who is here today? You can choose above, or just start typing. There is no rush.');
+  var q=$('quick');q.innerHTML='';QUICK.both.forEach(function(t){var b=document.createElement('button');b.className='pref';b.type='button';b.textContent=t;b.onclick=function(){send(t)};q.appendChild(b)});
+}
+if(memOn()&&mem.mode)setMode(mem.mode,true);else intro();
+(function(){var b=document.getElementById('totop');if(!b)return;function vis(){b.hidden=(window.pageYOffset||document.documentElement.scrollTop||0)<500}window.addEventListener('scroll',vis,{passive:true});vis();b.onclick=function(){var calm=document.documentElement.hasAttribute('data-calm')||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);window.scrollTo({top:0,behavior:calm?'auto':'smooth'});var h=document.querySelector('.brand');if(h&&h.focus)h.focus({preventScroll:true})}})();
 })();
 </script>
 </body>
